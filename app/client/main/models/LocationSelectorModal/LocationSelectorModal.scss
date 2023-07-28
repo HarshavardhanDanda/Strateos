@@ -1,0 +1,23 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+
+.location-selector-modal {
+  &__left.card,
+  &__right.card {
+    height: 45vh;
+    overflow: auto;
+
+    &--large {
+      height: 55vh;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__location-box {
+    flex: 1;
+  }
+}

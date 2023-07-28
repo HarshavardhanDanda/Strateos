@@ -1,0 +1,73 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.organizations-list-panel table {
+  border-bottom: 1px solid $standard-gray;
+}
+
+.new_org_helper_message {
+  padding-top: 10px;
+}
+
+#profile {
+  position: relative;
+
+  .user-name {
+    @extend h1 !optional;
+  }
+
+  #public {
+    padding-top: 50px;
+  }
+
+  .explanation {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid $standard-gray;
+  }
+
+  #password-change-form {
+    margin-top: 10px;
+
+    .feedback {
+      margin-left: 20px;
+    }
+  }
+  #two-factor-setup {
+    #qrcode {
+      width: 256px;
+      margin: 20px auto;
+    }
+
+    .confirm-code {
+      width: 300px;
+      margin: 20px auto;
+      margin-bottom: 30px;
+    }
+
+    .actions {
+      border-top: 1px solid $standard-gray;
+      margin-top: 10px;
+      padding-top: 5px;
+
+      .abort-2fa {
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.abandon-2fa-challenge {
+  margin-left: 20px;
+}
+
+.password-confirm-2fa {
+  margin-top: 20px;
+}
+
+.developer-status {
+  .is-not-developer {
+    .btn {
+      margin-top: $spacing--md;
+    }
+  }
+}

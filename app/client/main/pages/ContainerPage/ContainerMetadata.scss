@@ -1,0 +1,15 @@
+.container-metadata {
+  &__core-property {
+    display: flex;
+    &__item {
+      width: 50%;
+    }
+  }
+
+  .amino-table {
+    .amino-table__cell.metadata-cell-multiline {
+      // overwrite default, allowing multiple lines
+      white-space: normal;
+    }
+  }
+}

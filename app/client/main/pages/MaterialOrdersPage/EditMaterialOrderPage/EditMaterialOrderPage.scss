@@ -1,0 +1,38 @@
+@use 'main/global-imports' as *;
+
+.edit-material-order-page {
+	&__form {
+    .row + .row {
+      margin-top: $spacing--sm;
+    }
+  }
+
+	&__group-materials {
+    margin-top: $spacing--md;
+  }
+
+	&__item-header {
+    @include tx-type__style(subheading, $default-tier: primary, $default-weight: heavy);
+  }
+
+	&__buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: $spacing--md;
+  }
+
+  dt, dd {
+    height: 25px;
+  }
+
+  .dl-horizontal {
+    dt {
+      float:left;
+      text-align: left;
+    }
+  }
+
+  .labeled-input {
+    margin-right: $spacing--xxxlg;
+  }
+}

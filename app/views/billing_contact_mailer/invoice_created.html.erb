@@ -1,0 +1,57 @@
+<table border="0" cellpadding="0" cellspacing="0"
+  width="445" align="center" style="margin:auto" class="fullwidth">
+
+  <tr>
+    <td align="center" style="padding:0 0 10px 0">
+      <p style="text-align:center;font-size:17px;color:#0E202E;line-height:160%;
+        margin:0;padding:0;letter-spacing:0.3px" class="source light">
+         <a style="color:hsl(205,  73%, 60%)" href="<%= organization_invoice_url @invoice.organization, @invoice, format: 'pdf' %>">
+          Invoice for <%= @invoice.month %>
+         </a>
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <p style="font-size:17px;color:#0E202E;line-height:160%;margin:0;padding:0;
+        letter-spacing:0.3px" class="source light">
+        Hello,
+        <br/>
+        <br/>
+        Your Strateos invoice for <%= @invoice.month %> is now available.
+        <% if @invoice.total <= 0 %>
+          The total comes to <%= number_to_currency @invoice.total %>, so we won't charge your payment method.
+        <% else %>
+          We will charge your payment method <%= number_to_currency @invoice.total %>
+          within the next two business days.
+        <% end %>
+        <br/>
+        <br/>
+        You can review all charges for your <a style="color:hsl(205,  73%, 60%)"
+          href="<%= organization_url @invoice.organization %>">
+          <%= @invoice.organization.name %></a> account on your invoice.
+        <br/>
+        <br/>
+        For a detailed breakdown, log into your Strateos account and visit:
+        <a style="color:hsl(205,  73%, 60%)" href="<%= organization_billing_url(@invoice.organization) %>">
+          <%= organization_billing_url(@invoice.organization) %>
+        </a>
+        <% if @invoice.xero_invoice.try(:pdf) %>
+          <br/>
+          A copy of your invoice is also attached to this email.
+        <% end %>
+        <br/>
+        <br/>
+        Need support? Send us an email at <a style="color:hsl(205,  73%, 60%)"
+          href="mailto:support@strateos.com">support@strateos.com</a> and we'll be happy to help you.
+        <br/>
+        <br/>
+        Thanks for using Strateos,<br>
+        The Strateos Billing Team<br>
+        <a style="color:hsl(205,  73%, 60%)" href="mailto:accountsreceivable@strateos.com">accountsreceivable@strateos.com</a>
+      </p>
+    </td>
+  </tr>
+
+</table>

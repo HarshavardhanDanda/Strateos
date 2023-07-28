@@ -1,0 +1,26 @@
+@use 'main/global-imports' as *;
+
+.video-links-container {
+  display: inline-block;
+
+  ul.video-links {
+    @include tx-typescale(-2);
+    display: inline;
+  }
+
+  .video-link,
+  .video-duration {
+    white-space: nowrap;
+  }
+
+  .video-icon:before {
+    margin-right: 4px;
+  }
+
+  ul {
+    .video-links__link {
+      display: list-item;
+      margin-right: 10px;
+    }
+  }
+}

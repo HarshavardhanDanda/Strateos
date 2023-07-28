@@ -1,0 +1,182 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+@use '../../assets/stylesheets/bootstrap-variables' as *;
+
+.shipping-cart-layer {
+  @include tx-z-index(fixed, notification);
+  bottom: 0;
+  left: 0;
+
+  .shipping-cart {
+    @include flex-justify-and-align(space-between, center);
+    @include tx-box-shadow(modal-shadow);
+    border-left: 0;
+    margin-bottom: 20px;
+    background-color: $white;
+    padding: 10px 20px;
+
+    .ship-cart,
+    .clear-cart {
+      cursor: pointer;
+      padding: 10px 0;
+      margin-left: 10px;
+      text-transform: uppercase;
+      color: $blue;
+    }
+  }
+}
+
+.shipping-cart-modal {
+  .verify-samples {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    > * {
+      margin-bottom: $spacing--xlg;
+    }
+  }
+
+  &__list-group-item {
+    margin-top: 1em;
+  }
+
+  .shipping-form {
+    @include flex-justify-and-align(center, center);
+    flex-direction: column;
+  }
+
+  .badge.container-warning {
+    color: $state-warning-text;
+    background-color: $white;
+  }
+
+  .shipping-options {
+    width: 100%;
+  }
+
+  .shipping-note {
+    text-align: center;
+  }
+
+  .centering-container {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .seal-alert {
+    margin-bottom: $spacing--xxlg;
+
+    i.fa-exclamation-triangle {
+      margin-right: $between-text-and-icon;
+    }
+
+    .input-container {
+      margin-top: $spacing--md;
+
+      label {
+        margin-left: $between-text-and-icon;
+      }
+    }
+  }
+
+  .address-type {
+    margin-top: 30px;
+
+    h3 {
+      text-align: center;
+      margin-bottom: 0;
+    }
+  }
+
+  .address-details {
+    margin-top: 30px;
+  }
+
+
+  .review-shipment {
+    .modal__body-title {
+      margin-bottom: $spacing--xlg;
+    }
+
+    .review-courier-pickup {
+      max-width: $x-large-input-width;
+    }
+
+    .sample-summary,
+    .shipping-summary {
+      h3 {
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: $font-weight-bold;
+      }
+    }
+
+    .sample-summary {
+      .sample-list {
+        margin-left: 10px;
+      }
+    }
+
+    .order-overview {
+      @include flex-justify-and-align(space-around, flex-start);
+      flex-direction: row;
+      width: 100%;
+
+      .shipment-summary {
+        @include tx-box-shadow(light-shadow);
+        padding: 30px;
+        min-width: 60%;
+
+        .shipping-option {
+          margin-left: 10px;
+        }
+
+        .shipping-address {
+          .address-text {
+            text-align: left;
+            padding-left: 0;
+          }
+        }
+      }
+
+      .shipping-payment {
+        align-self: stretch;
+        @include flex-justify-and-align(space-between, flex-start);
+        flex-direction: column;
+      }
+    }
+
+    .estimate-note {
+      @include tx-typescale(-2);
+      margin-top: $spacing--xxs;
+    }
+  }
+
+  .shipment-order-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    > * {
+      margin-bottom: $spacing--xlg;
+    }
+
+    .courier-pickup-instructions {
+      max-width: $x-large-input-width;
+
+      &__courier-info {
+        text-align: center;
+
+        em {
+          @include tx-typescale(1);
+          font-weight: $font-weight-regular;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+}

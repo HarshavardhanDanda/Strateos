@@ -1,0 +1,75 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  animation-name: fadeIn;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+
+  &__header {
+    @include tx-layout__item(stack, xxxlg);
+    text-align: center;
+    font-weight: $font-weight-light;
+  }
+
+  &__description {
+    @include tx-layout__item(stack, xlg);
+  }
+
+  &__form {
+    @include tx-layout__item(stack, xxlg);
+    width: 300px;
+  }
+
+  &__divider {
+    $line-width: 110px;
+    @include tx-layout__item(stack, xxlg);
+
+    position: relative;
+    width: 100%;
+    text-align: center;
+
+    &:before,
+    &:after {
+      display: block;
+      content: '';
+      height: 1px;
+      background-color: $white;
+      position: absolute;
+      top: 50%;
+    }
+
+    &:before {
+      left: 0;
+      right: calc(50% + 1ch + #{$spacing--md});
+    }
+
+    &:after {
+      right: 0;
+      left: calc(50% + 1ch + #{$spacing--md});
+    }
+  }
+
+  &__links {
+    flex-direction: column;
+    @include flex-justify-and-align(space-around, center);
+  }
+}
+
+.lockout-page {
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

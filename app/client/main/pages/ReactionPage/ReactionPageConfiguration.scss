@@ -1,0 +1,101 @@
+@use 'main/global-imports' as *;
+
+.reaction-page-configuration {
+  display: grid;
+  grid-gap: $spacing--xlg;
+
+  &__title {
+    font-family: Axia;
+    font-size: 21px;
+    line-height: 32px;
+  }
+
+  &__subTitle {
+    @include tx-type__tier(secondary)
+  }
+
+  &__inputs-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: $spacing--lg;
+    row-gap: $spacing--sm;
+    flex-wrap: wrap;
+  }
+
+  &__inputs {
+    width: pxToRem(550px);
+  }
+
+  &__inputs-group {
+    display: flex;
+    column-gap: $spacing--sm;
+  }
+
+  &__editButtons {
+    &--hidden {
+      display: none;
+    }
+
+    &--show {
+      height: $spacing--xxlg;
+      align-self: end;
+      display: grid;
+      align-items: center;
+    }
+  }
+
+  &__product-section {
+
+    display: grid;
+    grid-gap: $spacing--xlg;
+
+    .divider--horz {
+      margin: 0;
+    }
+
+    .custom-property {
+      .amino-table {
+        border: 0;
+        &__body {
+          border-bottom: 1px solid $carbon--20;
+        }
+      }
+    }
+
+  }
+
+  &__item-group {
+    margin: $spacing--root, 0;
+    display: grid;
+    grid-gap: $spacing--xs;
+    .radio-group {
+      margin-bottom: 0;
+      .tx-radio {
+        margin-bottom: $spacing--root;
+      }
+    }
+  }
+
+  &__item-title {
+    font-family: Atlas Grotesk;
+  }
+
+  &__buttons {
+    justify-self: end;
+    border: none;
+  }
+
+  &__table {
+    &__container {
+      display: grid;
+    }
+    &__table-content {
+      grid-area: 1 / 1;
+    }
+    &__overlay {
+      grid-area: 1 / 1;
+      background-color: rgba($black--10, 0.5);
+      z-index: $z-index-2;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+@use 'main/global-imports' as *;
+
+.material-component {
+  &__card {
+    margin-bottom: 15px;
+  }
+
+  &__molecule {
+    height: 54px;
+  }
+
+  &__icon {
+    color: $light-carbon;
+    margin-left: 5px;
+  }
+
+  &__icon:hover {
+    cursor: pointer;
+  }
+
+  &__expanded-table {
+    .amino-table {
+      &__row {
+        background-color: #F8FCFF !important;
+      }
+    }
+  }
+
+  &__title {
+    font-family: $font-family--branded;
+    color: $black;
+    opacity: 0.6;
+  }
+
+}
+
+// hacky but was the only way to select only the expanded rows as we have in amino right now
+td[colspan="8"] {
+  padding: 0;
+}

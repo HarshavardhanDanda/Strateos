@@ -1,0 +1,23 @@
+<div class="login">
+  <h1 class="login__header tx-type--invert tx-type--heavy">Forgot your admin password?</h1>
+
+  <p class="tx-type--secondary tx-type--invert login__description">
+    No worries, we'll email you a link to reset it.
+  </p>
+
+  <form accept-charset="UTF-8" action="/admins/password" id="reset_pw_form" method="post" class="login-form login__form">
+    <div class="login-form__authenticity-token">
+      <input name="utf8" type="hidden" value="&#x2713;" />
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+    </div>
+
+    <div class="login-form__group">
+      <input onkeyup="this.setAttribute('value', this.value);" type="email" class="form-control login-form__group-input" name="admin[email]" value="<%= resource.email %>" autofocus=true>
+      <label class="login-form__group-label" for="email"><h3 class="tx-type--invert tx-type--secondary">Your Admin Email Address</h3></label>
+    </div>
+
+    <div class="login-form__action form-actions">
+      <button class="login-form__submit btn btn-default" name="button" type="submit">Reset Admin Password</button>
+    </div>
+  </form>
+</div>

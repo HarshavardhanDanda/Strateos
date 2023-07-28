@@ -1,0 +1,164 @@
+@use 'bootstrap-variables' as *;
+@use 'bootstrap-sass/assets/stylesheets/bootstrap/mixins' as *;
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+
+.project-header {
+  h1 a {
+    color: $black;
+  }
+
+  .project-settings-btn {
+    @include tx-typescale(0);
+    color: $extra-light-carbon;
+    margin-left: $spacing--xxs;
+
+    &:hover,
+    &:focus {
+      color: $carbon;
+    }
+  }
+
+  .actions {
+    display: flex;
+    align-items: center;
+    margin: 0 -10px;
+
+    > * {
+      margin: 0 10px;
+    }
+  }
+}
+
+.project-content {
+  padding: 20px 0;
+}
+
+.chooser.list-group {
+  width: 90%;
+  margin: 0 auto;
+
+  & > .list-group-item {
+    &.active {
+      color: $black--90;
+    }
+
+    &.details {
+      color: $black--90;
+      border-top: 0;
+    }
+
+    &.option {
+      cursor: pointer;
+    }
+  }
+
+  &.chosen {
+    color: $black--30;
+  }
+
+  &.has-errors > .list-group-item {
+    border-color: $red--100;
+  }
+}
+
+#notebook-frame {  // sass-lint:disable-line no-ids id-name-format
+  @include transition(right 1s);
+  @include tx-box-shadow(dark-shadow);
+  @include tx-z-index(fixed, notebook);
+
+  top: 116px;
+  width: 800px;
+  background-color: $white;
+
+  .browser {
+    height: 100%;
+    padding: 0 20px;
+  }
+
+  .notebook-list {
+    height: 100%;
+    overflow-y: scroll;
+    white-space: nowrap;
+    padding-bottom: 20px;
+  }
+
+  &.shown {
+    right: 0;
+  }
+
+  &.shelved {
+    right: -800px;
+  }
+
+  div.notebook-title {
+    padding: 10px 15px;
+    color: $white;
+    background-color: $carbon;
+
+    .name {
+      &:hover {
+        color: $white;
+      }
+    }
+
+    .action-close {
+      float: right;
+      line-height: 1;
+      color: $white;
+    }
+  }
+
+  #create-notebook { // sass-lint:disable-line no-ids id-name-format
+    margin-bottom: 20px;
+  }
+
+  #toggle-notebook { // sass-lint:disable-line no-ids id-name-format
+    left: -46px;
+    width: 46px;
+    height: 77px;
+    position: absolute;
+    text-align: center;
+    line-height: 65px;
+    background: url('/images/left-tab.png') no-repeat;
+  }
+
+  iframe {
+    border: 0;
+    width: 100%;
+  }
+}
+
+.static-notebook-header {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+iframe.static-notebook {
+  border: 0;
+  width: 100%;
+}
+
+.notebook-card {
+  display: block;
+  cursor: pointer;
+  background: $white;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid $light-gray;
+  border-bottom-width: 2px;
+  position: relative;
+
+  .details {
+    @include tx-typescale(-2);
+    margin-bottom: 0;
+  }
+}
+
+.project-settings {
+  .bsl-settings {
+    .hint {
+      margin-top: $spacing--xxxs;
+    }
+  }
+}

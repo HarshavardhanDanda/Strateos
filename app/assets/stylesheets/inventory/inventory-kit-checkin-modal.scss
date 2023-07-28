@@ -1,0 +1,59 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.kit-checkin {
+  .list-panes {
+    display: inline-block;
+    margin-right: $spacing--xxlg;
+    vertical-align: top;
+
+    .vertical-button-group-with-label:not(:last-child) {
+      margin-bottom: $spacing--xlg;
+    }
+  }
+
+  .container-pane {
+    display: inline-block;
+    width: 60%;
+
+    .container-inputs {
+      .validation-group {
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      // All of these container inputs are siblings in the DOM,
+      // as they were programmatically layed out.
+      // The code below attempts to make groupings of these elements
+      // by using functions like `evenly-sized` which will take some
+      // elements and set their width and margins so that they are evenly spaced.
+
+      .container-label,
+      .container-barcode {
+        width: 100%;
+      }
+
+      .container-storage_condition,
+      .container-expires_at {
+        @include evenly-sized(2, $spacing--xlg, container-expires_at)
+      }
+
+      .container-container_type_id,
+      .container-resource_id
+      {
+        @include evenly-sized(2, $spacing--xlg, container-resource_id)
+      }
+
+      .container-lot_no,
+      .container-location
+      {
+        @include evenly-sized(2, $spacing--xlg, container-location)
+      }
+
+      .container-volume,
+      .container-mass
+      {
+        @include evenly-sized(2, $spacing--xlg, container-mass)
+      }
+    }
+  }
+}

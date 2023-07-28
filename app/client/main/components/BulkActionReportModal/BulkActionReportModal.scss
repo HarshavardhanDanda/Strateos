@@ -1,0 +1,22 @@
+@use 'main/global-imports' as *;
+
+.bulk-action-report-modal {
+  &__data-table {
+    display: inline-table;
+  }
+
+  &__banner {
+    padding-bottom: $spacing--md;
+  }
+
+  &__status {
+    display: flex;
+    align-items: center;
+    gap: $spacing--xxs;
+    padding-bottom: $spacing--md;
+  }
+
+  &__download {
+    padding-top: $spacing--md;
+  }
+}

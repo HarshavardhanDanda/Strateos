@@ -1,0 +1,22 @@
+@use 'main/global-imports' as *;
+
+.run-transfer-pane {
+
+    &__runs-list {
+        height: 130px;
+        overflow: auto;
+    }
+
+    &__project {
+        margin-top: $spacing--md;
+
+        &-title {
+            margin-bottom: $spacing--xxs;
+        }
+
+        &-subtitle {
+            color: $carbon--40;
+            margin-bottom: $spacing--xxxs;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+@use "sass:color";
+@use 'main/global-imports' as *;
+
+.protocol-card {
+  &__favorite-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    right: 2px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    margin-right: 4px;
+    color: color.adjust($light-gray, $lightness: -30%);
+
+    &--active {
+      color: $tx-gold;
+    }
+  }
+
+  &__popover-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

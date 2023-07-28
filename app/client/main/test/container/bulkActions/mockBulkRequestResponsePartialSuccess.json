@@ -1,0 +1,72 @@
+{
+  "data": {
+    "id": "bk1aw9s6dupepf689x",
+    "type": "bulk_requests",
+    "links": {
+      "self": "http://localhost:5000/api/bulk_requests/bk1aw9s6dupepf689x"
+    },
+    "attributes": {
+      "created_by": "u12345",
+      "organization_id": "org13",
+      "context_type": "Container",
+      "bulk_action": "relocate",
+      "query": {},
+      "expected_records": 4,
+      "additional_data": {
+        "location": "location_id"
+      },
+      "result_success": [
+        {
+          "id": "ct101",
+          "updated_at": "2023-02-21T00:45:22.002-08:00",
+          "status": "returned",
+          "barcode": "AA_101",
+          "label": "container_name_1",
+          "location_id": "loc1",
+          "organization": "Strateos",
+          "errors": null
+        },
+        {
+          "id": "ct102",
+          "updated_at": "2023-02-21T00:45:22.002-08:00",
+          "status": "available",
+          "barcode": "AA_102",
+          "label": "container_name_2",
+          "errors": null
+        }
+      ],
+      "result_errors": [
+        {
+          "id": "ct103",
+          "updated_at": "2023-02-21T00:45:22.002-08:00",
+          "status": "destroyed",
+          "barcode": "AA_103",
+          "label": "container_name_3",
+          "errors": [
+            {
+              "title": "Not found",
+              "detail": "Container with id ct103 not found",
+              "source": "/api/container/bulk_relocate/2"
+            }
+          ]
+        },
+        {
+          "id": "ct104",
+          "updated_at": "2023-02-21T00:45:22.002-08:00",
+          "status": "will_be_destroyed",
+          "barcode": "AA_104",
+          "label": "container_name_4",
+          "errors": [
+            {
+              "title": "Invalid Record",
+              "detail": "Multiple tubes cannot be in a single box cell, This location does not accept vendor-tube",
+              "source": "/api/container/bulk_relocate/3"
+            }
+          ]
+        }
+      ],
+      "failed_with_errors": null,
+      "completed_at": "2023-02-21T00:45:22.002-08:00"
+    }
+  }
+}

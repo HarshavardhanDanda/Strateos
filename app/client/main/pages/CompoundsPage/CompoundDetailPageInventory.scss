@@ -1,0 +1,14 @@
+@use 'main/global-imports' as *;
+
+.compound-detail-page-inventory {
+  &__icon {
+    color: $carbon--40;
+    font-weight: 400;
+    font-size: medium;
+  }
+
+  &__scroll {
+    max-height: pxToRem(400px);
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,108 @@
+@use 'main/global-imports' as *;
+
+.row-entity-creator {
+  $height: 40px;
+  align-items: center;
+  display: flex;
+  margin-bottom: 3em;
+
+  & &__input-container:first-child &__input,
+  & &__icon:first-child {
+    @include tx-border-radius(medium, none, none, medium);
+  }
+
+  & &__input-container:last-child &__input,
+  & &__icon:last-child {
+    @include tx-border-radius(none, medium, medium, none);
+  }
+
+  &__data-entry {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+    height: $height;
+    position: relative;
+  }
+
+  &__text-input {
+    flex-grow: 0;
+  }
+
+  &__number-input {
+    flex-grow: 0;
+    margin: 0;
+    position: relative;
+  }
+
+  &__input {
+    flex-grow: 3;
+    background-color: $light-gray;
+    border: 0;
+    box-sizing: border-box;
+    height: $height;
+    outline: none;
+    padding: 1em;
+
+    &:focus {
+      box-shadow: 0 0 4px 0 $tx-gold inset;
+    }
+
+    &::placeholder {
+      color: $carbon;
+      font-weight: 700;
+    }
+
+    + .help-block {
+      flex-grow: 1;
+      position: absolute;
+      top: $height;
+    }
+  }
+
+  &__input-container {
+    flex-wrap: wrap;
+  }
+
+  &__dropdown {
+    @include tx-border-radius(none);
+    height: $height;
+    padding: 0 1em;
+    width: 20%;
+  }
+
+  &__icon {
+    @include tx-typescale(3);
+    background-color: $green;
+    border: 0;
+    height: 100%;
+    min-width: $height;
+    padding: 0;
+    text-align: center;
+    width: $height;
+    color: $white;
+    line-height: $height;
+  }
+
+  &__block-entry {
+    flex-grow: 0;
+    padding-right: 0;
+
+    textarea {
+      flex-grow: 1;
+      height: $height;
+      resize: none;
+      transition: height 0.2s;
+    }
+
+    textarea:focus {
+      height: $height * 2;
+    }
+  }
+
+  &__vertical-divider {
+    border-right: 1px solid $black--70;
+    display: block;
+    height: 100%;
+    width: 0;
+  }
+}

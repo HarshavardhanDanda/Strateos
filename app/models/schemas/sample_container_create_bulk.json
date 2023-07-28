@@ -1,0 +1,119 @@
+{
+  "type": "array",
+  "items": [
+    {
+      "type": "object",
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "container_type": {
+          "type": "string"
+        },
+        "storage_condition": {
+          "type": "string, null"
+        },
+        "lab_id": {
+          "type": "string, null"
+        },
+        "empty_mass_mg": {
+          "type": "number, null"
+        },
+        "suggested_barcode": {
+          "type": "string, null"
+        },
+        "contextual_custom_properties": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "key": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "key",
+                "value"
+              ]
+            }
+          ]
+        },
+        "aliquots": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "well_idx": {
+                  "type": "string"
+                },
+                "volume_ul": {
+                  "type": "number, null"
+                },
+                "mass_mg": {
+                  "type": "number, null"
+                },
+                "name": {
+                  "type": "string, null"
+                },
+                "compound_links": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "compound_link_id": {
+                          "type": "string"
+                        },
+                        "concentration": {
+                          "type": "number"
+                        },
+                        "solubility_flag": {
+                          "type": "boolean"
+                        }
+                      },
+                      "required": [
+                        "compound_link_id"
+                      ]
+                    }
+                  ]
+                },
+                "contextual_custom_properties": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "key": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "key",
+                        "value"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "well_idx"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "label",
+        "container_type"
+      ]
+    }
+  ]
+}

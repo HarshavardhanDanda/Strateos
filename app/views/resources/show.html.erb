@@ -1,0 +1,11 @@
+<div id="kit"></div>
+
+<script type="text/javascript" charset="utf-8">
+document.addEventListener("DOMContentLoaded", function(event) {
+  window.ContainerTypes = <%= ContainerType.where(well_count: 1).to_json(only: [:id, :name, :shortname, :well_volume_ul]).html_safe %>;
+  new Transcriptic.Views.KitPage({
+    el: '#kit',
+    data: <%= @json.to_json.html_safe %>
+  });
+});
+</script>

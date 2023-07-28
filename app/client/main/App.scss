@@ -1,0 +1,43 @@
+@use 'main/global-imports' as *;
+
+.main-app {
+  display: flex;
+  flex-direction: column;
+
+  -ms-overflow-style: -ms-autohiding-scrollbar; //sass-lint:disable-line no-vendor-prefixes
+  width: 100vw;
+  height: 100vh !important; //sass-lint:disable-line no-important
+  box-sizing: border-box;
+
+  &__body {
+    overflow: auto;
+    max-height: 100%;
+    min-height: 0;
+  }
+}
+
+.tx-layout__tab-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  // flex stretch makes tab content take up all available space, but no more than its content.
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.tx-view {
+  display: flex;
+  position: relative;
+  padding: 0px $spacing--sm;
+  width: 100%;
+  max-width: $max-width;
+
+  &:not(.row) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

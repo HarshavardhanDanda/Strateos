@@ -1,0 +1,25 @@
+<div class="login">
+  <h1 class="login__header tx-type--invert tx-type--heavy">Admin Password Reset</h1>
+  <form accept-charset="UTF-8" action="/admins/password" id="reset_pw_form" method="post" class="login-form login__form">
+    <div class="login-form__authenticity-token">
+      <input name="utf8" type="hidden" value="&#x2713;" />
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+      <input type="hidden" name="_method" value="put">
+      <input type="hidden" name="admin[reset_password_token]" value="<%= params[:reset_password_token] or params[:admin][:reset_password_token] %>" />
+    </div>
+
+    <div class="login-form__group">
+      <input onkeyup="this.setAttribute('value', this.value);" type="password" class="form-control login-form__group-input" value="" name="admin[password]" tabindex="1" />
+      <label class="login-form__group-label" for="password"><h3 class="tx-type--invert tx-type--secondary">New Admin Password</h3></label>
+    </div>
+
+    <div class="login-form__group">
+      <input type="password" class="form-control login-form__group-input" name="admin[password_confirmation]" value="" onkeyup="this.setAttribute('value', this.value);" tabindex="2" />
+      <label class="login-form__group-label" for="password_confirmation"><h3 class="tx-type--invert tx-type--secondary">Confirm Admin Password</h3></label>
+    </div>
+
+    <div class="login-form__action form-actions">
+      <button class="login-form__submit btn btn-default" name="button" type="submit" tabindex="3">Change My Admin Password</button>
+    </div>
+  </form>
+</div>

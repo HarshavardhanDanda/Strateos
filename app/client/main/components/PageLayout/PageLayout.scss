@@ -1,0 +1,23 @@
+@use 'main/global-imports' as *;
+@use "sass:color";
+
+.page-layout {
+
+  background-color: $white;
+  &__white {
+    background-color: $white;
+  }
+
+  &__gray {
+    background-color: color.adjust($light-gray, $lightness: 3%);
+  }
+
+  &__tabs-content {
+    @include tx-box-shadow(dark-shadow);
+  }
+
+  &__tabs {
+    margin: auto;
+    height: 50px;
+  }
+}

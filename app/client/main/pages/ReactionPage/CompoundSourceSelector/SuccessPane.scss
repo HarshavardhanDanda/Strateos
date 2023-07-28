@@ -1,0 +1,38 @@
+@use 'main/global-imports' as *;
+
+.shipment-created-success {
+  @include tx-layout__children(stack, xxlg);
+
+  &__header-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  &__materials-illustration {
+    margin-top: 10px;
+  }
+
+  &__shipment-content {
+    @include tx-spacing__overflow-padding(sm);
+    @include tx-spacing__inset(square, xlg);
+    @include tx-layout__children(stack, xlg);
+
+    margin-bottom: -$spacing--xlg !important; //sass-lint:disable-line no-important
+  }
+
+  &__instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  
+.shipment-instruction {
+  &__header {
+    margin: 5px 0;
+    font-weight: $font-weight-regular;
+  }
+}

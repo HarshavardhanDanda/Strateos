@@ -1,0 +1,5 @@
+<%= @ticket.message %>
+
+User:  <%= @ticket.user.name %>
+RunID: <%= @ticket.run_id %>
+URL:   <%= organization_project_run_url(@ticket.run.project.organization.subdomain, @ticket.run.project.id, @ticket.run) %>

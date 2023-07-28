@@ -1,0 +1,55 @@
+@use "sass:map";
+@use 'main/global-imports' as *;
+
+@function sum($list) {
+  $total: 0;
+  @each $item in $list {
+    $total: $total + $item;
+  }
+  @return $total;
+};
+
+$column-weights: (
+  location: 2,
+  barcode: 0.5,
+  container-id: 0.5,
+  container-type-id: 0.5,
+  available: 0.5,
+  source: 1.4,
+  destination: 1,
+  mixture: 0.5
+);
+
+$weightSum: sum(map.values($column-weights));
+$chartWeightSum:
+  map.get($column-weights, source) +
+  map.get($column-weights, destination);
+
+.card-table-spacing {
+  display: flex;
+
+  &__column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include tx-spacing__inset(squish, xxxs);
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  @each $column, $weight in $column-weights {
+    &__#{$column} {
+      $weight-ratio: calc($weight / $weightSum) * 100;
+      width: #{$weight-ratio * 1%};
+    }
+  }
+
+  &__chart {
+    width: calc($chartWeightSum / $weightSum) * 100%;
+  }
+
+  &__mixture-content{
+    justify-content: center;
+  }
+}

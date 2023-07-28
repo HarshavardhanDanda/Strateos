@@ -1,0 +1,80 @@
+@use 'main/global-imports' as *;
+
+.task-graph-viewer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+
+  &__buttons {
+    @include tx-z-index(relative, overlay);
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  &__main-graph-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  &__detail-panel {
+    position: absolute;
+    right: 0;
+    max-height: calc(100% - #{$spacing--md});
+    margin-top: calc(#{$spacing--md} / 2);
+    margin-right: $spacing--sm;
+    width: 50%;
+    max-width: $element-width-lg;
+  }
+}
+
+.task-graph-legend {
+  &__list {
+    @include tx-layout__children(stack, xxs);
+  }
+
+  &__text {
+    white-space: nowrap;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    align-items: center;
+  }
+
+  &__demo {
+
+    $icon-width: 23px;
+
+    @include completion-status-coloration;
+
+    margin-right: $spacing--xxs;
+
+    &--line {
+      height: 0;
+      border-top-width: 1px;
+      border-top-color: $black;
+      width: $icon-width;
+    }
+
+    &--box {
+      width: $icon-width;
+      height: 12px;
+      border: 1px solid $black--40;
+    }
+
+    &--dependencies {
+      border-top-style: solid;
+    }
+
+    &--constraints {
+      border-top-style: dashed;
+    }
+  }
+}

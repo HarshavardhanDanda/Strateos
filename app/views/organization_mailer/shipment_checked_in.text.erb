@@ -1,0 +1,11 @@
+Strateos has received your shipment and added your containers to the <%= @organization.name %> organization.
+
+Shipment Name: <%= @shipment.name  || @shipment.id %>
+Label: <%= @shipment.label %>
+
+Container ID      Label
+<% @containers.each do |container| -%>
+<%= container.id %>    <%= container.label || '-' %>
+<% end -%>
+
+Thanks for using Strateos!

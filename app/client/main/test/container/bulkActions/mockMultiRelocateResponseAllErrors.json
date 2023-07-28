@@ -1,0 +1,57 @@
+{
+  "data": {
+    "attributes": {
+      "result_success": [],
+      "result_errors": [
+        {
+          "id": "c1",
+          "status": "available",
+          "updated_at": "2023-03-29T04:44:07.580-07:00",
+          "label": "Sample relocation container 1",
+          "barcode": "bar1",
+          "location_id": "loc1",
+          "errors": [
+            {
+              "title": "Record invalid",
+              "detail": "Multiple tubes cannot be in a single box cell.",
+              "code": "100",
+              "source": "/api/containers/relocate_many/0",
+              "status": "422"
+            },
+            {
+              "title": "Record invalid",
+              "detail": "This location does not accept 96-deep.",
+              "code": "100",
+              "source": "/api/containers/relocate_many/0",
+              "status": "422"
+            }
+          ]
+        },
+        {
+          "id": "c2",
+          "status": "available",
+          "updated_at": "2023-03-29T04:44:26.074-07:00",
+          "label": "Sample relocation container 2",
+          "barcode": "bar2",
+          "location_id": "loc2",
+          "errors": [
+            {
+              "title": "Record invalid",
+              "detail": "Multiple tubes cannot be in a single box cell.",
+              "code": "100",
+              "source": "/api/containers/relocate_many/1",
+              "status": "422"
+            },
+            {
+              "title": "Record invalid",
+              "detail": "This location does not accept 384-echo.",
+              "code": "100",
+              "source": "/api/containers/relocate_many/1",
+              "status": "422"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

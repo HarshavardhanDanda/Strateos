@@ -1,0 +1,17 @@
+@use 'main/global-imports' as *;
+
+.download-file-content {
+  display: grid;
+  gap: $spacing--xs;
+
+  .button-group {
+    margin-top: $spacing--xxlg;
+    justify-self: end;
+  }
+
+  &__search {
+    display: flex;
+    gap: $spacing--md;
+    margin-bottom: $spacing--sm;
+  }
+}

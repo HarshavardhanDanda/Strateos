@@ -1,0 +1,208 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+
+.inventory-modern {
+  .inventory-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+
+    .samples {
+      flex-grow: 1;
+    }
+
+    .actions {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+// Sizes the Sample Cards for the smaller selector view.
+// The Inventory Page uses the standard Card sizes, which are larger
+.inventory-selector {
+  .inventory-content {
+    $rect-width:   200px;
+    $rect-height:  calc($rect-width / 2);
+    $rect-spacing: 15px;
+
+
+    .containers {
+      .container-rect {
+        width:  $rect-width;
+        height: $rect-height;
+        margin: calc($rect-spacing / 2);
+      }
+    }
+  }
+}
+
+.banner-button {
+  color: $red--100;
+  float: right;
+  &:hover {
+    color: $red--100;
+  }
+  margin-right: $spacing--sm;
+}
+.request-intake-kit__choose-containers {
+  .body-container {
+    @include flex-justify-and-align(center, center);
+    flex-direction: column;
+  }
+  .vial-data {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid $black--20;
+    padding: 8px;
+  }
+
+  .table-border {
+    border: 2px solid $black--30;
+    padding: 0px;
+  }
+
+  .total-cost {
+    padding: $spacing--xxxs 0px;
+  }
+
+  .plates,
+  .boxes {
+    margin: 10px;
+
+    .container-type,
+    .quantity,
+    .price {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .container-type {
+      width: 250px;
+    }
+
+    .quantity {
+      margin: 0 25px;
+      width: 100px;
+    }
+
+    .price {
+      width: 100px;
+    }
+
+    .container-type,
+    .price {
+      .text {
+        @include tx-border-radius(medium);
+        @include tx-typescale(-2);
+        padding: 11px;
+        background: $light-gray;
+      }
+    }
+  }
+}
+
+.request-intake-kit__choose-delivery {
+  .address-choice-modal-body {
+    border-bottom: 1px solid $light-gray;
+  }
+
+  .body-container {
+    @include flex-justify-and-align(center, center);
+    flex-direction: column;
+  }
+  .payment-method {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.request-intake-kit__review-request {
+  .body-container {
+    @include flex-justify-and-align(center, center);
+    flex-direction: column;
+  }
+
+  .overview-summary {
+
+    margin: 20px 0;
+
+    .detail-summary,
+    .payment-summary {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .detail-summary {
+      @include tx-box-shadow(light-shadow);
+      padding: 30px 40px;
+      width: 470px;
+      margin-right: 20px;
+
+      .quantity-summary,
+      .address-summary {
+        margin: 0 0 30px;
+
+        a,
+        p {
+          @include tx-typescale(-2);
+          margin-bottom: 5px;
+        }
+
+        .address-text {
+          text-align: left;
+        }
+      }
+    }
+
+    .payment-summary {
+      width: 250px;
+      margin-left: 20px;
+
+      .order-summary {
+        @include tx-typescale(-2);
+      }
+
+      .intake-kit-payment-method {
+        margin-top: $spacing--xxlg;
+      }
+    }
+  }
+}
+
+.request-intake-kit__kit-request-success {
+  .body-container {
+    @include flex-justify-and-align(center, center);
+    flex-direction: column;
+  }
+
+  .success-modal-body {
+    border-bottom: 1px solid $light-gray;
+    margin-bottom: 10px;
+    padding-bottom: 30px;
+
+    .order-summary {
+      width: 250px;
+    }
+
+    h1{
+      margin-top: 10px;
+      font-size: 1rem;
+      margin-bottom: -10px;
+    }
+
+    p{
+      font-size: 0.9rem;
+    }
+  }
+
+  .goto-modal-body {
+    h1 {
+      margin: 0 0 20px;
+    }
+
+    .goto-button {
+      margin: 30px;
+    }
+  }
+}

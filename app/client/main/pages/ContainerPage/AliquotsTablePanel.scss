@@ -1,0 +1,35 @@
+@use 'main/global-imports' as *;
+
+.aliquot-table-panel {
+  &__header {
+    padding: $spacing--xxs 0 $spacing--xxs $spacing--md;
+  }
+
+  &__list {
+    padding: 0;
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  &__body {
+    max-height: 500px;
+    overflow: auto;
+  }
+
+  &__compounds {
+    padding: 0;
+
+    .list__topBar {
+      display: none;
+    }
+  }
+
+  &__compound {
+    margin: $spacing--xxxs;
+
+    .molecule-viewer--tiny {
+    width: 200px;
+    height: 200px;
+    }
+  }
+}

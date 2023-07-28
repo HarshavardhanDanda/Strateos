@@ -1,0 +1,34 @@
+@use 'main/global-imports' as *;
+
+.plate-create {
+  @include tx-layout__children(stack, md);
+
+  &__details {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__error {
+    width: 368px;
+    margin: 0 30px;
+
+    .alert {
+      text-align: center;
+    }
+  }
+
+  &__link-compounds-label {
+    color: $light-carbon;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+
+  &__zero-state-text {
+    padding-right: $spacing--xxs;
+  }
+
+  &__link-compounds-btn {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+}

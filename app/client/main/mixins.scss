@@ -1,0 +1,26 @@
+@use '@transcriptic/amino/dist/styling/colors/colorway' as *;
+
+@mixin flex-justify-and-align($justify, $align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// l -> light color stripe
+// d -> dark color stripe
+@mixin background-stripes($l, $d) {
+  @include linear-gradient(left top, $l 0%, $l 25%, $d 25%, $d 50%, $l 50%, $l 75%, $d 75%);
+  background-size: 60px 60px;
+}
+@mixin admin-stripes-dark-blue {
+  @include background-stripes($str-black, $str-navy);
+}
+@mixin admin-stripes-grey {
+  @include background-stripes($extra-light-gray, $light-gray);
+}
+@mixin admin-stripes-grey-70 {
+  @include background-stripes(
+    tx-transparentize($extra-light-gray, dark-overlay),
+    tx-transparentize($light-gray, dark-overlay)
+  );
+}

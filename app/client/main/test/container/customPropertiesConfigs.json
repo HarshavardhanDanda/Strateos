@@ -1,0 +1,106 @@
+[
+  {
+    "id": "ccpc1gbfaxdsutu6x",
+    "context_type": "Container",
+    "organization_id": "org13",
+    "key": "ct_prop_1",
+    "label": "Project id",
+    "config_definition": {
+      "type": "string",
+      "label": "Project id",
+      "editable": false
+    },
+    "created_at": "2021-10-28T11:11:50.286-07:00",
+    "updated_at": "2021-10-28T11:11:50.286-07:00"
+  },
+  {
+    "id": "ccpc1gbfaxdsutu80",
+    "context_type": "Container",
+    "organization_id": "org13",
+    "key": "ct_prop_2",
+    "label": "Mosaic Request Id",
+    "config_definition": {
+      "type": "integer",
+      "label": "Mosaic Request Id",
+      "editable": true
+    },
+    "created_at": "2021-10-28T11:11:50.286-07:00",
+    "updated_at": "2021-10-28T11:11:50.286-07:00"
+  },
+  {
+    "id": "ccpc1gbfdbfrc26q2",
+    "context_type": "Container",
+    "organization_id": "org13",
+    "key": "ct_prop_3",
+    "label": "Operation category",
+    "config_definition": {
+      "type": "multi-choice",
+      "label": "Operation category",
+      "editable": true,
+      "default": "Other",
+      "options": [
+        {
+          "value": "Technology Development",
+          "name": "Technology Development"
+        },
+        {
+          "value": "General Discovery",
+          "name": "General Discovery"
+        },
+        {
+          "value": "Mouse Phenotyping",
+          "name": "Mouse Phenotyping"
+        },
+        {
+          "value": "General Screening",
+          "name": "General Screening"
+        },
+        {
+          "value": "Other",
+          "name": "Other"
+        }
+      ]
+    },
+    "created_at": "2021-10-28T11:44:13.555-07:00",
+    "updated_at": "2021-10-28T11:44:13.555-07:00"
+  },
+  {
+    "id": "ccpc1gbfaxdsutu3x",
+    "context_type": "Container",
+    "organization_id": "org13",
+    "key": "ct_prop_4",
+    "label": "Budget Code",
+    "config_definition": {
+      "type": "choice",
+      "label": "Budget Code",
+      "default": "1001",
+      "editable": true,
+      "options": [
+        {
+          "name": "1001",
+          "value": "1001"
+        },
+        {
+          "name": "1002",
+          "value": "1002"
+        }
+      ]
+    },
+    "created_at": "2021-10-28T11:11:50.286-07:00",
+    "updated_at": "2021-10-28T11:11:50.286-07:00"
+  }, 
+  {
+    "id": "ccpcbooleantype",
+    "context_type": "Container",
+    "organization_id": "org13",
+    "key": "ct_prop_5",
+    "label": "Made Of PLastic",
+    "config_definition": {
+      "type": "boolean",
+      "label": "Made Of Plastic",
+      "default": "",
+      "editable": true
+    },
+    "created_at": "2021-10-28T11:11:50.286-07:00",
+    "updated_at": "2021-10-28T11:11:50.286-07:00"  }
+]

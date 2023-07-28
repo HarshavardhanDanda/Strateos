@@ -1,0 +1,33 @@
+@use 'main/global-imports' as *;
+
+.data-object-file-header {
+  @include tx-layout__item(stack, sm);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tx-layout__item(stack, xxs);
+  }
+
+  &__title {
+    // set width for ellipsis overflow.
+    width: 50%;
+  }
+
+  &__title-name {
+    @include ellipsis(100%);
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tx-layout__children(inline, sm);
+
+    .divider--vert {
+      height: pxToRem(50px);
+      margin: 0 20px;
+    }
+  }
+}

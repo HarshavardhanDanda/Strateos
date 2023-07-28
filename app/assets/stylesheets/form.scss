@@ -1,0 +1,18 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.far.fa-trash-alt.delete-icon,
+.far.fa-comment.comment-icon {
+  cursor: pointer;
+  color: $dark-gray;
+}
+
+.far.fa-trash-alt.delete-icon {
+  &:hover {
+    @include tx-box-shadow(light-shadow);
+    color: $red--40;
+  }
+
+  &:active {
+    color: $red;
+  }
+}

@@ -1,0 +1,38 @@
+@use 'main/global-imports' as *;
+
+.plate-view-type-toggle {
+  display: flex;
+
+  cursor: pointer;
+
+  &__plate-icon {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 18px;
+  }
+
+  &--plate &__well {
+    @include tx-border-radius(full);
+  }
+
+  &--map &__well {
+    @include tx-border-radius(none);
+  }
+
+  &__well {
+    width: 4px;
+    height: 4px;
+    background: $dark-gray;
+    margin: 1px;
+    display: block;
+  }
+
+  &--active &__well {
+    background: $blue;
+  }
+
+  &--active &__tile {
+    background: $blue;
+  }
+}

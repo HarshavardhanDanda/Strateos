@@ -1,0 +1,74 @@
+{
+  "data": {
+    "id": "bk1ayychtwj9yesdyd",
+    "type": "bulk_requests",
+    "links": {
+      "self": "/api/bulk_requests/bk1ayychtwj9yesdyd"
+    },
+    "attributes": {
+      "completed_at": "2023-05-15T00:35:57.327-07:00",
+      "context_type": "container",
+      "bulk_action": "download",
+      "search_query": {
+        "data": {
+          "type": "inventory_searches",
+          "attributes": {
+            "query": "\"TEST_CONT_\"",
+            "page": 1,
+            "aliquot_count": 0,
+            "hide_tubes": false,
+            "hide_plates": false,
+            "sort_by": "updated_at",
+            "sort_desc": true,
+            "status": "all",
+            "ignore_score": false,
+            "search_fields": [
+              "label",
+              "id",
+              "barcode"
+            ],
+            "per_page": "10",
+            "show_containers_without_runs": false,
+            "hide_containers_with_pending_runs": false,
+            "volume": "*",
+            "contextual_custom_properties": {},
+            "aliquot_contextual_custom_properties": {},
+            "container_properties": {},
+            "aliquot_properties": {},
+            "search_score": true,
+            "include": [
+              "container_type"
+            ],
+            "search_hazard": [],
+            "container_type": [],
+            "empty_mass": {
+              "min": null,
+              "max": null
+            },
+            "created_after": null,
+            "created_before": null,
+            "bulk_search": []
+          }
+        }
+      },
+      "additional_data": {
+        "visible_columns": [
+          "name",
+          "barcode"
+        ]
+      },
+      "expected_records": 3,
+      "result_success": [],
+      "result_errors": [],
+      "attachments": [],
+      "failed_with_errors": {
+        "title": "Internal Server Error",
+        "detail": "undefined method 'test' for nil:NilClass",
+        "code": "500",
+        "source": "/api/bulk_requests/bk1ayychtwj9yesdyd",
+        "status": "500"
+      }
+    }
+  },
+  "isDone": true
+}

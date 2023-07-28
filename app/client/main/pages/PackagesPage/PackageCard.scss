@@ -1,0 +1,19 @@
+@use 'main/global-imports' as *;
+
+.package-card {
+  @include mq(md, up) {
+    @include tx-layout__grid-item(xlg, 4);
+  }
+
+  @include mq(sm, only) {
+    @include tx-layout__grid-item(md, 3);
+  }
+
+  @include mq(xs, only) {
+    @include tx-layout__grid-item(md, 2);
+  }
+
+  .version {
+    color: $dark-gray;
+  }
+}

@@ -1,0 +1,32 @@
+@use 'main/global-imports' as *;
+
+.container-page {
+  flex-grow: 1;
+  width: 100%;
+
+  &__metadata-header {
+    margin-top: $spacing--md;
+    margin-bottom: $spacing--sm;
+  }
+
+  &__border-line {
+    border: $normal-border solid $carbon--30;
+    box-sizing: border-box;
+    padding: $spacing--lg;
+    border-radius: 5px;
+    margin-top: $spacing--md;
+    margin-bottom: $spacing--sm;
+
+    .collapsible-panel {
+      margin: 0;
+      border-radius: 5px;
+      background-color: transparent;
+    }
+
+    .aliquot-table-panel {
+      &__header {
+        padding: 0px;
+      }
+    }
+  }
+}

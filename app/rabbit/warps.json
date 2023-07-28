@@ -1,0 +1,305 @@
+[{
+  "warp": {
+    "id": "w1xj2jqt5y2pw",
+    "deviceId": "wc4-infinite1",
+    "command": {
+      "name": "PlateReader.ReadFluorescence",
+      "cType": "96-flat",
+      "wells": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95
+      ],
+      "excitation": "4.75E-7:meter",
+      "emission": "5.09E-7:meter",
+      "numFlashes": 25,
+      "manualGain": 0.25,
+      "integrationTime": "0.02:millisecond",
+      "settleTime": "0.0:millisecond",
+      "lagTime": "0.0:millisecond"
+    },
+    "state": "Completed",
+    "parents": [
+      "w1xj2jqt5y2pv"
+    ],
+    "runId": "r195skcdhv7b8",
+    "instructionId": "i195skcf26kyb"
+  },
+  "time_estimate": {
+    "min": "34316.908219944016:millisecond",
+    "nominal": "97001.79190499864:millisecond",
+    "max": "180581.6368184048:millisecond"
+  },
+  "container_transfers": {},
+  "reported_completed_at": "2016-06-29T05:06:51.288Z"
+},
+{
+  "warp": {
+    "id": "w1xjdj2r9c6av",
+    "deviceId": "wc6-omni1",
+    "command": {
+      "name": "LiquidHandler.DoProcedure",
+      "procedure": {
+        "operations": [
+          {
+            "name": "LiquidHandler$Transfer",
+            "from": {
+              "location": {
+                "holder": "(0, 0)",
+                "index": 2
+              },
+              "nominalVolume": "2.0E-9:meter^3",
+              "calibratedVolume": "1.6332999999999997E-9:meter^3",
+              "depth": {
+                "method": "ll_bottom",
+                "distance": "0.002:meter"
+              },
+              "speed": {
+                "start": "2.5000000000000002E-8:meter^3/second",
+                "max": "5.0000000000000004E-8:meter^3/second"
+              },
+              "primerVol": "5.0E-9:meter^3",
+              "clldSensitivity": 63,
+              "plldSensitivityThreshold": 15,
+              "plldDurationThreshold": "5.0:millisecond"
+            },
+            "to": {
+              "location": {
+                "holder": "(1, 1)",
+                "index": 1
+              },
+              "nominalVolume": "2.0E-9:meter^3",
+              "calibratedVolume": "1.6332999999999997E-9:meter^3",
+              "depth": {
+                "method": "ll_bottom",
+                "distance": "0.001:meter"
+              },
+              "speed": {
+                "start": "7.500000000000001E-8:meter^3/second",
+                "max": "1.5000000000000002E-7:meter^3/second"
+              },
+              "mixAfter": {
+                "volume": "7.000000000000001E-9:meter^3",
+                "repetitions": 3,
+                "speed": "1.0000000000000001E-7:meter^3/second"
+              },
+              "clldSensitivity": 63,
+              "plldSensitivityThreshold": 15,
+              "plldDurationThreshold": "5.0:millisecond"
+            },
+            "preBuffer": "0.0:meter^3",
+            "disposalVol": "0.0:meter^3",
+            "transitVol": "2.0E-9:meter^3",
+            "blowoutBuffer": false
+          }
+        ],
+        "plates": {
+          "(1, 1)": "96-pcr",
+          "(0, 0)": "tubeplate-12-1.5",
+          "(1, 0)": "tubeplate-12-2.0"
+        },
+        "tipType": "filtered50",
+        "tipRack": "mobiletall",
+        "tipLoc": {
+          "holder": "tips-filtered50",
+          "index": 86
+        }
+      }
+    },
+    "state": "Completed",
+    "parents": [
+      "w1xjdj2r9c6au"
+    ],
+    "runId": "r1964qf7e7mua",
+    "instructionId": "i1964qf7exqvy"
+  },
+  "time_estimate": {
+    "min": "0.0:millisecond",
+    "nominal": "22349.80166243455:millisecond",
+    "max": "56851.23719519716:millisecond"
+  },
+  "container_transfers": {},
+  "reported_completed_at": "2016-06-29T19:48:41.841Z"
+},
+{
+  "warp": {
+    "id": "w1xjsm4ahz6jp",
+    "deviceId": "wc4-omni1",
+    "command": {
+      "name": "LiquidHandler.DoProcedure",
+      "procedure": {
+        "operations": [
+          {
+            "name": "LiquidHandler$Transfer",
+            "from": {
+              "location": {
+                "holder": "(0, 0)",
+                "index": 2
+              },
+              "nominalVolume": "2.0E-9:meter^3",
+              "calibratedVolume": "1.6332999999999997E-9:meter^3",
+              "depth": {
+                "method": "ll_bottom",
+                "distance": "0.002:meter"
+              },
+              "speed": {
+                "start": "2.5000000000000002E-8:meter^3/second",
+                "max": "5.0000000000000004E-8:meter^3/second"
+              },
+              "primerVol": "5.0E-9:meter^3",
+              "clldSensitivity": 63,
+              "plldSensitivityThreshold": 15,
+              "plldDurationThreshold": "5.0:millisecond"
+            },
+            "to": {
+              "location": {
+                "holder": "(2, 1)",
+                "index": 1
+              },
+              "nominalVolume": "2.0E-9:meter^3",
+              "calibratedVolume": "1.6332999999999997E-9:meter^3",
+              "depth": {
+                "method": "ll_bottom",
+                "distance": "0.001:meter"
+              },
+              "speed": {
+                "start": "7.500000000000001E-8:meter^3/second",
+                "max": "1.5000000000000002E-7:meter^3/second"
+              },
+              "mixAfter": {
+                "volume": "7.000000000000001E-9:meter^3",
+                "repetitions": 3,
+                "speed": "1.0000000000000001E-7:meter^3/second"
+              },
+              "clldSensitivity": 63,
+              "plldSensitivityThreshold": 15,
+              "plldDurationThreshold": "5.0:millisecond"
+            },
+            "preBuffer": "0.0:meter^3",
+            "disposalVol": "0.0:meter^3",
+            "transitVol": "2.0E-9:meter^3",
+            "blowoutBuffer": false
+          }
+        ],
+        "plates": {
+          "(2, 1)": "96-pcr",
+          "(0, 0)": "tubeplate-12-1.5",
+          "(1, 1)": "tubeplate-12-2.0"
+        },
+        "tipType": "filtered50",
+        "tipRack": "mobiletall",
+        "tipLoc": {
+          "holder": "tips-filtered50",
+          "index": 52
+        }
+      }
+    },
+    "state": "Completed",
+    "parents": [
+      "w1xjsm4ahz6jn"
+    ],
+    "runId": "r19664j2dd7ag",
+    "instructionId": "i19664j2dzz33"
+  },
+  "time_estimate": {
+    "min": "0.0:millisecond",
+    "nominal": "22349.80166243455:millisecond",
+    "max": "56851.23719519716:millisecond"
+  },
+  "container_transfers": {},
+  "reported_completed_at": "2016-06-30T17:45:09.238Z"
+}]
+

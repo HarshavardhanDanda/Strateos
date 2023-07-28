@@ -1,0 +1,93 @@
+@use 'main/global-imports' as *;
+
+.edit-resource {
+
+  height: 450px;
+  width: auto;
+
+  &__molecule-viewer {
+    .molecule-viewer-carousel-wrapper {
+      height: 425px;
+      }  
+    }
+
+  &__resource-viewer-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: $spacing--xxxs;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  &__resource-copy-section {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+
+  &__resource-copy-button {
+    @include tx-z-index(relative, page-content, 0);
+    font-size: 11px;
+    line-height: 20px;
+    vertical-align: middle;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    transition: color 200ms;
+    cursor: pointer;
+
+    &::before {
+      @include tx-z-index(absolute, page-content, -1);
+      @include tx-border-radius(full);
+      display: block;
+      content: ' ';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -45%);
+      background: $black--20;
+      width: 0;
+      height: 0;
+      transition: width 200ms, height 200ms;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &--active,
+    &:active {
+      color: $white;
+
+      &::before {
+        background: $black--80;
+        width: 100%;
+        height: 100%;
+        transition: width 200ms, height 200ms, background-color 200ms;
+      }
+    }
+
+    &:not(:active) {
+      &:hover,
+      &:focus {
+        &::before {
+          width: 100%;
+          height: 100%;
+          transition: width 200ms, height 200ms, background-color 200ms;
+        }
+      }
+    }
+  }
+
+  &__resource-copy-check-icon {
+    pointer-events: none;
+    color: #397f48;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  &__resource-copy-check-icon-opaque {
+    opacity: 1;
+  }
+}

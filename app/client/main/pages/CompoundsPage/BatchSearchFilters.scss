@@ -1,0 +1,8 @@
+@use 'main/global-imports' as *;
+
+.batch-filters {
+    &__molecule-viewer {
+        height: 262px;
+    }
+}
+

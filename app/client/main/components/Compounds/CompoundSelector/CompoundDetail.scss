@@ -1,0 +1,12 @@
+@use 'main/global-imports' as *;
+
+.compound-detail {
+    @include tx-spacing__inset(squish, sm);
+    height: calc(70vh - 75px);
+    
+    &__body {
+        &--compound {
+            height: 306px;
+        }
+    }
+}

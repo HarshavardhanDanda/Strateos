@@ -1,0 +1,679 @@
+@use "navigation";
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+@use "sass:color";
+
+#protocols {
+  #browser {
+    display: table;
+    width: 100%;
+
+    .group {
+      color: $extra-dark-gray;
+    }
+
+    .body {
+      width: 66.66666667%;
+      display: table-cell;
+      vertical-align: top;
+      padding: 0 15px;
+      min-height: 600px;
+
+      .empty.left {
+        text-align: left;
+      }
+
+      .helper.preview {
+        color: $extra-dark-gray;
+        padding-bottom: 5px;
+      }
+
+      .headline {
+        .group {
+          @include tx-typescale(3);
+          margin-top: 15px;
+        }
+
+        h1 {
+          margin-top: 10px;
+        }
+      }
+
+      .desc {
+        margin-bottom: 15px;
+      }
+
+      .right {
+        overflow: hidden;
+        margin-top: 15px;
+
+        .glyphicon-ok-sign {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .finder {
+      width: 33.33333333%;
+      height: 100%;
+      display: table-cell;
+
+      .btn-primary {
+        font-weight: $font-weight-regular;
+      }
+
+      .search {
+        border-bottom: 1px solid $dark-gray;
+        padding: 10px 15px;
+      }
+
+      .result {
+        padding: 0 15px;
+        border-bottom: 1px solid $dark-gray;
+        padding-top: 10px;
+        padding-bottom: 15px;
+
+        &.clickable {
+          &:hover {
+            cursor: pointer;
+            background-color: $extra-light-gray;
+          }
+
+          &.active {
+            background-color: $extra-light-gray;
+          }
+        }
+      }
+    }
+  }
+
+  #protocol {
+    .droppable-highlight {
+      border: 2px dashed $dark-gray;
+    }
+
+    #protocol-canvas {
+      width: 100%;
+      min-height: 300px;
+      padding-left: 0;
+    }
+
+    h2#empty-protocol {
+      text-align: center;
+      color: $extra-dark-gray;
+    }
+
+    .tabbable.details {
+      margin-top: 20px;
+    }
+
+    .disabled {
+      font-style: italic;
+      color: $extra-dark-gray;
+    }
+
+    #type-signature-panel {
+      .signature {
+        @include tx-typescale(0);
+        margin-top: 0;
+        text-align: center;
+        margin-bottom: 10px;
+        font-family: monospace;
+      }
+
+      .what {
+        margin-top: 5px;
+      }
+    }
+
+    .btn-launch {
+      margin-bottom: 20px;
+    }
+
+    #create-new-run {
+      margin-top: 10px;
+
+      #new-run-project {
+        width: 280px;
+        display: inline-block;
+      }
+
+      #new-run-name {
+        width: 274px;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+#launch {
+  .instructions {
+    // this is an image/label pair that we center align
+    // horizontally with a hacky margin-left.
+    .instruction-step {
+      display: flex;
+      align-items: center;
+      height: 70px;
+      margin: 15px 0;
+      margin-left: 30%;
+
+      img {
+        align-self: left;
+        height: 100%;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .helper {
+    color: $extra-dark-gray;
+    margin-top: 8px;
+  }
+
+  .aliquot-groups {
+    > .group {
+      display: flex;
+      margin-bottom: 5px;
+
+      .aliquots-select-input {
+        flex: 1;
+      }
+
+      > .btn {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .parameters {
+    width: 100%;
+  }
+}
+
+.options {
+  width: 100%;
+  margin-bottom: 80px;
+
+  &__toggle-with-label {
+    span {
+      @include tx-type__style(body-text-small);
+      margin-left: $spacing--xxxs;
+    }
+  }
+}
+
+.request-date-picker,
+.request-time-picker {
+  margin-bottom: $spacing--xxs;
+  margin-right: $spacing--xlg;
+
+  h4 {
+    margin-bottom: 5px;
+  }
+}
+
+.request-date-review {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: $spacing--xxs;
+}
+
+.run-custom-prop {
+  width: 100%;
+}
+
+.package {
+  .wrapped-card-page {
+    margin: 0;
+
+    .empty {
+      padding: $spacing--md;
+    }
+  }
+
+  .node-group-section {
+    padding-bottom: $spacing--md;
+    border-bottom: 2px solid $light-gray;
+
+    &:not(:first-child) {
+      margin-top: $spacing--xxlg;
+    }
+  }
+}
+
+.package-node {
+  .package-node-header {
+    display: flex;
+    flex-direction: row;
+
+    .nav-back {
+      line-height: 48px;
+    }
+
+    h1 {
+      margin: 5px;
+    }
+  }
+
+  .package-node-body {
+    background-color: $white;
+    border-top: 2px solid $light-gray;
+    border-bottom: 2px solid $light-gray;
+    padding: $spacing--xlg;
+  }
+
+  &.protocol-node {
+    .package-node-body {
+      padding: 0;
+    }
+
+    .versions {
+      li {
+        a {
+          i {
+            float: right;
+          }
+        }
+      }
+    }
+
+    .protocol-action-bar {
+      margin: $spacing--xxs 0;
+
+      .start-new-version {
+        padding-left: navigation.$tab-text-left-padding;
+      }
+    }
+
+    .version-detail.protocol-version-detail {
+      padding: 0 $spacing--xxlg;
+      border-left: 1px solid $light-gray;
+      .detail {
+        margin-bottom: $spacing--xlg;
+
+        &.published-info {
+          .published-status-container {
+            @include tx-typescale(3);
+            margin-bottom: $spacing--md;
+
+            i {
+              color: $carbon;
+              margin-right: $spacing--xxxs;
+            }
+          }
+
+          .publish-copy {
+            margin-bottom: $spacing--md;
+          }
+        }
+      }
+    }
+  }
+}
+
+.protocol-tiles {
+  display: block;
+
+  .protocol-tile {
+    text-align: left;
+    display: inline-block; // so they wrap left
+    position: relative; // to allow abs positioning of children.
+    width: calc(100% / 3 - 10px * 2);
+    margin: 10px;
+    border: 1px solid $light-gray;
+    cursor: pointer;
+    vertical-align: top;
+    overflow: hidden;
+
+    .protocol-icon {
+      img {
+        margin: 0 auto;
+        width: 130px;
+        height: 110px;
+        display: block;
+      }
+      padding: 20px;
+      border-bottom: 1px solid $light-gray;
+    }
+
+    .protocol-logo {
+      position: absolute;
+      height: 20px;
+      bottom: 0;
+      right: 0;
+      margin: $spacing--xxxs;
+    }
+
+    .protocol-details {
+      .protocol-name {
+        h3,
+        p.note {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        h3 {
+          margin-top: 0;
+          margin-bottom: 0;
+          font-weight: $font-weight-regular;
+
+          img.validated-protocol {
+            display: inline-block;
+            margin-left: 5px;
+            width: 21px; // width of the 2x icon
+          }
+        }
+      }
+
+      .protocol-description {
+        word-wrap: break-word;
+        height: 67px; // causes the gradient to appear in the middle of a line of text
+        overflow: hidden;
+        padding-bottom: 10px;
+        position: relative;
+
+        &:after {
+          background: linear-gradient(white 0, white);
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          height: 10px;
+          width: 100%;
+        }
+
+        .desc {
+          margin-top: 0.25rem;
+        }
+      }
+    }
+
+    &:hover {
+      border-color: $dark-gray;
+    }
+  }
+}
+
+.protocol-overview {
+  .object-overview-and-details {
+    justify-content: center;
+    padding: 0 $spacing--xlg;
+
+    .object-description {
+      h1 {
+        margin: 0 0 $spacing--xxxlg;
+      }
+
+      .text-description {
+        margin: $spacing--xxxlg 0 0;
+      }
+    }
+  }
+
+  .protocol-validation {
+    .validated-icon-container {
+      margin-top: 20px;
+      white-space: normal; // so tooltip can wrap
+
+      .hover-tip {
+        // The neg left margin is to align this with the text above/below it
+        margin-left: -10px;
+        padding-left: 5px; // some distance between the tooltip and the image
+      }
+
+      img {
+        width: 109px; // width of the 'Validated' icon
+      }
+    }
+  }
+}
+
+// TODO Move all package related scss to a package.scss
+.package-details {
+  @include tx-box-shadow(light-shadow);
+  background-color: $white;
+  padding: $spacing--xxs $spacing--xxs $spacing--xxs $spacing--xxxlg;
+  margin: 0 auto $spacing--xxlg;
+}
+
+/*
+This is a component for representing an object in two sections,
+column for a primary content, and a column for details.  For example,
+ProtocolOverview uses this as follows:
+  Column 1: title, image, description
+  Column 2: details like category, samples required, data generated
+*/
+
+.object-overview-and-details {
+  display: flex;
+  flex-direction: row;
+
+  .object-summaries {
+    // This makes the vertical divider extend above & below the content
+    padding: $spacing--xlg 0;
+    max-width: 400px;
+    padding-left: $spacing--xxxlg;
+  }
+
+  .object-description {
+    border-right: 1px solid $light-gray;
+  }
+
+  .object-action-buttons {
+    .btn:not(:last-child) {
+      margin-right: $spacing--md;
+    }
+  }
+}
+
+.protocol-shipment-modal-page {
+  input {
+    margin-right: 1em;
+  }
+
+  label {
+    text-align: left;
+
+    .has-error {
+      color: color.adjust($red, $lightness: -20%);
+    }
+  }
+
+  .shipment-options {
+    margin-top: 15px;
+  }
+}
+
+.pickup-input {
+  textarea {
+    resize: none;
+  }
+}
+
+.payment-info-page {
+  h2 {
+    margin: 1.5em;
+  }
+
+  .alert {
+    margin-bottom: 1.5em;
+  }
+}
+
+.successful-submission-confirmation {
+  text-align: center;
+
+  hr {
+    margin: 0px;
+  }
+
+  .run-button-container {
+    @include flex-justify-and-align(center, center);
+    padding: 30px;
+  }
+}
+
+.modal-footer .error-text {
+  color: $extra-light-carbon;
+  margin-right: 10px;
+}
+
+.review-submit {
+  margin: 20px 0;
+
+  h2 {
+    margin: 30px;
+    text-align: center;
+  }
+
+  .section {
+    margin-bottom: 15px;
+
+    h3 {
+      margin-bottom: 5px;
+      font-weight: $font-weight-semibold;
+    }
+  }
+}
+
+.thermocycle-parameters {
+  .thermocycle-group {
+    @include tx-border-radius(medium);
+    margin-bottom: 15px;
+    padding: 15px;
+    position: relative;
+
+    .remove-group-button {
+      position: absolute;
+      top: 10px;
+      right: -15px;
+    }
+
+    .thermocycle-steps {
+      display: flex;
+      align-items: center;
+
+      .steps {
+        border-left: 2px solid $light-gray;
+
+        .toggle-list {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          height: 40px;
+          margin-top: 25px;
+
+          .toggle-step-option {
+            display: inline-block;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+
+.launch-run {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 680px;
+  margin: auto;
+  margin-bottom: 10px;
+
+  > .labeled-input {
+    &.full-width {
+      width: 100%;
+    }
+
+    > .input {
+      width: $small-input-width;
+    }
+
+    > .input-wide {
+      width: $large-input-width;
+    }
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section {
+    width: 100%;
+    border-bottom: 4px solid $light-gray;
+
+    > h1 {
+      border-bottom: 4px solid $light-gray;
+    }
+
+    > h2 {
+      border-bottom: 1px solid $extra-light-carbon;
+      padding: 5px;
+      margin-bottom: 5px;
+      margin-top: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      .tx-help-icon {
+        margin-left: $between-text-and-icon;
+      }
+    }
+
+    margin-bottom: 10px;
+
+    .options__wrapper {
+      margin-top: $spacing--md;
+    }
+  }
+
+  .launch-run {
+    width: auto;
+
+    .section {
+      > h3 {
+        border-bottom: 2px solid $light-gray;
+      }
+      border-bottom: 2px solid $light-gray;
+    }
+  }
+
+  .multi-group {
+    padding-bottom: 30px;
+    width: 100%;
+
+    .nested-group {
+      display: flex;
+      padding-top: 15px;
+    }
+
+    .actions {
+      transform: translateY(-5px);
+      width: 20px;
+      padding-right: 20px;
+
+      > a {
+        @include tx-typescale(-1);
+        color: $dark-gray;
+
+        &:hover {
+          color: $extra-light-carbon;
+        }
+      }
+    }
+
+    .add-group {
+      @include tx-typescale(-2);
+    }
+  }
+
+  &.option  {
+    &__label {
+        @include tx-type__style(body-text-small);
+    }
+  }
+}

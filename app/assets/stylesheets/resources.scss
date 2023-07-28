@@ -1,0 +1,154 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.create-resource {
+  .row + .row {
+    margin-top: 5px;
+  }
+}
+
+.resource {
+  .btn.pull-right {
+    margin-left: 10px;
+    margin-top: 6px;
+  }
+
+  h1 {
+    margin-bottom: 5px;
+  }
+
+  .kit-title,
+  .part-of-a-kit {
+    margin-bottom: 15px;
+  }
+
+  .desc {
+    margin-bottom: 15px;
+  }
+
+  #metadata-content {
+    margin-bottom: 5px;
+  }
+
+  .header-bar {
+    .resource_type_label {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    border-left: 1px solid $black--20;
+    margin-top: 20px;
+    height: 100%;
+    padding-bottom: 20px;
+
+    .history-title {
+      border-bottom: 0;
+    }
+
+    #sharing,
+    #actions {
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-left: -15px;
+
+        &#action-list {
+          li {
+            cursor: pointer;
+          }
+        }
+
+        li {
+          border-bottom: 1px solid $standard-gray;
+          padding: 3px 0 3px 15px;
+
+          .remove {
+            font-size: 85%;
+          }
+
+          &:last-child {
+            border-bottom: 1px solid $black--20;
+          }
+        }
+      }
+    }
+
+    #metadata {
+      .resource_id {
+        padding-top: 5px;
+      }
+
+      .properties {
+        .tags {
+          padding-top: 5px;
+
+          .tag-new-form {
+            display: inline-block;
+
+            .tag-new-field {
+              @include tx-typescale(-2);
+              width: 100px;
+              height: 19px;
+              padding: 1px;
+            }
+          }
+
+          .tag-new {
+            border: 1px solid $black--20;
+            color: $extra-dark-gray;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+
+          .delete-tag:hover {
+            background-color: $extra-dark-gray;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .type-signature {
+        margin-left: -15px;
+        border: none;
+        @include tx-typescale(-3);
+        padding-left: 15px;
+      }
+    }
+
+    #history {
+      ul {
+        margin-left: 0;
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      .event-row {
+        border-top: 1px solid $standard-gray;
+        padding: 3px 1px;
+        font-size: 85%;
+        margin-right: 0;
+
+        div.col-md-3 {
+          width: 27%;
+        }
+
+        div.col-md-9 {
+          width: 73%;
+          padding-left: 0;
+        }
+      }
+
+      .paging {
+        border-top: 1px solid $black--20;
+        margin: 0 0 0 -15px;
+        padding-top: 5px;
+        text-align: center;
+      }
+    }
+  }
+}

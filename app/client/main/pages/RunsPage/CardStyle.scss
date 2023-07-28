@@ -1,0 +1,51 @@
+@use 'main/global-imports' as *;
+
+.runs-page {
+	.button-select {
+		margin-bottom: $spacing--xxs;
+	}
+
+	.tx-profile {
+		display: inline-flex;
+	}
+
+	.amino-table__cell-content:hover {
+		overflow: hidden !important;
+	}
+
+	.amino-table__cell:hover {
+		overflow: hidden !important;
+	}
+
+	.label {
+
+		color: $white;
+		border-radius: 24px;
+
+		&-run-accepted {
+			@include bootstrap-mixins-label-variant(#079ae4);
+		}
+
+		&-run-in_progress,
+		&-run-shipment_pending,
+		&-run-pending,
+		&-run-awaiting {
+			@include bootstrap-mixins-label-variant(#ff9900);
+		}
+
+		&-run-billing_invalid,
+		&-run-aborted,
+		&-run-canceled,
+		&-run-rejected {
+			@include bootstrap-mixins-label-variant(#d84b41);
+		}
+
+		&-run-complete {
+			@include bootstrap-mixins-label-variant(#49a25c);
+		}
+	}
+
+	.tooltip-wrapper {
+		display: block;
+	}
+}

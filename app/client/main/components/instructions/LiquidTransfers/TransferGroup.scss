@@ -1,0 +1,29 @@
+@use 'main/global-imports' as *;
+
+.transfer-group {
+  max-width: 100%;
+}
+
+.transfer-group-summary {
+  .metric {
+    font-weight: bold;
+  }
+}
+
+.transfer-group-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  @include tx-layout__children(inline, xxs);
+
+  &__container {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  &__volume-label {
+    white-space: nowrap;
+    display: inline;
+  }
+}

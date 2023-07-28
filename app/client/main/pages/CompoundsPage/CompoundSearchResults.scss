@@ -1,0 +1,18 @@
+@use 'main/global-imports' as *;
+
+.compound-results {
+    &__molecule {
+      height: 66px;
+    }
+
+    &__labels {
+      @include tx-typescale(1);
+      margin-left: $spacing--xxxs;
+      color: $light-carbon;
+    }
+    
+    &__pagination {
+        display: flex; 
+        justify-content: center;
+    }
+}

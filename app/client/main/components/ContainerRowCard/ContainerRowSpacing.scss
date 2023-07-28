@@ -1,0 +1,101 @@
+@use 'main/global-imports' as *;
+@use "sass:map";
+
+@function sum($list) {
+  $total: 0;
+  @each $item in $list {
+    $total: $total + $item;
+  }
+  @return $total;
+};
+
+$column-weights: (
+  icon: 1,
+  name: 3,
+  container-id: 3,
+  container-type: 2,
+  container-content: 2,
+  condition: 2,
+  created-at: 3,
+  last-used: 3,
+  container-code: 2,
+  organization-name: 3,
+  created-by: 2,
+);
+
+$weightSum: sum(map.values($column-weights));
+
+.container-row-spacing {
+  display: flex; // sass-lint:disable-line no-important
+
+  &__column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include tx-spacing__inset(squish, xxxs);
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__text {
+    float: left;
+  }
+
+  &__icon {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  &__status-icon {
+    @include tx-typescale(-2);
+    display: inline;
+    margin-left: $spacing--xxxs;
+  }
+
+  @each $column, $weight in $column-weights {
+    &__#{$column} {
+      $weight-ratio: calc($weight / $weightSum) * 100;
+
+      flex-grow: $weight;
+      flex-basis: #{$weight-ratio * 1%};
+    }
+  }
+}
+
+.container-row-card {
+  margin-bottom: 1rem;
+}
+
+// ContainerRowCard specific
+.container-row {
+
+  // position tooltip top left of card.
+  .alert-indicator {
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+}
+
+.icon-sort {
+  i {
+    margin-left: $spacing--xxs;
+  }
+
+  &__down {
+    i {
+      margin-bottom: 3px;
+    }
+  }
+
+  &__up {
+    i {
+      margin-top: 5px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+@use 'main/global-imports' as *;
+
+.assign {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: $spacing--xxxs;
+}

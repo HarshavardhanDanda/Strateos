@@ -1,0 +1,17 @@
+.instruction-time-constraint {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+  justify-content: space-around;
+  margin-bottom: 1em;
+
+  // override InstructionCard external geometry
+  .expandable-card.instruction-card {
+    width: inherit;
+    max-width: inherit;
+    margin: inherit;
+    width: 200px;
+    display: inline-block;
+  }
+
+}

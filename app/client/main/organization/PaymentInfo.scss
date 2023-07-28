@@ -1,0 +1,12 @@
+@use 'main/global-imports' as *;
+
+.paymentinfo {
+  &__modalbody {
+    padding-left: $spacing--xxxlg;
+    padding-right: $spacing--xxxlg;
+  }
+
+  &__banner {
+    margin-bottom: $spacing--md;
+  }
+}

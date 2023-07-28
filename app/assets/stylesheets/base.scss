@@ -1,0 +1,760 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use 'bootstrap-sass/assets/stylesheets/bootstrap/mixins' as *;
+@use '../../client/main/mixins' as *;
+@use '../../assets/stylesheets/bootstrap-variables' as *;
+
+.form-control {
+  &:focus {
+    @include focused-form-shadow;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: $global-bkg-color;
+
+  .show-grid {
+    margin-top: 1em;
+  }
+
+  .panel-heading,
+  .sequential-header {
+    background-color: $extra-light-gray;
+    border-color: $dark-gray;
+  }
+
+  .modal {
+    &.fade .modal-dialog {
+      @include translate(0, 0);
+      @include transition-transform(0.15s ease);
+      @include scale(0.8);
+    }
+
+    &.in .modal-dialog {
+      @include scale(1);
+    }
+
+    form {
+      margin-bottom: 0;
+    }
+
+    // Use this styling whenever you want to show a big message
+    // to user within a modal with large font on top, smaller on bottom (master, detail)
+    .modal-confirmation-text {
+      font-weight: $font-weight-regular;
+      margin-top: 20px;
+      margin-bottom: 30px;
+
+      .master {
+        @include tx-typescale(3);
+        margin-bottom: 20px;
+      }
+
+      .detail {
+        @include tx-typescale(1);
+      }
+    }
+
+    // This is repeated in Modal/style.scss
+    .multi-step-chrome {
+      margin-bottom: 0;
+      border: 0;
+    }
+
+    .sequential-steps {
+      @include tx-typescale(-2);
+      padding-left: 0;
+      margin: 0;
+      text-align: center;
+      list-style: none;
+
+      li {
+        &:before {
+          display: none;
+        }
+
+        span.index {
+          margin-right: 4px;
+        }
+
+        display: inline;
+        padding: 0 10px;
+        cursor: pointer;
+        font-weight: 400;
+        opacity: 0.4;
+
+        &.current {
+          font-weight: 600;
+          opacity: 1;
+        }
+
+        &.disabled {
+          cursor: auto;
+        }
+
+        .fa-check {
+          color: $green;
+        }
+      }
+    }
+  }
+
+  .multi-step-modal {
+    .modal-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:before,
+      &:after {
+        display: none;
+      }
+
+      .btn.next {
+        // The submit button has a spinning fa icon
+        i {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 30px 30px 20px;
+  }
+
+  .modal .modal-header button.close {
+    @include tx-typescale(5);
+    color: $white;
+    text-shadow: none;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    opacity: 1;
+    font-weight: $font-weight-regular;
+  }
+
+  .modal {
+    .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-transform: none;
+
+      .modal-title {
+        margin: 0;
+        color: $carbon;
+      }
+    }
+
+    .modal-body {
+      padding: 30px;
+
+      &__title {
+        text-align: center;
+      }
+    }
+  }
+
+  a:hover {
+    // no href on the js links
+    cursor: pointer;
+  }
+
+  a.inherit-styles {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  ul.refs {
+    list-style: none;
+    display: inline-block;
+    margin-right: 7px;
+    margin-bottom: 0;
+    padding-left: 0;
+
+    .ref {
+      @include tx-border-radius(small);
+      display: inline-block;
+      padding: 2px 4px;
+      margin-right: 3px;
+      background-color: $green--40;
+    }
+  }
+}
+
+.main-page-content {
+  @include tx-z-index(relative, page-content);
+}
+
+// The main container of the app
+.main-app {
+
+  .sign-out {
+    a {
+      color: $extra-light-carbon;
+
+      &:hover {
+        text-decoration: none;
+        color: $white;
+      }
+    }
+  }
+
+  .page {
+    position: relative;
+
+    .nav-stacked.run-refs {
+      > li > a {
+        padding: 10px 15px;
+      }
+    }
+
+    .nav.nav-pills.nav-stacked {
+      li {
+        a {
+          @include tx-border-radius(none);
+          background-color: inherit;
+          border: 0;
+          border-bottom: 1px solid $white;
+
+          &:hover { // sass-lint:disable-line nesting-depth
+            background-color: $white;
+          }
+
+          &.active { // sass-lint:disable-line nesting-depth
+            color: $dark-gray;
+            background-color: $white;
+          }
+        }
+
+        &.active {
+          a { // sass-lint:disable-line nesting-depth
+            color: $dark-gray;
+            background-color: $white;
+          }
+        }
+
+        &:last-child {
+          a { // sass-lint:disable-line nesting-depth
+            border-bottom: 0;
+          }
+        }
+
+        & + li {
+          margin-top: 0;
+          margin-left: 0;
+        }
+      }
+    }
+
+    > .headline {
+      padding-left: 10px;
+      width: 100%;
+    }
+
+    > .breadcrumbs + .headline {
+      h1 {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .panel-default {
+    .panel-heading {
+      background-color: $white;
+      border-bottom: none;
+      a {
+        color: $extra-dark-gray;
+      }
+    }
+  }
+
+  section.section {
+    background: $white;
+    padding: $spacing--md;
+    margin: $spacing--md 0;
+    border: 1px solid $light-gray;
+
+    .section-header {
+      padding: $spacing--xxs;
+      margin-bottom: $spacing--xxs;
+      border-bottom: 1px solid $light-gray;
+    }
+  }
+
+  .panel,
+  .panel .panel-heading {
+    border-color: $light-gray;
+  }
+
+  .panel {
+    @include tx-border-radius(none);
+
+    &.page-header-panel {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 $spacing--md;
+      width: 100%;
+    }
+  }
+
+  .panel .panel-heading {
+    @include tx-typescale(-1);
+    text-transform: uppercase;
+    color: $carbon;
+    padding: 5px 15px;
+    @media(min-width: 992px) {
+      &.panel-icon {
+        padding-left: 200px;
+      }
+    }
+
+    &.panel-navigation {
+      padding-bottom: 0;
+    }
+
+    button.close {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  .panel-heading h3.panel-title {
+    margin: 0;
+  }
+
+  footer.footer {
+    margin-bottom: 8px;
+    @media print {
+      display: none;
+    }
+
+    p {
+      color: $black;
+    }
+  }
+}
+
+.header-button {
+  margin-top: 4px;
+  margin-left: 5px;
+}
+
+.input.fixed {
+  @include tx-typescale(-2);
+  padding-top: 6px;
+  color: $dark-gray;
+}
+
+.pull-center {
+  text-align: center;
+}
+
+footer {
+  a {
+    color: $black;
+
+    &:hover {
+      color: $dark-blue;
+    };
+  }
+}
+
+.hidden {
+  display: none !important;
+}
+
+.alert-header {
+  margin-top: 30px;
+}
+
+.action-buttons {
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid $carbon;
+  text-align: center;
+}
+
+.panel-body p:last-child {
+  margin-bottom: 0;
+}
+
+// when we want to have a close button within a panel (say in a modal)
+.panel .panel-heading {
+  button.close,
+  .protocol-name {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+}
+
+.admin-panel {
+  @media print {
+    display: none;
+  }
+
+  @include tx-border-radius(large);
+  background-color: $white;
+  border: 1px solid $light-gray;
+  padding: 45px 15px 15px;
+  position: relative;
+
+  &:after {
+    @include tx-typescale(-2);
+    content: 'Admin';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-weight: 700;
+    color: $carbon;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  @include admin-stripes-grey();
+
+  &.success {
+    @include background-stripes($green--30, $green--40);
+    border-color: $green--30;
+  }
+
+  &.danger {
+    @include background-stripes($red--40, $red--50);
+    border-color: $red--40;
+  }
+}
+
+.nav-tabs.border-bottom {
+  border-bottom: 1px solid $carbon;
+}
+
+li.admin-tab a,
+li.adin-tab a.active {
+  @include admin-stripes-grey();
+  padding: 0 $spacing--md;
+
+  &:hover {
+    @include admin-stripes-grey();
+  }
+}
+
+.attachments {
+  .attachment {
+    @include tx-typescale(-2);
+    border: 1px solid $black--20;
+    padding: 2px 6px;
+    background: $extra-light-gray;
+    max-width: 75%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 5px;
+
+    .size {
+      display: inline-block;
+      color: $extra-light-carbon;
+      float: right;
+    }
+
+    .name {
+      font-weight: bold;
+    }
+  }
+}
+
+del {
+  text-decoration: none;
+  color: $red;
+  background: $red--70;
+}
+
+ins {
+  background: $green--70;
+  color: $green;
+  text-decoration: none;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: $black;
+  shape-rendering: crispEdges;
+}
+
+.search-input {
+  position: relative;
+
+  input {
+    border: 0;
+    outline: none;
+    width: 100%;
+    color: $extra-dark-gray;
+    font-weight: $font-weight-light;
+  }
+  padding-left: 15px;
+
+  i {
+    @include tx-typescale(0);
+    right: 9px;
+    position: absolute;
+    top: 50%;
+    margin-top: -0.75rem;
+    color: $black--30;
+
+    &.clear {
+      cursor: pointer;
+
+      &:hover {
+        color: $extra-dark-gray;
+      }
+    }
+  }
+}
+
+dd code {
+  padding: 0;
+}
+
+.master-detail-label {
+  .master-label {
+    @include tx-typescale(1);
+  }
+
+  .master-parens,
+  .detail-container {
+    @include tx-typescale(-2);
+    font-weight: lighter;
+    color: $extra-dark-gray;
+  }
+
+  .detail-container.italicize {
+    font-style: italic;
+  }
+}
+
+.fa.fa-sm {
+  font-size: 80%;
+}
+
+.destroy-button {
+  display: flex;
+  align-self: center;
+
+  &:hover {
+    .btn {
+      color: $red;
+      cursor: pointer;
+    }
+  }
+
+  .btn {
+    color: $extra-light-carbon;
+    box-shadow: none;
+    border-style: none;
+    background-color: transparent;
+  }
+}
+
+.deletable-row {
+  &:hover {
+    .destroy-button {
+      visibility: visible;
+    }
+  }
+
+  .deletable-row-contents {
+    padding-left: 0; // so delete button is close to content
+  }
+}
+
+.link-style-button {
+  color: $blue;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.panel-body.extra-pad {
+  // bootstrap standard pad is 15
+  padding: 30px;
+}
+
+.generic-empty-list {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  color: $extra-light-carbon;
+  font-style: italic;
+}
+
+.brush .extent {
+  stroke: $white;
+  fill-opacity: 0.125;
+  shape-rendering: crispEdges;
+}
+
+.hover-tip {
+  color: $dark-gray;
+  line-height: 1;
+}
+
+.vertical-button-group {
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  button {
+    @include tx-border-radius(none);
+    height: 40px;
+    outline: none !important;
+    border: 1px solid $light-gray; // default
+
+    position: relative; // So the trash icon can be position: absolute
+
+    &:hover {
+      // overwrite bootstraps hover border.
+      border: 1px solid $light-gray;
+    }
+
+    &.first {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+
+    &.last {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+
+    &:not(.first) {
+      border-top: 0;
+    }
+
+    &.active {
+      box-shadow: none; // remove bootstrap's box shadow
+
+      &:not(:hover) {
+        background: $extra-dark-gray;
+        border-color: $extra-dark-gray;
+        color: $white;
+      }
+    }
+
+    &:not(.active) {
+      font-weight: 300;
+
+      &.error:not(:hover) {
+        background:   $alert-danger-bg;
+        border-color: $alert-danger-border;
+      }
+    }
+
+    .innards {
+      @include flex-justify-and-align(space-between, center);
+
+      .text {
+        @include ellipsis(85%);
+        vertical-align: middle;
+      }
+
+      i {
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.trash-icon {
+  cursor: pointer;
+  color: $dark-gray;
+
+  &:hover {
+    color: $red--40;
+  }
+
+  &:active {
+    color: $red;
+  }
+}
+
+.vertical-button-group-with-label {
+  &__title {
+    display: flex;
+    justify-content: space-between;
+
+    width: 200px;
+
+    a {
+      @include tx-typescale(-2);
+      color: $dark-gray;
+
+      &:hover { // sass-lint:disable-line nesting-depth
+        color: $carbon;
+      }
+    }
+  }
+
+  .vertical-button-group {
+    margin: 5px 0;
+  }
+}
+
+// Validations
+.statuses {
+  .valid {
+    color: $state-success-text;
+  }
+
+  .pending,
+  .warning {
+    color: $state-warning-text;
+  }
+
+  i {
+    margin-right: $spacing--xxs;
+  }
+}
+
+.status-label {
+  .desc {
+    margin-bottom: $spacing--md;
+  }
+}
+
+.disable-user-select {
+  user-select: none;
+}
+
+.help-button {
+  margin-left: 4px;
+}
+
+// Clears all base styles of a <button>
+button.clear {
+  // sass-lint:disable-block no-vendor-prefixes
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.label {
+  @include str-type__style(label, $default-tier: secondary, $default-weight: heavy);
+}

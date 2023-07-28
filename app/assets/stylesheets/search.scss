@@ -1,0 +1,34 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+// Simple search bar with icon
+// By default has a light gray left border with some margin-left
+.search-bar {
+  $border-style: 1px solid $light-gray;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  i {
+    color: $extra-light-carbon;
+  }
+  &.inline { // To render in-line, e.g. within a modal header.
+    border-left: $border-style; // vert. line separting it from its siblings on left
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  &.bare {
+    border-bottom: $border-style;
+    margin: 0;
+    padding: 10px;
+  }
+  input {
+    flex: 1;
+    font-weight: $font-weight-light;
+    color: $extra-dark-gray;
+    margin-left: 10px;
+    height: auto;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+}

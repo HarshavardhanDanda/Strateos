@@ -1,0 +1,34 @@
+@use 'main/global-imports' as *;
+
+.sidebar {
+  .clear-search-link {
+    cursor: pointer;
+    font-size: $base-font-size--default;
+    float: right;
+    color: black;
+    text-decoration: underline;
+  }
+  .filter-title {
+    @include tx-typescale(1);
+    font-weight: 900;
+  }
+}
+
+.inventory-sidebar {
+  list-style: none;
+}
+
+.inventory-search-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 13px;
+  color: inherit;
+  font-weight: 600;
+}
+
+.inventory-search-heading {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  align-items: center;
+}

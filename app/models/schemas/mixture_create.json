@@ -1,0 +1,67 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": [
+        "label",
+        "description",
+        "mixture_components_attributes"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "mixture_components_attributes": {
+          "type": "array",
+          "minItems": 1,
+          "additionalProperties": false,
+          "required": [
+            "mixable_type",
+            "mixable_id"
+          ],
+          "items": {
+            "type": "object",
+            "properties": {
+              "starting_concentration": {
+                "type": "string"
+              },
+              "target_concentration": {
+                "type": "string"
+              },
+              "is_diluent": {
+                "type": "boolean"
+              },
+              "mixable_type": {
+                "type": "string",
+                "enum": [
+                  "Mixture",
+                  "Resource"
+                ]
+              },
+              "mixable_id": {
+                "type": "string"
+              },
+              "vendor_id": {
+                "type": "string"
+              },
+              "supplier_id": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "include": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

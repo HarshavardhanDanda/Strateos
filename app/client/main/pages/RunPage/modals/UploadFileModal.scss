@@ -1,0 +1,70 @@
+@use 'main/global-imports' as *;
+
+.upload-file-modal {
+  &__content {
+    margin: $spacing--md;
+    display: grid;
+    gap: $spacing--md;
+    .radio-group {
+      margin-bottom: 0;
+    }
+  }
+
+  &__button-group {
+    margin-top: $spacing--xxlg;
+    display: flex;
+    gap: $spacing--xs;
+    justify-content: flex-end;
+  }
+
+  &__button-container {
+    @include tx-border-radius(medium);
+    @include tx-box-shadow(none);
+
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    padding-left: $spacing--xs;
+    height: pxToRem(40px);
+    font-weight: $font-weight-light;
+    border: 1px solid $carbon--30;
+    letter-spacing: inherit;
+    text-overflow: ellipsis;
+    width: 100%;
+  }
+
+  &__config, &__drawer {
+    display: grid;
+    gap: $spacing--sm;
+  }
+
+  &__drawer {
+    padding-bottom: $spacing--sm;
+  }
+
+  &__data-label {
+    @include tx-border-radius(large);
+    @include ellipsis(100%);
+    background-color: $blue--30;
+    height: pxToRem(28px);
+    padding: pxToRem(2px);
+    margin-top: pxToRem(4px);
+  }
+
+  &__container-tags {
+    padding-left: 0;
+    display: flex;
+    justify-content: start;
+    .base-tag:first-child {
+      margin-left: 0
+    }
+    .base-tag {
+      @include tx-border-radius(large);
+    }
+  }
+
+  &__sentence-case {
+    @include sentence-case();
+  }
+
+}

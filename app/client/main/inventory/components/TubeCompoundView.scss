@@ -1,0 +1,30 @@
+@use 'main/global-imports' as *;
+
+.tube-compounds {
+  @include tx-layout__children(stack, xxs);
+  margin-bottom: $spacing--sm;
+
+  &__molecule-viewer {
+    .molecule-viewer--tiny {
+    width: 150px;
+    height: 180px;
+    }
+    @include tx-layout__item(stack, sm);
+    @include tx-layout__item(inline, sm);
+  }
+
+  &__link-compounds-label {
+    color: $light-carbon;
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+
+  &__link-compounds-btn {
+    padding-top: 10px;
+    padding-bottom: 15px;
+  }
+
+  &__zero-state-text {
+    padding-right: $spacing--xxs;
+  }
+}

@@ -1,0 +1,46 @@
+@use 'main/global-imports' as *;
+
+.inventory-drawer-details {
+  &__drawer-body {
+    height: 62vh;
+
+    &--with-footer {
+      height: calc(61vh - 70px);
+    }
+  }
+  &__interactive-plate {
+    flex: 1;
+  }
+
+  &__aliquot-panel {
+    flex: 1;
+  }
+
+  &__panel-heading {
+     color: $carbon;
+    padding: 5px 10px;
+  }
+
+  &__navback {
+
+    &-icon {
+      display: inline;
+      margin-right: $spacing--xxxs;
+      font-size: medium;
+      cursor: pointer;
+    }
+    &-title {
+      display: inline;
+      color: $carbon;
+      cursor: pointer;
+    }
+    &-wellname {
+        display: inline;
+        text-transform: uppercase;
+      }
+  }
+
+  &__banner{
+    padding-bottom: $spacing--lg;
+  }
+}

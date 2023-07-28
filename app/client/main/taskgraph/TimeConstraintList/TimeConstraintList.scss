@@ -1,0 +1,21 @@
+@use 'main/global-imports' as *;
+// Vertical list.  TODO Extract .vertical-spaced-list into a js component.
+.taskgraph-constraint-list {
+
+  &__constraint-list-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    max-width: 800px;
+  }
+
+  &__sentence {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__graph-container {
+    margin-bottom: 40px;
+  }
+}

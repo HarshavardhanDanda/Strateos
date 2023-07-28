@@ -1,0 +1,43 @@
+{
+  "data": {
+    "attributes": {
+      "result_success": [
+        {
+          "id": "c1",
+          "status": "available",
+          "updated_at": "2023-04-05T23:59:41.147-07:00",
+          "label": "Sample relocation container 1",
+          "barcode": "bar1",
+          "location_id": "loc1",
+          "errors": null
+        }
+      ],
+      "result_errors": [
+        {
+          "id": "c2",
+          "status": "available",
+          "updated_at": "2023-03-29T04:44:07.580-07:00",
+          "label": "Sample relocation container 2",
+          "barcode": "bar2",
+          "location_id": "loc2",
+          "errors": [
+            {
+              "title": "Record invalid",
+              "detail": "Multiple tubes cannot be in a single box cell.",
+              "code": "100",
+              "source": "/api/containers/relocate_many/1",
+              "status": "422"
+            },
+            {
+              "title": "Record invalid",
+              "detail": "This location does not accept 96-deep.",
+              "code": "100",
+              "source": "/api/containers/relocate_many/1",
+              "status": "422"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "data": [
+      {
+        "id": "ct1",
+        "aliquot_count": 1,
+        "barcode": "1509202106",
+        "container_type_id": "bottle-500",
+        "container_type_shortname": "bottle-500",
+        "created_at": "2021-09-15T07:14:34.670-07:00",
+        "label": "Tube 1Test",
+        "organization_id": "org13",
+        "slot": null,
+        "storage_condition": "cold_4",
+        "test_mode": false,
+        "updated_at": "2021-09-15T07:38:44.057-07:00",
+        "created_by": "u1",
+        "public_location_description": "In storage",
+        "organization_name": "Strateos",
+        "container_type_name": "500mL Bottle"      
+      },
+      {
+        "id": "ct2",        
+        "aliquot_count": 1,
+        "barcode": null,
+        "container_type_id": "a1-vial",
+        "container_type_shortname": "a1-vial",
+        "created_at": "2021-09-02T02:24:31.912-07:00",        
+        "label": "Tube 1",
+        "organization_id": "org13",        
+        "storage_condition": "cold_4",
+        "updated_at": "2021-09-15T05:44:04.360-07:00",
+        "created_by": "u1",
+        "properties": {},
+        "organization_name": "Strateos",
+        "container_type_name": "A1 vial"
+      }     
+    ]
+}

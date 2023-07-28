@@ -1,0 +1,44 @@
+@use 'main/global-imports' as *;
+
+.liha-node {
+  &:hover &__rect,
+  &--selected &__rect {
+    stroke-width: 2;
+  }
+
+  &__rect {
+    stroke-width: 0;
+    cursor: pointer;
+  }
+
+  &__name,
+  &__wells,
+  &__clipping-rect {
+    pointer-events: none;
+    cursor: pointer;
+  }
+
+  &__text {
+    fill: $black;
+  }
+
+  &__wells {
+    font-weight: 800;
+    font-size: 12px;
+    opacity: 0.6;
+  }
+
+  &__name {
+    font-size: 14px;
+  }
+
+  &__selected-circle {
+    fill: $green--70;
+  }
+
+  &__selected-check {
+    font-family: 'Font Awesome 5 Pro';
+    fill: $white;
+    font-size: 12px;
+  }
+}

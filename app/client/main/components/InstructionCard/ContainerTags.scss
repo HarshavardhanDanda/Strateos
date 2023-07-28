@@ -1,0 +1,15 @@
+@use 'main/global-imports' as *;
+
+.container-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  @include tx-layout__children(stack, xxxs);
+  @include tx-layout__children(inline, xxxs);
+
+  text-align: right;
+  padding: 7px;
+  padding-bottom: 3px;
+  max-width: 100%;
+}

@@ -1,0 +1,100 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.list-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  width: 100%;
+
+  &:hover &__remove {
+    display: block;
+  }
+
+  &__remove {
+    @include tx-border-radius(full);
+    background-color: transparent;
+    border: 0;
+    color: $red;
+    cursor: pointer;
+    display: none;
+    left: -0.75em;
+    position: absolute;
+    top: 0.25em;
+  }
+
+  &__name {
+    color: $black--10;
+    font-weight: $font-weight-semibold;
+    width: 100%;
+  }
+
+  #{&}__name#{&}__datum {
+    @include tx-typescale(1);
+  }
+
+  &__label {
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+
+  &__checkbox {
+    display: flex;
+    flex-direction: column;
+
+    .checkbox {
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    &.form-group {
+      margin-bottom: 0;
+    }
+
+    > label {
+      text-align: center;
+    }
+  }
+
+  &__checkbox &__checkbox-label {
+    align-items: center;
+    display: flex;
+    padding: 0;
+    width: 100%;
+  }
+
+  &__checkbox &__checkbox-label &__checkbox-input {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  &__datum {
+    flex-grow: 1;
+    @include tx-typescale(-1);
+    overflow: hidden;
+    padding: 5px 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    &--fixed {
+      flex-grow: 0;
+    }
+
+    &--tiny {
+      width: 5%;
+    }
+
+    &--small {
+      width: 8%;
+    }
+
+    &--medium {
+      width: 15%;
+    }
+  }
+
+  &__text-block {
+    width: 20%;
+  }
+}

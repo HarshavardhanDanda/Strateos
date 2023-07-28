@@ -1,0 +1,39 @@
+@use 'main/global-imports' as *;
+
+.history {
+  position: relative;
+
+  .timeline {
+    border-left: 1px solid $blue--30;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    height: 100%;
+  }
+
+  .event {
+    min-height: 25px;
+    position: relative;
+    margin-top: 5px;
+
+    .icon {
+      @include tx-border-radius(small);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 25px;
+      background: $blue--30;
+      color: $white;
+      text-align: center;
+      line-height: 25px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .body {
+      line-height: 19px;
+      padding: 3px 3px 3px 33px;
+    }
+  }
+}

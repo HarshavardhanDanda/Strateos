@@ -1,0 +1,21 @@
+@use 'main/global-imports' as *;
+
+.export-csv-pane {
+    &__header{
+        display: flex;
+        align-items: center;
+    } 
+    &__subheading {
+        margin: 0;
+    }
+
+    &__regenerate-button {
+        margin-left: auto;
+    }
+
+    &__table {
+        height: pxToRem(460px);
+        overflow-y: auto;
+    }
+   
+}

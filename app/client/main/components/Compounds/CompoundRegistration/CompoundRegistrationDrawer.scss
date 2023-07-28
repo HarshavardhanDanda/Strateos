@@ -1,0 +1,27 @@
+@use 'main/global-imports' as *;
+
+.registration-drawer {
+  &__duplicates-drawer-options {
+    position: absolute;
+    bottom: $spacing--sm;
+    right: $spacing--md;
+  }
+
+  &__resolve-conflicts {
+    background-color: $green--90;
+  }
+
+  &__viewer-height {
+    &--small {
+      height: 43vh;
+    }
+
+    &--medium {
+      height: 45vh;
+    }
+
+    &--large {
+      height: 53vh;
+    }
+  }
+}

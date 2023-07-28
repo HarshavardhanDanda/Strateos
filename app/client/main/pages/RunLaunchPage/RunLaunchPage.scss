@@ -1,0 +1,34 @@
+@use 'main/global-imports' as *;
+
+.launch-new-run {
+  $default-spacing: $spacing--xxs;
+  $larger-spacing: $spacing--md;
+
+  display: flex;
+  flex-direction: column;
+
+  &__warnings {
+    > div {
+      margin: $default-spacing 0;
+    }
+  }
+
+  &__test-button-container {
+    text-align: right;
+  }
+
+  &__multi-step-chrome-container {
+    align-self: flex-end;
+    padding: $larger-spacing;
+  }
+}
+
+.panel.launch-run-panel {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 $secondary-chrome-padding;
+
+  .divider--horz {
+    margin: 40px (-$secondary-chrome-padding);
+  }
+}

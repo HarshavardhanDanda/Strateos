@@ -1,0 +1,85 @@
+@use 'main/global-imports' as *;
+
+.run-card {
+  position: relative;
+  height: 100%;
+
+  &__top-line {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+    @include tx-layout__children(inline, xxs);
+    width: 100%;
+    overflow: hidden;
+  }
+
+  &__title {
+    flex: 1;
+    color: $carbon;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+  &__description{
+    @include tx-typescale(-2)
+  }
+
+  &__status {
+    white-space: no-wrap;
+  }
+
+  &__success-status {
+    @include tx-z-index(relative, overlay);
+    @include tx-layout__children(inline, xxxs);
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__details {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  &__bottom-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: $spacing--sm;
+
+    > * {
+      @include ellipsis(100%);
+    }
+  }
+
+  &__highlighted {
+    color: $white !important;
+  }
+
+  &__progress {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: $blue;  // default color for in progress and accepted
+
+    &--canceled,
+    &--aborted {
+      background: $red--70;
+    }
+
+    &--complete {
+      background: $green--70;
+    }
+
+    &--pending {
+      background: $yellow;
+    }
+
+    &--rejected {
+      background: $red;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@use 'main/global-imports' as *;
+
+.page-header {
+  @include tx-box-shadow(light-shadow);
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  border-bottom: 1px solid $standard-gray;
+  min-height: 60px;
+
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: $white;
+  }
+
+  &__crumbs {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    margin-right: auto;
+  }
+
+  &__labels-actions {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-self: flex-end;
+
+    margin-left: auto;
+    color: $white;
+  }
+
+  &__labels {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+  }
+
+  &--primary {
+    background-color: $str-navy;
+  }
+
+  &--brand {
+    background-color: $str-green--dark;
+  }
+}

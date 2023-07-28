@@ -1,0 +1,213 @@
+@use 'main/global-imports' as *;
+
+.constraint-graphs {
+  @include tx-layout__children(stack, xxlg);
+  position: relative;
+}
+
+.constraint-viz {
+  $inst-width: 30%;
+  $inst-offset: 40px;
+  $inst-dot-size: 10px;
+  $border-width: 2px;
+  $border-style--dashed: $border-width dashed $black--30;
+
+  @include clearfix();
+
+  position: relative;
+  width: 100%;
+
+  &__inst-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+
+    width: 100%;
+    position: relative;
+  }
+
+  &__inst-container {
+    @include tx-z-index(relative, indicator);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: $spacing--xxxs 0;
+    width: calc(100% - (#{$inst-offset} * 2));
+  }
+
+  &__inst {
+    width: calc((100% + (#{$inst-offset} * 2)) * calc($inst-width / 100%));
+    max-height: 100%;
+  }
+
+  &__inst-dot {
+    @include tx-z-index(absolute, base-content);
+    @include tx-border-radius(full);
+
+    width: $inst-dot-size;
+    height: $inst-dot-size;
+    border: 2px solid $extra-light-carbon;
+    top: 50%;
+
+    &--start {
+      left: 0;
+      transform: translateY(calc(-50% + (#{$border-width} / 2)));
+    }
+
+    &--end {
+      right: 0;
+      transform: translateY(calc(-50% + (#{$border-width} / 2)));
+    }
+  }
+
+  &__inst-line {
+    @include tx-z-index(absolute, base-content);
+
+    left: $inst-dot-size;
+    right: $inst-dot-size;
+    height: 2px;
+    background: $extra-light-carbon;
+    top: 50%;
+    transform: translateY(calc(-50% + (#{$border-width} / 2)));
+  }
+
+  &__bound-row {
+    display: flex;
+    flex-direction: row;
+
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 2em;
+    position: relative;
+  }
+
+  &__row-cap {
+    position: relative;
+    min-width: $inst-offset;
+    max-width: $inst-offset;
+    overflow: hidden;
+
+    &--left {
+      margin-left: $inst-dot-size;
+    }
+
+    &--right {
+      margin-right: $inst-dot-size;
+    }
+  }
+
+  &__line-curve {
+
+    border: $border-style--dashed;
+    border-radius: 100%; // sass-lint:disable-line no-disallowed-properties
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    &--top:not(&--inv) {
+      right: -50%;
+      bottom: -50%;
+      border-right: 0;
+      border-bottom: 0;
+      transform: translateX(calc(-#{$border-width} / 2));
+    }
+
+    &--top#{&}--inv {
+      left: -50%;
+      bottom: -50%;
+      border-left: 0;
+      border-bottom: 0;
+      transform: translateX(calc($border-width / 2));
+    }
+
+    &--bottom:not(&--inv) {
+      left: -50%;
+      top: -50%;
+      border-left: 0;
+      border-top: 0;
+      transform: translate(calc($border-width / 2), $border-width);
+    }
+
+    &--bottom#{&}--inv {
+      right: -50%;
+      top: -50%;
+      border-right: 0;
+      border-top: 0;
+      transform: translate(calc(-#{$border-width} / 2), $border-width);
+    }
+
+    &--straight:not(&--inv) {
+      border-radius: 0; // sass-lint:disable-line no-disallowed-properties
+      border-right: 0;
+      border-top: 0;
+      border-bottom: 0;
+      right: -50%;
+      transform: translateX(calc(-#{$border-width} / 2));
+    }
+
+    &--straight#{&}--inv {
+      border-radius: 0; // sass-lint:disable-line no-disallowed-properties
+      border-right: 0;
+      border-top: 0;
+      border-bottom: 0;
+      left: 50%;
+      transform: translateX(calc(-#{$border-width} / 2));
+    }
+  }
+
+  &__bound-container {
+    flex-grow: 1;
+    margin: $spacing--xxxs 0;
+    position: relative;
+
+  }
+
+  &__bound {
+    @include tx-border-radius(medium);
+    @include tx-z-index(relative, header-content);
+    @include tx-spacing__inset(squish, xxxs);
+
+    background: $teal--30;
+    border: 1px solid $teal--50;
+    position: relative;
+    min-height: 100%;
+
+    $fromStart: 0;
+    $fromEnd: calc((100% + (#{$inst-offset} * 2)) * calc($inst-width / 100%));
+    $toStart: calc((100% + (#{$inst-offset} * 2)) * calc($inst-width / 100%));
+    $toEnd: 0;
+
+    &--start-to-start {
+      margin-left: $fromStart;
+      margin-right: $toStart;
+    }
+
+    &--end-to-start {
+      margin-left: $fromEnd;
+      margin-right: $toStart;
+    }
+
+    &--end-to-end {
+      margin-left: $fromEnd;
+      margin-right: $toEnd;
+    }
+
+    &--start-to-end {
+      margin-left: $fromStart;
+      margin-right: $toEnd;
+    }
+  }
+
+  &__bound-line {
+    @include tx-z-index(absolute, base-content);
+    height: 0;
+    width: 100%;
+    border-top: $border-style--dashed;
+    top: 50%;
+  }
+
+  &__bound-text {
+    text-align: center;
+  }
+}

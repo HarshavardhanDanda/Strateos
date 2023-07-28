@@ -1,0 +1,29 @@
+@use 'main/global-imports' as *;
+
+.detail-panel {
+  @include tx-border-radius(large);
+  background-color: $white;
+  border:           1px solid $standard-gray;
+  overflow-y:       auto;
+  transition: opacity 0.4s, transform 0.4s;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: $spacing--xlg;
+  }
+
+  &--visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &--hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+  }
+
+}

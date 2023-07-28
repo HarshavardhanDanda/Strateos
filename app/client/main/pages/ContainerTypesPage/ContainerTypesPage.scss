@@ -1,0 +1,15 @@
+@use 'main/global-imports' as *;
+
+.container-types-page {
+  margin: 40px;
+
+  .wrapped-col {
+    width: $element-width-sm;
+    white-space: normal;
+  }
+
+  .table {
+    // override
+    table-layout: auto;
+  }
+}

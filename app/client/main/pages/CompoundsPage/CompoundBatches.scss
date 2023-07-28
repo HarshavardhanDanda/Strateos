@@ -1,0 +1,19 @@
+.compound-batches {
+    .search-field {
+        height: pxToRem(42px);
+        position: relative;
+
+        &__wrapper {
+        width: inherit;
+        }
+
+    }
+    .multi-select {
+        .select-input {
+        height: pxToRem(42px);
+        }
+    }
+    .card {
+        overflow: visible;
+    }
+}

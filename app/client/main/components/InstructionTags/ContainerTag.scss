@@ -1,0 +1,21 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.container-tag {
+  max-width: 100%;
+  display: inline-block;
+  text-overflow: ellipsis;
+
+   &__time-constraint-icon {
+      padding: calc(#{$spacing--xs} / 2);
+      color: $black--80;
+      font-size: $spacing--xs;
+   }
+}
+
+.container-tag-with-scroll {
+  max-width: 100%;
+  display: inline-block;
+  &:hover {
+    overflow-x: auto;
+  }
+}

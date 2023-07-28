@@ -1,0 +1,95 @@
+@use 'main/global-imports' as *;
+
+.compound-heading {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: 5px;
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 5px 0 0 5px;
+
+    & > .desc {
+      display: flex;
+      align-items: center;
+    }
+
+    .user-profile {
+      margin-right: 5px;
+    }
+  }
+}
+
+.compound-detail__segment {
+  float: left;
+
+  &--right {
+    float: right;
+    text-align: right;
+  }
+}
+
+.compound-large {
+  width: 100%;
+
+  &__content {
+    @include tx-border-radius(medium);
+    width: 100%;
+    border: solid 1px $black--30;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &--dropshadow {
+      @include tx-box-shadow(light-shadow);
+      border: 0;
+      background-color: $white;
+    }
+  }
+
+  &__header {
+    height: 60px;
+    padding: 16px;
+    width: 100%;
+  }
+
+  &__smiles-input {
+    width: 260px;
+    float: left;
+  }
+
+  &__smiles-display {
+    &>p {
+      display: inline-block;
+      max-width: 250px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-right: 5px;
+    }
+    float: left;
+    background: transparent;
+
+    & button {
+      margin-top: -1.2em;
+    }
+
+    &:not(:hover) button {
+      visibility: hidden;
+    }
+  }
+
+  &__kv-display {
+    float: right;
+    background: transparent;
+  }
+}

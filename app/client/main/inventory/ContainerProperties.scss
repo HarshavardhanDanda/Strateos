@@ -1,0 +1,15 @@
+@use 'main/global-imports' as *;
+
+.shipment-container-row {
+  &__barcode {
+    display: inline-block;
+    width: 85%;
+    margin-right:$spacing--xxs;
+  }
+
+  &__barcode {
+    display: inline-block;
+    width: 85%;
+    margin-right:$spacing--xxs;
+  }
+}

@@ -1,0 +1,58 @@
+@use 'main/global-imports' as *;
+
+.send-to-workcell-drawer {
+  @include tx-spacing--inset(square, sm);
+  @include tx-layout__children(stack, md);
+  @include tx-box-shadow(light-shadow);
+
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: $black;
+  bottom: 0;
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__configuration {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+  }
+
+  &__config-section {
+    margin-top: $spacing--sm;
+    margin-bottom: $spacing--sm;
+    min-width: 125px;
+    margin-left: 25px;
+  }
+
+  &__config-section-container > div:first-child {
+    margin-left: 0;
+  }
+
+  &__config-section-container {
+    margin-left: 0px;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__time-allowance {
+    max-width: 175px;
+  }
+
+  &__parameters {
+    display: flex;
+  }
+
+  &__parameters div.tx-checkbox:nth-child(2) {
+    padding-left: 15px;
+  }
+}
+
+.send-to-workcell-drawer > *:last-child {
+  margin-bottom: calc(#{$intercom-icon-padding} + #{$intercom-icon});
+}

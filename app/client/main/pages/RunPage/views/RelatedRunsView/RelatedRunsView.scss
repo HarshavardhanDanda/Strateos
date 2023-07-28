@@ -1,0 +1,11 @@
+@use 'main/global-imports' as *;
+
+.related-runs-view {
+  margin: 0 auto;
+  max-width: 760px;
+  min-width: 300px;
+
+  &__connector {
+    border-color: $standard-gray;
+  }
+}

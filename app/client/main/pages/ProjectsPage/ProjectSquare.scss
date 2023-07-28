@@ -1,0 +1,294 @@
+@use 'main/global-imports' as *;
+@use "sass:color";
+
+.project-square {
+
+  @include tx-border-radius(small);
+  @include tx-z-index(relative, base-content);
+
+  @include mq(md, up) {
+    @include tx-layout__grid-item(xlg, 4);
+  }
+
+  @include mq(sm, only) {
+    @include tx-layout__grid-item(md, 3);
+  }
+
+  @include mq(xs, only) {
+    @include tx-layout__grid-item(md, 2);
+  }
+
+  &--implementation {
+    background-color: #F3FFFC !important;
+  }
+
+  position: relative;
+  transform: scale(1) translateZ(0);
+  transition: box-shadow 0.3s,transform 0.3s;
+
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+  }
+
+  /* STYLING FOR DEFAULT UN-HOVERED STATE */
+
+  &--archived &__contents {
+    background: $standard-gray;
+  }
+
+  &--create-new {
+    @include tx-spacing__inset(square, md);
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &--create-new &__contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: $carbon;
+    background-color: transparent;
+    border: 1px dashed $dark-gray;
+  }
+
+  &__contents {
+    @include tx-spacing__inset(square, md);
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  &__top-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__header-content {
+    @include tx-z-index(relative, base-content, 1);
+    flex-grow: 1;
+
+    position: relative;
+  }
+
+  &__headers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: translateZ(0);
+    transition: transform 0.2s;
+  }
+
+  &__subheader {
+    @include tx-layout__item(stack, sm);
+  }
+
+  &__view-link {
+    opacity: 0;
+    overflow: hidden;
+    bottom: 0;
+    transition: height 0.2s, opacity 0.2s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__action-menu {
+    @include tx-z-index(relative, tooltip);
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  &__view-button {
+    @include tx-border-radius(small);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include tx-spacing__inset(squish, sm);
+
+    border: 1px solid $white;
+    height: 40px;
+    background-color: tx-transparentize($str-green--dark, full);
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: tx-transparentize($str-green--dark, none);
+    }
+  }
+
+
+  &__info {
+    @include tx-spacing__inset(squish, md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @include tx-border-radius(none, none, small, small);
+    flex-grow: 0;
+    @include tx-z-index(relative, base-content, 1);
+
+    border-top: 2px solid $standard-gray;
+    color: $carbon;
+    font-weight: $font-weight-light;
+    background-color: $light-gray;
+    width: calc(100% + (2 * #{$spacing--md}));
+    margin-left: -$spacing--md;
+    margin-right: -$spacing--md;
+    margin-bottom: -$spacing--md;
+  }
+
+  &__summaries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include tx-layout__children(inline, xxxs);
+    @include tx-layout__children(stack, xxxs);
+    justify-content: flex-start;
+
+    width: 100%;
+  }
+
+  &__archived {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include tx-border-radius(pill);
+    @include tx-spacing__inset(squish, xxs);
+
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    background-color: $black;
+    transform: translateX(-50%) translateY(50%) translateZ(0);
+  }
+
+  &__describe {
+    position: absolute;
+    display: block;
+    padding-top: 20px;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(5px) translateZ(0);
+    transition: 0.2s opacity, 0.2s transform;
+  }
+
+  &__bsl-label {
+    display: inline-block;
+    flex: 1 1 100%;
+  }
+
+  &__icon {
+    @include tx-typescale(5);
+    transition: 0.2s color;
+    color: $dark-gray;
+  }
+
+  &__background {
+    @include tx-border-radius(small);
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $black;
+    opacity: 0;
+    transform: scale(1) translateZ(0);
+    transition: opacity 0.2s, transform 0.3s;
+  }
+
+  &__background--implementation {
+    background-color: $str-green--dark;
+  }
+
+  /* STYLING FOR ON HOVER STATE */
+
+
+  &--hovered {
+    @include tx-box-shadow(dark-shadow);
+    @include tx-z-index(relative, base-content, 1);
+
+    transform: scale(1.01);
+  }
+
+  &--hovered &__background {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &--hovered &__header,
+  &--hovered &__subheader {
+    color: $white !important;
+  }
+
+  &--hovered &__headers {
+    transform: translateY(-20px);
+  }
+
+  &--hovered &__view-link {
+    opacity: 1;
+  }
+
+  &--hovered &__action-menu {
+    opacity: 1;
+  }
+
+  &:hover &__describe {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  &--hovered &__bsl-label .bsl-label {
+    color: $extra-light-gray;
+  }
+
+
+  &:hover &__icon {
+    color: color.adjust($dark-gray, $lightness: -10%);
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: $spacing--xlg;
+    right: 0;
+  }
+
+  &__favorite-icon {
+    cursor: pointer;
+    color: color.adjust($light-gray, $lightness: -30%);
+    margin-bottom: pxToRem(1px);
+
+    &--active {
+      color: $tx-gold;
+    }
+
+    &__implementation {
+      margin: 0px 7px 2px 0px;
+      &--hovered {
+          color: $white;
+        }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+@use 'main/global-imports' as *;
+
+.table-view-actions {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2rem;
+  border-bottom: 0.5px solid $light-carbon;
+  padding-bottom: $spacing--md;
+
+  &__selection-info {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+  }
+
+  &__vertical-divider {
+    height: 100%;
+    width: 1px;
+    background-color: $dark-gray;
+    display: block;
+  }
+
+  &__selected-quantity {
+    @include tx-border-radius(pill);
+    background-color: $blue;
+    color: $white;
+    padding: 2px $spacing--sm;
+    margin-right:  $spacing--xxxs;
+    letter-spacing: 1px;
+  }
+
+  &__select-text {
+    margin-left: $spacing--md;
+  }
+}
+
+.selected-count-group {
+  display: flex;
+  flex-grow: 1;
+  padding-left: $spacing--md;
+ }

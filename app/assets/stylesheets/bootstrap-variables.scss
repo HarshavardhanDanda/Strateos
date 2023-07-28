@@ -1,0 +1,39 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+$brand-primary: $blue;
+
+//
+// Bootstrap customization
+//
+
+
+$input-color-placeholder: $black--30;
+
+$link-color: $blue;
+$link-hover-decoration: none;
+
+$state-danger-text: $red;
+$state-danger-bg: $red--50;
+
+$state-success-text: $green;
+$state-success-bg: $green--50;
+
+$state-warning-text: $orange;
+$state-warning-bg: $orange--50;
+
+$state-info-text: $blue;
+$state-info-bg: $blue--40;
+
+$grid-gutter-width: $spacing--md;
+
+// variables used in bootstrap/_variables.scss file
+
+$state-danger-border: darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+
+$alert-danger-bg: $state-danger-bg !default;
+$alert-danger-border: $state-danger-border!default;
+
+$font-size-base: $base-font-size--default !default;
+$font-size-small: ceil(($font-size-base * .85)) !default; // ~12px
+
+$table-bg-hover: #f5f5f5 !default;

@@ -1,0 +1,50 @@
+@use 'main/global-imports' as *;
+
+.container-card {
+  position: relative; // to allow hovered container view-details to use absolute pos.
+  width: 100%;
+  height: 120px;
+
+  &--standard-width {
+    width: 260px;
+  }
+
+  // A card with a single vert/horiz centered link
+  .single-link-card {
+    @include flex-justify-and-align(center, center);
+    @include icon-and-adjacent-text;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .name-code-container {
+    flex-grow: 1;
+
+    max-width: calc(100% - 40px);
+  }
+
+  .shipment-code {
+    position: absolute;
+    right: $spacing--md;
+    bottom: $spacing--md;
+    text-transform: uppercase;
+  }
+
+  .create-new-object {
+    .form-section {
+      @include flex-justify-and-align(center, center);
+      margin: $spacing--xlg;
+
+      i.hide-form {
+        position: absolute;
+        margin: 0;
+        right: $spacing--xxs;
+        top: $spacing--xxs;
+        color: $extra-light-carbon;
+        cursor: pointer;
+      }
+    }
+  }
+}

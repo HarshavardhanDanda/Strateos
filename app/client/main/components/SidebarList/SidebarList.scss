@@ -1,0 +1,35 @@
+@use 'main/global-imports' as *;
+@use 'VerticalNavGlobals';
+
+.sidebar-list {
+  @include tx-layout__children(stack, xxs);
+
+  padding-top: $spacing--xxlg;
+  height: 100%;
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    @include tx-z-index(relative, tooltip);
+  }
+
+  &__actions {
+    @include tx-z-index(relative, tooltip);
+  }
+
+  &__list {
+    @include tx-layout__children(stack, sm);
+    @include tx-z-index(relative, base-content);
+
+    padding-bottom: $spacing--xxs;
+    margin: auto;
+  }
+
+  &__list-item {
+    &::before {
+      display: none;
+    }
+  }
+}

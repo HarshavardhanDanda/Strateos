@@ -1,0 +1,40 @@
+@use 'bootstrap-sass/assets/stylesheets/bootstrap/mixins' as *;
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+
+.add-protocol-card {
+  .input-wide {
+    width: $large-input-width;
+    .submit-text {
+      margin-top: $spacing--xxs;
+    }
+  }
+}
+
+.wrapped-card-page .row-wrapped-grid {
+
+  .protocol-card.container-rect {
+    height: 140px;
+  }
+
+  .add-package-card.container-rect, .add-protocol-card.container-rect {
+    @include transition(width 200ms ease-in-out);
+    &.creating {
+      height: auto;
+    }
+  }
+
+  .add-protocol-card.container-rect {
+    &.creating {
+      width: $element-width-sm;
+    }
+    .form-section {
+      .vertical-spaced-list {
+        width: $element-width-base;
+      }
+    }
+  }
+
+}
+
+

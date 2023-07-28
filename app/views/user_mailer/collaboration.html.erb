@@ -1,0 +1,22 @@
+<table border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="margin:auto" class="fullwidth">
+  <div style="text-align:center;background-color:#F1F9F3;margin:auto" class="boxsize">
+    <div class="imgdiv">
+      <img src="https://go.strateos.com/hubfs/Software/Internal/Platform_Notification_Emails/template_body_img/Illustration1.png" alt="organization invite" width="140px" height="110px" />
+    </div>
+    <div class="bodydescription">
+      <p style="margin:0;font-family:sans-serif;font-weight:400;font-size:20px;"> You've been invited! </p>
+      <p style="margin:0px;font-family:sans-serif;font-weight:400;font-size:14px;line-height:22px;color:#0E212F" class="info">
+        You have been invited to join <%= @organization.name %> on Strateos.
+        Proceed to Strateos to view your organization 
+      </p>
+    </div>
+    <div style="text-align:center;" >
+      <a href="<%= organization_url(@organization) %>" target="_blank" style="padding-bottom: 35px">
+        <button style="width:190px; height:40px; background: #25B2F8; box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+                      border-radius: 4px; font-weight: 700; font-size:14px; line-height: 17px; border: none; color:#FFFFFF; cursor:pointer">
+          View organization
+        </button>
+      </a>
+    </div>
+  </div>
+</table>

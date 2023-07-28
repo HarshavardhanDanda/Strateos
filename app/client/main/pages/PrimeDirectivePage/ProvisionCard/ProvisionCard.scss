@@ -1,0 +1,26 @@
+@use 'main/global-imports' as *;
+
+.provision-card {
+  @include tx-layout__item(stack, md);
+
+  &__unprovisioned {
+    display: inline-grid;
+    text-align: center;
+  }
+
+  &__card {
+    padding: 0;
+  }
+
+  &__card-row:nth-child(even) {
+    background-color: $extra-light-gray;
+  }
+
+  &__card-row {
+    padding: 0 20px 0 10px;
+  }
+
+  &__link {
+    color: $str-accent;
+  }
+}

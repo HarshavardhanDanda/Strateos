@@ -1,0 +1,16 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.queries {
+
+  .sidebar {
+    @include tx-typescale(-2);
+  }
+
+  .results {
+    .empty {
+      h2 {
+        margin: 40px auto;
+      }
+    }
+  }
+}

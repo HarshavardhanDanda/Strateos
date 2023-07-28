@@ -1,0 +1,15 @@
+@use 'main/global-imports' as *;
+
+.runs {
+  @include tx-layout__children(stack, xlg);
+  margin: 0 auto;
+  max-width: 760px;
+  min-width: 300px;
+
+  h2 {
+    .show-hide-runs {
+      @include tx-typescale(-2);
+      padding-left: 5px;
+    }
+  }
+}

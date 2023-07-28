@@ -1,0 +1,36 @@
+@use 'main/global-imports' as *;
+
+.run-execution {
+  &__header {
+    display: flex;
+
+    margin-top: $spacing--sm;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: $spacing--sm;
+  }
+
+  &__body {
+    display: flex;
+
+    .request-details {
+      flex-grow: 1;
+      max-width: $run-instruction-card-max-width;
+      min-width: 300px;
+      margin-bottom: 20px;
+
+      .details {
+        word-wrap: break-word;
+        white-space: pre-wrap;
+      }
+    }
+  }
+
+  &__statuses {
+    @include tx-typescale(0);
+
+    > * {
+      margin-left: 10px;
+    }
+  }
+}

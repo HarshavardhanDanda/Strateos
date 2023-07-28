@@ -1,0 +1,9 @@
+@use 'main/global-imports' as *;
+
+.related-runs-modal {
+    &__table {
+        height: pxToRem(460px);
+        overflow-y: auto;
+        margin-top: 10px;
+    }
+}

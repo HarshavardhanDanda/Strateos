@@ -1,0 +1,20 @@
+@use 'main/global-imports' as *;
+
+.edit-predecessor-run {
+  margin-bottom: 10px;
+  width: 100%;
+
+  &__content {
+    @include tx-layout__children(stack, xxs);
+  }
+
+  &__toggle-with-label {
+    display: flex;
+    align-items: center;
+
+    span {
+      @include tx-type__style(body-text-small);
+      margin-left: $spacing--xxxs;
+    }
+  }
+}

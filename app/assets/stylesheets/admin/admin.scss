@@ -1,0 +1,124 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+#admin {
+  th.net {
+    text-align: right;
+  }
+
+  .quotes {
+    td {
+      &.total {
+        text-align: right;
+      }
+
+      .run-label {
+        &:not(:last-child) {
+          margin-right: $spacing--xxxs;
+        }
+      }
+    }
+  }
+}
+
+#solution {
+  margin-bottom: 15px;
+}
+
+#errors {
+  padding-left: 0;
+}
+
+.devstatus {
+  display: inline-block;
+  width: 350px;
+  margin-right: 20px;
+}
+
+#scheduler {
+
+  #workcells {
+    margin-top: 20px;
+  }
+
+  .run {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    border-right: 1px solid $black--30;
+    padding-right: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+    float: left;
+
+    &:last-child {
+      border-right: 0;
+      margin-right: 0;
+      padding-right: 0;
+    }
+
+    .heading {
+      &:hover {
+        cursor: -webkit-grab;
+        cursor:-moz-grab;
+      }
+
+      .run_id {
+        color: $extra-dark-gray;
+      }
+    }
+
+    ul {
+      margin-top: 15px;
+      padding-left: 0;
+
+      .instruction-card {
+        &.assigned {
+          background-color: $blue--30;
+          border-color: $blue--40;
+          color: $dark-blue;
+        }
+      }
+
+      .expandable-card__head {
+        code {
+          @include tx-typescale(-2);
+          margin-top: 9px;
+        }
+      }
+    }
+  }
+}
+
+#devices,
+.device-events {
+  .events-column {
+    text-align: center;
+  }
+
+  .records td {
+    vertical-align: middle;
+  }
+}
+
+.return-shipments {
+  tbody {
+    tr:first-child td {
+      border-bottom: 0;
+    }
+
+    tr:last-child td {
+      border-top: 0;
+    }
+  }
+
+  .address-text {
+    text-align: left;
+  }
+}
+
+.admin-warp-errors {
+  &.aborted {
+    background: $red--40;
+  }
+
+}

@@ -1,0 +1,30 @@
+@use 'main/global-imports' as *;
+
+.measure-data {
+  @include flex-justify-and-align(space-around, center);
+
+  .measure-data {
+    width: 100px;
+  }
+
+  &__inputs {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  &__cell {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    @include tx-layout__children(inline, xxxs);
+  }
+
+  &__label {
+    text-align: right;
+  }
+
+  &__input {
+    width: 175px;
+  }
+}

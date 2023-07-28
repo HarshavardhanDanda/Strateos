@@ -1,0 +1,45 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.split-stock {
+  .source-container-info {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .create-containers-list-pane {
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+
+    &__title {
+      display: flex;
+      justify-content: space-between;
+
+      width: 200px;
+
+      a {
+        @include tx-typescale(-2);
+        color: $dark-gray;
+      }
+    }
+
+    .vertical-button-group {
+      margin: 5px 0;
+    }
+
+    .add-container {
+      @include tx-typescale(-2);
+    }
+  }
+
+  .container-pane {
+    display: inline-block;
+    width: 70%;
+
+    .tube-details {
+      width: 300px;
+    }
+  }
+
+}

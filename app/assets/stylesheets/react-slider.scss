@@ -1,0 +1,31 @@
+@use "sass:color";
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+// react-slider styling
+.slider {
+  $main-fill-color:     $dark-gray;
+
+  .bar {
+    height: 1px;
+    background-color: $main-fill-color;
+  }
+
+  .handle {
+    @include tx-box-shadow(dark-shadow);
+    @include tx-border-radius(full);
+    $handle-bg-color: $white;
+    width:  $slider-handle-width-height;
+    height: $slider-handle-width-height;
+    margin-top: calc(-#{$slider-handle-width-height} / 2);
+    background-color: $handle-bg-color;
+
+    &:active,
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: color.adjust($handle-bg-color, $lightness: -5%);
+    }
+  }
+}

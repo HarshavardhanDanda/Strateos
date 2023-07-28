@@ -1,0 +1,82 @@
+[
+  {
+    "id": "ccpc1gc5w6b2q4swt",
+    "context_type": "CompoundLink",
+    "organization_id": "org13",
+    "key": "cmp_cp_1",
+    "label": "Project id",
+    "config_definition": {
+      "type": "string",
+      "label": "Solvent id",
+      "editable": false
+    },
+    "created_at": "2021-11-15T11:11:50.286-07:00",
+    "updated_at": "2021-11-15T11:11:50.286-07:00"
+  },
+  {
+    "id": "ccpc1gc2uu5yd9tdf",
+    "context_type": "CompoundLink",
+    "organization_id": "org13",
+    "key": "cmp_cp_2",
+    "label": "Thaw Count",
+    "config_definition": {
+      "type": "integer",
+      "label": "Thaw Count",
+      "editable": true
+    },
+    "created_at": "2021-11-15T11:11:50.286-07:00",
+    "updated_at": "2021-11-15T11:11:50.286-07:00"
+  },
+  {
+    "id": "ccpc1gc2v876hqgmu",
+    "context_type": "CompoundLink",
+    "organization_id": "org13",
+    "key": "cmp_cp_3",
+    "label": "Ferguson plot",
+    "config_definition": {
+      "type": "multi-choice",
+      "label": "Ferguson plot",
+      "editable": true,
+      "default": "Multiple KrC",
+      "options": [
+        {
+          "value": "Standard KrC",
+          "name": "Standard KrC"
+        },
+        {
+          "value": "Multiple KrC",
+          "name": "MultipleKrC"
+        },
+        {
+          "value": "With eukaryote",
+          "name": "With eukaryote"
+        }
+      ]
+    },
+    "created_at": "2021-11-15T11:44:13.555-07:00",
+    "updated_at": "2021-11-15T11:44:13.555-07:00"
+  },
+  {
+    "id": "ccpc1gbfaxdsutu3x",
+    "context_type": "CompoundLink",
+    "organization_id": "org13",
+    "key": "cmp_cp_4",
+    "label": "Solvent Id",
+    "config_definition": {
+      "type": "choice",
+      "label": "Solvent Id",
+      "default": "1234",
+      "editable": true,
+      "options": [
+        {
+          "name": "1234",
+          "value": "1234"
+        },
+        {
+          "name": "5632",
+          "value": "5632"
+        }
+      ]
+    }
+  }
+]

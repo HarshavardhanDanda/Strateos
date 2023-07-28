@@ -1,0 +1,123 @@
+@use 'main/global-imports' as *;
+
+.provision-selector {
+  position: relative;
+
+  .provision-to-container-list {
+    margin: $spacing--md 0;
+
+    .ref-provisions-container {
+      margin: $spacing--md 0;
+
+      .ref-name {
+        @include tx-typescale(-1);
+        display: inline-block;
+        border: 1px solid $black;
+        padding: $spacing--xxxs;
+      }
+
+      .ref-provisions {
+        padding: $spacing--md;
+
+        .provision {
+          display: flex;
+          padding: $spacing--xxxs;
+          margin: $spacing--xxxs 0;
+
+          .destination {
+            margin: 0 $spacing--xxxs;
+          }
+
+          .source {
+            margin: 0 $spacing--xxxs;
+          }
+        }
+      }
+    }
+  }
+
+  .provision-summary {
+    margin: $spacing--md 0;
+
+    .container-section {
+      margin: $spacing--md 0;
+
+      .container-provisions {
+        padding: $spacing--md;
+
+        .provision {
+          @include flex-justify-and-align(center, center);
+          border: 1px solid $black;
+          width: 200px;
+          height: 100px;
+
+          .destination {
+            padding: $spacing--xxxs;
+            margin: 0 $spacing--xxxs;
+
+            .name {
+              overflow-wrap: break-word;
+              margin-bottom: $spacing--xxxs;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .current-provision-spec {
+    .container-details {
+      display: block;
+    }
+
+    .provisions-summary {
+      margin-top: $spacing--md;
+
+      .container-provisions {
+        position: relative;
+        display: inline-flex;
+        margin: 0 $spacing--xxs $spacing--xlg;
+
+        .select-prompt {
+          position: absolute;
+          top: -$spacing--md;
+          font-weight: $font-weight-bold;
+        }
+
+        .edit-buttons {
+          margin-left: $spacing--xxs;
+
+          button {
+            position: absolute;
+            top: 0;
+          }
+
+          .editing {
+            color: $blue;
+          }
+        }
+
+        .container-provisions-summary {
+          dl {
+            dt {
+              width: $element-width-xxs;
+            }
+
+            dd {
+              margin-left: $element-width-xxs + $spacing--md;
+            }
+          }
+
+          .selectable {
+            cursor: pointer;
+            background: $yellow--60;
+
+            &:hover {
+              background: $yellow;
+            }
+          }
+        }
+      }
+    }
+  }
+}

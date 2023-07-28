@@ -1,0 +1,85 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+/*
+  Absolute position ensures that height properties will be inherited from the parent.
+  In this mixin, the `min-height: 100%` is ensured to be 100% of the parent, even if the bug below
+  is present in the target browser.
+  See https://bugs.webkit.org/show_bug.cgi?id=26559
+*/
+@mixin ensure-height-inheritance {
+  position: absolute;
+  x: 0;
+  y: 0;
+  min-height: 100%;
+}
+
+
+//  __________________________
+// |=Transcriptic=====Nav=Nav=|
+// | h1. Title                |
+// |                          |
+// | Tab1  Tab2  Tab3         |
+// |_----_____________________|
+// |                          |
+// |content                   |
+// |content                   |
+// |content                   |
+// |__________________________|
+.tabbed-page {
+  @include ensure-height-inheritance;
+  width: 100%;
+
+  .tabbed-header {
+    @include tx-box-shadow(light-shadow);
+    @include tx-z-index(relative, header-content);
+
+    background: $white;
+    padding: $secondary-chrome-padding $secondary-chrome-padding 0;
+
+    ul.nav-bar-horizontal {
+      margin-top: 20px;
+    }
+  }
+
+  .tabbed-content {
+    display: flex;
+    flex-direction: column;
+    position: relative; // A child panel-body can have absolute positioning
+    overflow-x: hidden;
+
+    &.no-padding {
+      padding: 0;
+      margin: 0;
+    }
+
+    &.full-width {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    &.hide-overflow {
+      overflow: hidden;
+    }
+
+    &.show-overflow.full-width  {
+      overflow: scroll;
+    }
+
+    &.seamless {
+      margin-top: 1px;
+    }
+
+    .panel-body.full-bleed {
+      position: absolute;
+      min-height: 100%;
+      min-width: 100%;
+    }
+  }
+}
+
+.tx-page {
+  @include ensure-height-inheritance;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}

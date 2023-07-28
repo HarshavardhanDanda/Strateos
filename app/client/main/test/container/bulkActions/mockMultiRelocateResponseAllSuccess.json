@@ -1,0 +1,27 @@
+{
+  "data": {
+    "attributes": {
+      "result_success": [
+        {
+          "id": "c1",
+          "status": "available",
+          "updated_at": "2023-04-05T23:59:41.147-07:00",
+          "label": "Sample relocation container 1",
+          "barcode": "bar1",
+          "location_id": "loc1",
+          "errors": null
+        },
+        {
+          "id": "c2",
+          "status": "available",
+          "updated_at": "2023-03-29T04:44:26.074-07:00",
+          "label": "Sample relocation container 2",
+          "barcode": "bar2",
+          "location_id": "loc1",
+          "errors": null
+        }
+      ],
+      "result_errors": []
+    }
+  }
+}

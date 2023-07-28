@@ -1,0 +1,26 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+
+.quick-launch-modal {
+  .modal-header {
+    .test-mode {
+      label {
+        span {
+          margin-left: $spacing--xxs;
+        }
+      }
+    }
+  }
+
+  .update-success {
+    .modal-body {
+       @include flex-justify-and-align(center, center);
+
+      .body-container {
+        @include flex-justify-and-align(center, center);
+        flex-direction: column;
+      }
+    }
+
+  }
+}

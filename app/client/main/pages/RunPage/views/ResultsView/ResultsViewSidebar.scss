@@ -1,0 +1,16 @@
+@use 'main/global-imports' as *;
+
+.result-view-sidebar {
+
+  &__collapsible-panel {
+    min-height: $spacing--lg;
+    padding-top: $spacing--xxxs;
+    border: 0;
+  }
+
+  &__download-button {
+    position: absolute;
+    top: pxToRem($spacing--lg);
+    right: pxToRem($spacing--xxxlg);
+  }
+}

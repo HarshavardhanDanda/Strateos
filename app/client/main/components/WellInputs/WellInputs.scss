@@ -1,0 +1,18 @@
+@use 'main/global-imports' as *;
+
+.well-inputs {
+  @include tx-layout__children(stack, sm);
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+
+  .clear-wells {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+
+  .row-height {
+    height: 7em;
+  }
+}

@@ -1,0 +1,40 @@
+// This is the css for pages still on the Rails asset pipeline. The pages still
+// on the asset pipeline are:
+// layouts/unauthenticated.html.erb
+
+// The goal is to ultimately move off the asset pipeline entirely. Please only
+// remove dependencies, do not add new ones. Do not move any shared resources
+// between this file and the bundled application into a new file either, the
+// goal is to have theses assets complelety separated from the bundled application.
+
+@use 'bootstrap-sass/assets/stylesheets/bootstrap/variables' as bootstrap_variables;
+@use 'bootstrap-sass/assets/stylesheets/bootstrap/mixins' as bootstrap_mixins;
+
+@use '@transcriptic/amino/dist/styling/amino-utilities';
+
+$font-path: ".";
+
+@use '@transcriptic/amino/dist/styling/typography/classes' with (
+    $font-path: "."
+);
+
+// Libraries
+@use 'bootstrap-variables';
+@use 'bootstrap-custom';
+
+// Amino Foundation and Component Styling
+@use '@transcriptic/amino/dist/amino_foundation';
+@use '@transcriptic/amino/dist/amino_components';
+
+// Web App mixins and variables
+@use '../../../app/client/main/mixins';
+@use '../../../app/client/main/variables';
+
+// useful functions and mixins
+@use 'legacy';
+
+@use 'error-explanation';
+@use 'authentication';
+@use 'login';
+@use 'login-form';
+@use 'unauthenticated';

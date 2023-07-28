@@ -1,0 +1,36 @@
+@use 'main/global-imports' as *;
+
+.well-tag {
+
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  cursor: pointer;
+  max-width: 100%;
+
+  &__prefix {
+    color: $black;
+    margin-right: $spacing--xxxs;
+  }
+
+  &__refname {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &__well-text {
+    flex-shrink: 0;
+
+    display: inline;
+    vertical-align: middle;
+  }
+}

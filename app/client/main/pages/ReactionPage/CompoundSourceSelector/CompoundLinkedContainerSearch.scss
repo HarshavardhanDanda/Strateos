@@ -1,0 +1,24 @@
+@use 'main/global-imports' as *;
+
+.container-results {
+  &__molecule {
+    height: 24px;
+  }
+
+  .amino-table__header {
+    .tx-checkbox__icon-container {
+      display: none;
+    }
+  }
+
+  .container-type {
+    display: flex;
+    flex-wrap: nowrap;
+
+    .baby-icon {
+      font-size: 24px;
+      margin-left: -10px;
+      color: $light-carbon;
+    }
+  }
+}

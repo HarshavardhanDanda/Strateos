@@ -1,0 +1,11 @@
+$dataset-black: #000000; // sass-lint:disable-line no-color-hex
+
+.zoomable-dataset {
+  &__dataset-container {
+    background-color: $dataset-black;
+  }
+
+  &__link-container {
+    text-align: right;
+  }
+}

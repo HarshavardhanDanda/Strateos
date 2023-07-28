@@ -1,0 +1,169 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use 'bootstrap-variables' as *;
+@use 'bootstrap-sass/assets/stylesheets/bootstrap/mixins' as *;
+@use '../../client/main/mixins' as *;
+
+$user-post-color:     $dark-gray;
+$operator-post-color: $tx-gold;
+$admin-post-color:    $red;
+
+.attachment-uploader {
+  &.add-post {
+    .files {
+      .file {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.add-post {
+  .author {
+    margin-bottom: $spacing--xxs;
+  }
+
+  .actions {
+    margin-top: $spacing--xxs;
+  }
+
+  .files {
+    margin: $spacing--xxs 0;
+  }
+
+  .placeholder {
+    color: $extra-dark-gray;
+  }
+
+  .btn-send {
+    margin-right: $spacing--xxs;
+  }
+
+  textarea {
+    @include tx-typescale(-1);
+    width: 100%;
+    border: 0;
+    background: transparent;
+    resize: none;
+    margin-bottom: -6px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.event.post,
+.add-post {
+  margin-bottom: $spacing--xxs;
+  padding: $spacing--xxs;
+  border-left: 3px solid transparent;
+  background-color: transparent;
+  cursor: text;
+
+  &.user {
+    border-left-color: $user-post-color;
+  }
+
+  &.operator {
+    border-left-color: $operator-post-color;
+  }
+
+  &.admin {
+    @include admin-stripes-grey-70;
+  }
+}
+
+.conversation {
+  @include tx-typescale(-1);
+  margin-top: $spacing--md;
+
+  .compose-admin-post {
+    margin-bottom: $spacing--md;
+  }
+
+  .compose-admin-post {
+    .nav {
+      margin-bottom: $spacing--xxs;
+    }
+  }
+
+  .compose-admin-post,
+  .post-container {
+    max-width: $element-width-md;
+    min-width: $element-width-sm;
+  }
+
+  .post-container {
+    @include size(max-content, auto);
+    position: relative;
+
+    .delete-icon {
+      $icon-size: $spacing--xlg;
+      position: absolute;
+      right: -$icon-size;
+      top: 0;
+      width: $icon-size;
+      height: $icon-size;
+      line-height: $icon-size;
+      text-align: center;
+      color: $dark-gray;
+      cursor: pointer;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+
+  .post,
+  .add-post {
+    .container {
+      font-weight: $font-weight-regular;
+      display: flex;
+      justify-content: flex-start;
+      margin-top: 0px;
+
+      .header {
+        margin: $spacing--xxs
+      }
+    }
+  }
+
+  .event {
+    .timestamp {
+      @include tx-typescale(-2);
+      margin-left: $spacing--xxs;
+      font-weight: $font-weight-light;
+      color: $carbon;
+    }
+
+    &.post {
+      .attachment {
+        @include tx-typescale(-2);
+        border: 1px solid $standard-gray;
+        padding: 2px 6px;
+        background: $extra-light-gray;
+        max-width: 75%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-top: 5px;
+
+        .size {
+          display: inline-block;
+          color: $dark-gray;
+        }
+
+        .name {
+          font-weight: $font-weight-bold;
+        }
+      }
+
+      .text {
+        word-break: break-word;
+        white-space: pre-wrap;
+        margin-left: $spacing--sm;
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <%= stylesheet_link_tag "application", :media => :all %>
+  </head>
+  <body>
+    <div class="chrome">
+      <div class="header-bar">
+        <div class="logo"></div>
+        <div class="navigation">
+          <div class="navigation-inner">
+            <div class="element">
+              <span>Authorization</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-page-content">
+        <%= render partial: "layouts/flash_messages" %>
+        <div id="oauth">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

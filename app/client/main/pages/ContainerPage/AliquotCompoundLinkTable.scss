@@ -1,0 +1,77 @@
+@use 'main/global-imports' as *;
+
+.aliquot-compound-link-table {
+
+  &__link-button {
+    padding-bottom: $spacing--xxs;
+    padding-right: $spacing--xxs;
+    display: inline;
+  }
+
+  &__button{
+    @include flex-justify-and-align(flex-end, center);
+  }
+
+  &__zero-state {
+    .zero-state {
+      width: 100%;
+    }
+  }
+
+  &__molecule {
+    height: 66px;
+  }
+
+  &__popover {
+    .molecule-viewer {
+      border: none;
+    }
+
+    .popover__content {
+      padding: 0;
+    }
+  }
+
+  &__popover-wrapper {
+    display: block;
+  }
+
+  &__remove-column {
+    width: 48px;
+  }
+
+  &__molecule-column {
+    text-align: center !important;
+  }
+
+  &__property-column {
+    min-width: 110px;
+  }
+
+  &__value-column {
+    min-width: 150px;
+  }
+}
+
+.aliquot-compound-link-table__row {
+  &:hover .aliquot-compound-link-table__remove-column,
+  &:hover .aliquot-compound-link-table__molecule-column {
+    background-color: $white;
+  }
+
+  &:nth-child(4n-3),
+  &:nth-child(4n-2) {
+    background-color: $extra-light-gray;
+
+    &:hover .aliquot-compound-link-table__remove-column,
+    &:hover .aliquot-compound-link-table__molecule-column {
+      background-color: $extra-light-gray;
+    }
+  }
+
+  .inplace-input {
+    .select {
+      padding-right: 0;
+    }
+  }
+}

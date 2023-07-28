@@ -1,0 +1,50 @@
+@use 'main/global-imports' as *;
+
+.manage-container-modal-wrapper{
+
+  .manage-container-modal {
+
+    &__search {
+      @include tx-layout__children(stack, xxxs);
+    }
+
+    &__footer {
+      justify-content: space-between
+    }
+
+    &__footer-text {
+      font-family: Atlas Grotesk;
+      padding: $spacing--md;
+    }
+
+    $manage_container_height: 500px;
+    .manage-container-content {
+      height: $manage_container_height;
+
+      .amino-table{
+        .amino-table__row.manage-containers-row--error{
+          background-color: $red--40 !important;
+          i.fa {
+            color: $red--80;
+          }
+        }
+      }
+    }
+  }
+
+  .modal-drawer{
+
+    .delete-container-drawer-message{
+      p {
+        padding-left: 13px;
+        color: $str-black;
+        font-size: 14px;
+      }
+    }
+  }
+
+}
+
+table.amino-table {
+  position: relative;
+}

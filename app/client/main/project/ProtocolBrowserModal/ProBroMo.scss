@@ -1,0 +1,10 @@
+.probromo {
+  .modal-body {
+    margin: 0;
+    padding: 0 15px !important; // React Modal specificity is too high
+    overflow: hidden;
+  }
+  section {
+    padding: 30px 15px;
+  }
+}

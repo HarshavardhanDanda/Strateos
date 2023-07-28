@@ -1,0 +1,33 @@
+@use 'main/global-imports' as *;
+
+.material-order-items {
+  &__footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__footer-item {
+    width: 15%;
+  }
+
+  &__footer-item-group {
+    width: 26%;
+  }
+
+  &__footer-item-emolecule {
+    width: 18%;
+  }
+
+  &__molecule {
+    height: $spacing--xxxlg;
+    &--clickable {
+      cursor: pointer;
+    }
+  }
+
+  &__name {
+    &--clickable {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use 'main/global-imports' as *;
+
+.data-object-lcmrm {
+    &__slash-icon {
+        color: $carbon--40;
+        font-size: medium;
+        align-self: center;
+    }
+
+    &__ratio-buttons {
+        margin-bottom: $spacing--xlg;
+    }
+
+    &__csv-table{
+        margin: $spacing--md 0px;
+    }
+}

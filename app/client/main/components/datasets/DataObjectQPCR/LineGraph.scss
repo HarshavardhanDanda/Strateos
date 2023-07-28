@@ -1,0 +1,17 @@
+.qpcr-linegraph {
+  position: relative;
+  width: 100%;
+
+  &__background,
+  &__foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &__svg {
+    position: relative;
+    width: 100%;
+  }
+}

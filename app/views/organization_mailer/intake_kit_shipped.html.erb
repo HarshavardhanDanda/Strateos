@@ -1,0 +1,46 @@
+<h3 align="center">Hello <%= @intake_kit.organization.name %>, your intake kit order is on its way</h3>
+<!--this image source has to be changed to http url-->
+<img alt="shipping-image" src="https://s3.amazonaws.com/static-public.transcriptic.com/email/run_status/intake_kit_shipment.png" height="150" width="150" style="display:block;border:none;margin:auto" align="center" />
+<table align="center" style="width: 90%; border: 1px solid #9EA3A8; border-radius: 5px; border-spacing: 0; border-collapse: separate">
+  <tr>
+    <th style="padding: 10px; text-align: left; border-bottom: 1px solid #9EA3A8">Summary</th>
+    <th style="padding: 10px; text-align: left; border-bottom: 1px solid #9EA3A8">Shipping address</th>
+  </tr>
+  <tr>
+    <td style="padding: 15px; line-height: 1.5; text-align: left">
+      Order # :<%= @intake_kit.tracking_number %><br />
+      Order Date:<%= DateTime.parse(@intake_kit.created_at.to_s).strftime("%B %d, %Y") %><br />
+      Order Total: $<%=InvoiceItem.find(@intake_kit.invoice_item_id)&.charge&.to_f %>
+    </td>
+    <td style="padding: 15px; line-height: 1.5; text-align: left">
+      <% address = Address.find(@intake_kit.address_id) %>
+      <% if address.present? %>
+        <% unless address.attention.nil? %>
+          <%= address.attention  %><br />
+        <% end %>
+        <%=address.street %>,<br />
+        <%=address.city%>, <%= address.country %> <%= address.zipcode %>
+      <% end %>
+    </td>
+  </tr>
+</table>
+<div style="text-align: center; margin-top: 20px">
+  <div>
+    <%root_path = Rails.application.routes.default_url_options %>
+    <%organization = Organization.find(@intake_kit.organization_id) %>
+    <a style="display:block; width:150px; font-weight: bold; padding:15px; text-decoration:none; background-color: #414C58; color: white; border-radius: 5px" href= <%=root_path[:protocol] %>://<%=root_path[:host] %>/<%=organization.subdomain %>/shipments/intake_kits?in_transit_to_you=true target="_blank">
+      View your order
+    </a>
+  </div>
+</div>
+<table align="center" style="width: 90%; margin-top: 15px; border-collapse: separate; border-spacing: 0">
+  <tr>
+    <th style="margin-bottom: 5px; float: left">Notes from Strateos operator</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #9EA3A8; border-radius: 5px; margin: 5px; padding: 15px; line-height: 1.8; word-break: break-word; text-align: left">
+      <%notes = IntakeKit.find(@intake_kit.id)&.notes %>
+      <%=notes %>
+    </td>
+  </tr>
+</table>

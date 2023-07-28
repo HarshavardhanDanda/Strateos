@@ -1,0 +1,14 @@
+@use 'main/global-imports' as *;
+
+.bsl-label {
+  color: $carbon;
+  white-space: nowrap;
+
+  &.bsl-2 {
+    color: $purple--80;
+  }
+
+  &--invert {
+    color: $white;
+  }
+}

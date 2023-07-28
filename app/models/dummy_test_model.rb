@@ -1,0 +1,2 @@
+class DummyTestModel < ApplicationRecord
+end

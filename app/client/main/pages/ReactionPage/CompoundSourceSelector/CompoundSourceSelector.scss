@@ -1,0 +1,8 @@
+.container-selector {
+   display: contents;
+   
+   &__register {
+      display: flex;
+      flex-direction: row-reverse;
+   }
+}

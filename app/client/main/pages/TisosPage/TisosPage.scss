@@ -1,0 +1,28 @@
+@use 'main/global-imports' as *;
+
+.tisos-page {
+  &__container-actions {
+    display: flex;
+    flex-direction: column;
+
+    @include tx-layout__children(stack, xxxs);
+
+  }
+
+  &__action-button{
+    margin: 0;
+    padding: $spacing--xxxs 0;
+  }
+  
+  &__bulk-action-button{
+   margin-right:$spacing--sm ;
+  }
+
+  &__bulk-action-container{
+    float: right;
+   }
+
+   &__table-name{
+    display: inline-block;
+   }
+}

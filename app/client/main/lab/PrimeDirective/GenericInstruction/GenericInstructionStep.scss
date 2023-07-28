@@ -1,0 +1,26 @@
+@use 'main/global-imports' as *;
+
+.generic-instruction-step {
+
+    display: flex;
+    margin-bottom: $spacing--xxs;
+    flex: 1;
+    border: 1px solid #C2C4C6;
+    color: #445464;
+
+    &__head {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__title-index {
+        margin-right: $spacing--xxxs;
+    }
+}

@@ -1,0 +1,23 @@
+@use 'main/global-imports' as *;
+
+.mix-group {
+  @include tx-layout__children(inline, xxs);
+  display: flex;
+  flex-direction: row;
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__target {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__target-data {
+    display: flex;
+    flex-direction: row;
+    @include tx-layout__children(inline, sm);
+  }
+}

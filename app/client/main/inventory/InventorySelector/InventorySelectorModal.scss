@@ -1,0 +1,7 @@
+@use 'main/global-imports' as *;
+
+.inventory-selector-modal{
+    &__banner{
+        padding-bottom: $spacing--xlg;
+    }
+}

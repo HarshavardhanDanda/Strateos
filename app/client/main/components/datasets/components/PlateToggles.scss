@@ -1,0 +1,76 @@
+@use 'main/global-imports' as *;
+
+.tx-plate-toggles {
+  flex-basis: 100px;
+  flex-grow: 1;
+
+  margin-left: 20px;
+  max-height: 250px;
+  max-width: 80%;
+
+  &__list {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type: none;
+    text-align: left;
+  }
+
+  &__toggle {
+    cursor: pointer;
+    font-weight: 400;
+    height: 26px;
+    margin: 0.4em 20px 0.4em 0;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    // sass-lint:disable no-disallowed-properties
+    box-shadow: 0 0 0 tx-transparentize($black, full);
+    // sass-lint:enable no-disallowed-properties
+    width: 87px;
+
+    &--selected {
+      @include tx-box-shadow(dark-shadow);
+      font-weight: $font-weight-semibold;
+
+      .tx-plate-toggles__indicator,
+      &:hover .tx-plate-toggles__indicator {
+        width: 200px;
+        height: 200px;
+        transition: width 0.3s, height 0.3s;
+      }
+
+      .tx-plate-toggles__label {
+        color: $white;
+      }
+    }
+
+    &:not(.tx-plate-toggles__toggle--selected):hover .tx-plate-toggles__indicator {
+      height: 21px;
+      width: 21px;
+    }
+  }
+
+  &__label {
+    @include tx-z-index(relative, base-content, 1);
+    line-height: 26px;
+    margin-left: 27px;
+    transition: color 0.2s;
+  }
+
+  &__indicator {
+    @include tx-box-shadow(dark-shadow);
+    @include tx-border-radius(full);
+    @include tx-z-index(absolute, base-content);
+
+    border: 2px solid $white;
+    height: 17px;
+    left: 12px;
+    margin-top: 0.25em;
+    top: 9px;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s, height 0.2s;
+    width: 17px;
+  }
+}

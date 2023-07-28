@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "shortname": {
+      "type": "string"
+    },
+    "well_count": {
+      "type": "number"
+    },
+    "col_count": {
+      "type": "number"
+    },
+    "is_tube": {
+      "type": "boolean"
+    },
+    "well_depth_mm": {
+      "type": "number"
+    },
+    "well_volume_ul": {
+      "type": "number"
+    },
+    "dead_volume_ul": {
+      "type": "number"
+    },
+    "safe_min_volume_ul": {
+      "type": "number"
+    },
+    "height_mm": {
+      "type": "number"
+    },
+    "capabilities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "cost_each": {
+      "type": "number"
+    },
+    "acceptable_lids": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "manual_execution": {
+      "type": "boolean"
+    },
+    "vendor": {
+      "type": "string"
+    },
+    "catalog_number": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "shortname",
+    "is_tube",
+    "well_count",
+    "well_depth_mm",
+    "well_volume_ul"
+  ],
+  "additionalProperties": false
+}

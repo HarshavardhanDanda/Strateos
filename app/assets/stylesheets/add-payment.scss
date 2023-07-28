@@ -1,0 +1,8 @@
+@use '../../client/main/mixins' as *;
+
+.po-info-editor {
+  &__address {
+    @include flex-justify-and-align(center, center);
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,75 @@
+@use "sass:color";
+@use 'main/global-imports' as *;
+
+.resource-card {
+  &__resource-name {
+    color: $black--90;
+    font-size: 12px;
+    font-weight: bold;
+    overflow: hidden;
+    width: $large-input-width;
+    text-overflow: ellipsis;
+    max-height: 18px;
+    background-color: $white;
+    white-space: nowrap;
+  }
+
+  &__actions-container {
+    position: absolute;
+    top: $spacing--xxs;
+    right: $spacing--xxs;
+  }
+
+  &__kind {
+    padding-left: 50px;
+  }
+
+  &__container {
+    display: flex;
+    padding-top: 13px;
+    margin-bottom: 0px;
+  }
+  
+  &__resource-name-icon {
+    padding-right: $spacing--xxs;
+    font-size: 18px;
+    color: $black--90;
+  }
+
+  &__card-name {
+    display: inline-flex;
+    align-items: center;
+    height: 25px;
+  }
+
+  &__card {
+    max-width: $max-width;
+    height: 244px;
+    margin-bottom: $spacing--md;
+    cursor: pointer;
+  }
+
+  &__sensitivity {
+    font-size: 18px;
+    padding: $spacing--xxxs;
+    color: color.adjust($extra-light-carbon, $lightness: -20%);
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+  }
+
+  .divider--horz {
+    margin-top: 2px;
+    margin-bottom: 13px;;
+  }
+
+  .kv-list--top-bottom .kv-list__value {
+    margin-bottom: $spacing--xxs;
+  }
+
+  .aminor-hexagon-double:before {
+    margin: auto;
+  }
+}

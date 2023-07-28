@@ -1,0 +1,80 @@
+@use 'main/global-imports' as *;
+
+.run-submit-modal {
+  &-empty-banner {
+    height: 54px;
+  }
+
+  .run-submit-modal_workcell-based-options {
+    height: 150px;
+    padding-top: 30px;
+
+    .workcell-based-options_header {
+      padding: 10px 10px 10px 0;
+    }
+
+    .tx-checkbox {
+      padding-bottom: 5px;
+    }
+  }
+
+  .run-submit-modal_workcell-select {
+    .select {
+      width: 184px;
+    }
+
+    padding-bottom: 10px;
+  }
+
+  .modal-header {
+    padding: $spacing--xlg $spacing--xlg 0 $spacing--xlg;
+  }
+  .run-submit-modal__body {
+    padding: $spacing--xxs $spacing--xlg $spacing--xlg $spacing--xlg;
+  }
+
+  .run-submit-modal_run-table {
+    margin-top: 10px;
+  }
+
+  .run-submit-modal_run-table .amino-table__row .amino-table__cell:first-child {
+    width: 40%;
+  }
+
+  .run-submit-modal_run-table .amino-table__row .amino-table__cell:nth-child(4n) {
+    width: 90px;
+  }
+
+  .run-submit-modal_mcx-options {
+    display: flex;
+  }
+
+  .col-0 select.select-input{
+    margin-left: 10px;
+    width: 85%;
+  }
+
+  .col-1 .input-with-units {
+    margin-left: 10px;
+    width: 85%;
+  }
+
+  .col-0 {
+    width: 50%;
+  }
+
+  .col-1 {
+    width: 50%;
+  }
+
+  &__remove-button {
+    margin: auto;
+  }
+
+  &__remove-button--disabled {
+    margin: auto;
+    cursor: not-allowed;
+  }
+
+
+}

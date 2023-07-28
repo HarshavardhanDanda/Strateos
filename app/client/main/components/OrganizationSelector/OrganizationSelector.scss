@@ -1,0 +1,160 @@
+@use 'main/global-imports' as *;
+
+$element-pad: 10px;
+
+.organization-selector {
+  position: relative;
+  padding-left: $spacing--sm;
+  padding-right: $spacing--sm;
+  display: flex;
+  align-items: center;
+  height: 50px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__target {
+    @include tx-layout__children(inline, xxxs);
+
+    display: inline-block;
+    text-align: right;
+  }
+
+  &__organization-pic {
+    @include tx-border-radius(medium);
+    height: 40px;
+    width: 40px;
+  }
+
+  &__anchor-tag {
+    opacity: .6;
+    vertical-align: super;
+    font-size: 14px;
+  }
+
+  &__profile {
+    &--details {
+      opacity: 0.6;
+    }
+  }
+
+  &__profile_name {
+    font-size: 14px
+  }
+
+  &__logout-row {
+    @include tx-spacing__inset(squish, md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    opacity: .6;
+  }
+
+  &__org-name {
+    padding-left: 0px;
+  }
+
+  &__org-defaults {
+    padding-right: 0px !important;
+  }
+
+  &__org-defaults > div {
+    display: flex;
+    align-items: center;
+  }
+
+  &__org {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -1px 0px rgba(138, 159, 182, 0.15);
+    padding: 15px 15px;
+  }
+
+  &__hover{
+    a{
+      &:hover {    
+        border-bottom: 2px solid $green--70;
+      }
+    }
+
+    &:hover {
+      a { 
+        color: $white; 
+        font-weight: bold;
+        opacity:1;
+      }
+    }
+
+
+  }
+
+  &__current-organization-pic {
+    @include tx-border-radius(medium);
+    height: 22px;
+    width: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    margin-bottom: 3px;
+  }
+
+  &__dropdown {
+    @include tx-typescale(-1);
+    @include tx-border-radius(none, none, medium, medium);
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: $header-bar-height;
+    right: -$element-pad;
+    width: 320px;
+    line-height: normal;
+    background-color: $hover-navigation-item-color;
+    max-height: 500px;
+
+    .row:last-child {
+      .col-md-10 {
+        left: 7px;
+      }
+    }
+  }
+
+  &__account-actions {
+    @include tx-layout__children(inline, sm);
+    display: flex;
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    @include tx-spacing__inset(squish, md);
+
+    background-color: $hover-navigation-item-color;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  &__account-action {
+    height: 100%;
+  }
+
+  &__org-list {
+    @include tx-spacing__inset(squish, sm);
+    flex-grow: 1;
+
+    overflow: auto;
+    padding-bottom: 0px;    
+  }
+
+  &__org-header-text {
+    margin-top: 15px
+  }
+
+  &__org-actions {
+    @include tx-layout__children(inline, xxxs);
+    float: right;
+  }
+}

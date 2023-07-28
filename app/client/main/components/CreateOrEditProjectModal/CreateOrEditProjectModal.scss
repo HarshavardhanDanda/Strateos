@@ -1,0 +1,15 @@
+@use 'main/global-imports' as *;
+
+.create-or-edit-project-modal {
+    display: flex;
+    flex-direction: row;
+    @include tx-layout__children(stack, md);
+    &__implementation-toggle {
+        flex-grow: 1;
+    }
+
+    &__implementation-toggle-label {
+        flex-grow: 14;
+        padding-bottom: 10px;
+    }
+}

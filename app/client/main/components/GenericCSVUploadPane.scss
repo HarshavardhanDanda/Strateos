@@ -1,0 +1,9 @@
+@use '@transcriptic/amino/dist/styling/spacing/_utilities' as *;
+
+.csv-upload-pane {
+  &__dragdrop-buttons {
+    display: flex;
+    justify-content: end;
+    margin-bottom: $spacing--sm;
+  }
+}

@@ -1,0 +1,21 @@
+@use 'main/global-imports' as *;
+
+// Patch to fix scrolling on Admin App only while enabling IE compatibility on Main App simultaneously
+// TODO: Remove this once Admin pages have been refactored.
+.admin-app {
+  .tabbed-page .tabbed-content {
+    overflow: scroll !important; //sass-lint:disable-line no-important
+  }
+}
+
+.panel.panel-body {
+  background-color: $black--10;
+  box-shadow: none;
+  border: none;
+  padding: 0;
+}
+
+.panel.row {
+  margin-right: 0;
+  margin-left: 0;
+}

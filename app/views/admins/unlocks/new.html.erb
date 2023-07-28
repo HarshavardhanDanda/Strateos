@@ -1,0 +1,21 @@
+<h1 class="unauthenticated-title">Need to unlock an admin?</h1>
+
+<p class="tx-type--secondary">
+  How did you get locked out in the first place?
+</p>
+
+<form accept-charset="UTF-8" action="/admins/unlock" id="resend_unlock_form" method="post">
+  <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" />
+    <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Admin email</label>
+    <input type="email" class="form-control" name="admin[email]" placeholder="transcriptron@strateos.com"
+           autofocus=true>
+  </div>
+
+  <div class="form-actions">
+    <button class="btn btn-default admin" name="button" type="submit">Re-send admin unlock</button>
+  </div>
+</form>

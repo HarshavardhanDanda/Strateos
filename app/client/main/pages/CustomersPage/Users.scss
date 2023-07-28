@@ -1,0 +1,8 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.tx-users {
+  &__search-bar {
+    width: 300px;
+    margin-bottom: $spacing--sm;
+  }
+}

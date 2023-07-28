@@ -1,0 +1,52 @@
+<%= create_gmail_goto_action("View Run", "View Cancelled Run", organization_project_run_url(@run.project.organization.subdomain, @run.project.id, @run)) %>
+</script>
+
+<table border="0" cellpadding="0" cellspacing="0" width="445" align="center" style="margin:auto" class="fullwidth">
+
+  <tr>
+    <td class="content" style="padding:0 0 30px 0">
+      <p style="text-align:center;font-size:17px;color:#0E202E;line-height:160%;margin:0;padding:0;letter-spacing:0.3px" class="source light">
+        Hello <%= @run.organization.name %>. Your run
+        <span style="font-style:italic"><%= @run.display_name %></span>
+        has been cancelled. You will not be charged for this run.
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <img src="http://static-public.transcriptic.com/email/run_status/status_has-samples_run-cancelled@2x.png" width="227" height="69" style="display:block;border:none;margin:auto" align="center" />
+    </td>
+  </tr>
+
+  <tr>
+    <td style="height:50px"></td>
+  </tr>
+
+
+  <tr>
+    <td align="center" style="padding:0 0 20px 0">
+      <a href="<%= organization_project_url(@run.project.organization.subdomain, @run.project.id) %>">
+        <img src="http://static-public.transcriptic.com/email/run_status/launch-new-run-btn@2x.png" width="250" height="40" style="display:block;margin:auto;border:none" align="center" />
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" style="padding:0 0 20px 0">
+      <a href="mailto:support@strateos.com">
+        <img src="http://static-public.transcriptic.com/email/run_status/contact-support-btn@2x.png" width="250" height="40" style="display:block;margin:auto;border:none" align="center" />
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center" style="padding:0 0 20px 0">
+      <a href="<%= organization_project_run_url(@run.project.organization.subdomain, @run.project.id, @run) %>" class="source" style="font-size:15px;color:hsl(205,  73%, 60%)">
+        View Cancelled Run
+      </a>
+    </td>
+  </tr>
+
+
+</table>

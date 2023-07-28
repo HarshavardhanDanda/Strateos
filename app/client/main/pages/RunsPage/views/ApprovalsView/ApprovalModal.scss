@@ -1,0 +1,43 @@
+@use 'main/global-imports' as *;
+
+.run-approval-modal-wrapper {
+   /* enable overflow for date time picker rendering outside of modal */
+  overflow: visible;
+
+  .run-approval{
+    .schedule {
+      margin-top: $spacing--xxs;
+    }
+
+    .add-device {
+      float: right;
+
+      &__margin-top {
+        margin-top: $spacing--md;
+      }
+    }
+    
+    .calendar-container {
+      margin-top: $spacing--xxxs;
+      height: 400px;
+
+      .event-details {
+        min-height: 0 !important;
+
+        &__footer {
+          padding-top: 0px;
+        }
+      }
+
+      .time-grid-event  {
+        p {
+          color: $black !important;
+        }
+      }
+    }
+
+  }
+
+}
+
+

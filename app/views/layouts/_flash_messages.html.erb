@@ -1,0 +1,26 @@
+<%# When we don't want to show one of devise's flashes/notices/alerts, we simply set the flash text to the empty string,
+     which is why you see the checks to notice.length, etc, below. %>
+<% if notice && notice.length > 0 %>
+  <div class="authentication__alert alert alert-success alert-dismissable" data-alert="true">
+    <a class="close" data-dismiss="alert" onclick="removeAlertMessage()">×</a>
+    <%=raw notice %>
+  </div>
+<% end %>
+<% if alert && alert.length > 0 %>
+  <div class="authentication__alert alert alert-danger alert-dismissable" data-alert="true">
+    <a class="close" data-dismiss="alert" onclick="removeAlertMessage()">×</a>
+    <%=raw alert %>
+  </div>
+<% end %>
+<% if flash[:error] && flash[:error].length > 0 %>
+  <div class="authentication__alert alert alert-danger alert-dismissable" data-alert="true">
+    <a class="close" data-dismiss="alert" onclick="removeAlertMessage()">×</a>
+    <%=raw flash[:error] %>
+  </div>
+<% end %>
+
+<script>
+  function removeAlertMessage() {
+    document.getElementsByClassName("alert")[0].remove();
+  }
+</script>

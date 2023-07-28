@@ -1,0 +1,2954 @@
+{
+    "0": {
+        "sample_name": "W000124518_001",
+        "data_file_name": "HDAC6_W000124518_0329.d",
+        "acquisition_timestamp": 1646587500,
+        "well_name": "a1",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 52105
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 99085
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 824
+        }
+    },
+    "1": {
+        "sample_name": "W000124518_002",
+        "data_file_name": "HDAC6_W000124518_0330.d",
+        "acquisition_timestamp": 1646587560,
+        "well_name": "a2",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 56024
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.56,
+            "area": 102312
+        },
+        "h3k9-product": {
+            "rt": 0.564,
+            "area": 812
+        }
+    },
+    "2": {
+        "sample_name": "W000124518_003",
+        "data_file_name": "HDAC6_W000124518_0331.d",
+        "acquisition_timestamp": 1646587620,
+        "well_name": "a3",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 51894
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.56,
+            "area": 94735
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 960
+        }
+    },
+    "3": {
+        "sample_name": "W000124518_004",
+        "data_file_name": "HDAC6_W000124518_0332.d",
+        "acquisition_timestamp": 1646587680,
+        "well_name": "a4",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 48687
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.56,
+            "area": 89360
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 1351
+        }
+    },
+    "4": {
+        "sample_name": "W000124518_005",
+        "data_file_name": "HDAC6_W000124518_0333.d",
+        "acquisition_timestamp": 1646587740,
+        "well_name": "a5",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 49230
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.56,
+            "area": 91987
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 2845
+        }
+    },
+    "5": {
+        "sample_name": "W000124518_006",
+        "data_file_name": "HDAC6_W000124518_0334.d",
+        "acquisition_timestamp": 1646587800,
+        "well_name": "a6",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 51018
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.56,
+            "area": 96726
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 6211
+        }
+    },
+    "6": {
+        "sample_name": "W000124518_007",
+        "data_file_name": "HDAC6_W000124518_0335.d",
+        "acquisition_timestamp": 1646587860,
+        "well_name": "a7",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 62330
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.56,
+            "area": 116077
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 18858
+        }
+    },
+    "7": {
+        "sample_name": "W000124518_008",
+        "data_file_name": "HDAC6_W000124518_0336.d",
+        "acquisition_timestamp": 1646587980,
+        "well_name": "a8",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 58445
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 102234
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 46977
+        }
+    },
+    "8": {
+        "sample_name": "W000124518_009",
+        "data_file_name": "HDAC6_W000124518_0337.d",
+        "acquisition_timestamp": 1646588040,
+        "well_name": "a9",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 58022
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 90668
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 94470
+        }
+    },
+    "9": {
+        "sample_name": "W000124518_010",
+        "data_file_name": "HDAC6_W000124518_0338.d",
+        "acquisition_timestamp": 1646588100,
+        "well_name": "a10",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 51121
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 76537
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 171256
+        }
+    },
+    "10": {
+        "sample_name": "W000124518_011",
+        "data_file_name": "HDAC6_W000124518_0339.d",
+        "acquisition_timestamp": 1646588160,
+        "well_name": "a11",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 61216
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 84178
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 227438
+        }
+    },
+    "11": {
+        "sample_name": "W000124518_012",
+        "data_file_name": "HDAC6_W000124518_0340.d",
+        "acquisition_timestamp": 1646588220,
+        "well_name": "a12",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 56520
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 78061
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 221036
+        }
+    },
+    "12": {
+        "sample_name": "W000124518_013",
+        "data_file_name": "HDAC6_W000124518_0341.d",
+        "acquisition_timestamp": 1646588280,
+        "well_name": "a13",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 60230
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 113712
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 7508
+        }
+    },
+    "13": {
+        "sample_name": "W000124518_014",
+        "data_file_name": "HDAC6_W000124518_0342.d",
+        "acquisition_timestamp": 1646588340,
+        "well_name": "a14",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 63229
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.56,
+            "area": 117328
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 11410
+        }
+    },
+    "14": {
+        "sample_name": "W000124518_015",
+        "data_file_name": "HDAC6_W000124518_0343.d",
+        "acquisition_timestamp": 1646588400,
+        "well_name": "a15",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 61458
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 109575
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 23776
+        }
+    },
+    "15": {
+        "sample_name": "W000124518_016",
+        "data_file_name": "HDAC6_W000124518_0344.d",
+        "acquisition_timestamp": 1646588460,
+        "well_name": "a16",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 44058
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 64998
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 30248
+        }
+    },
+    "16": {
+        "sample_name": "W000124518_017",
+        "data_file_name": "HDAC6_W000124518_0345.d",
+        "acquisition_timestamp": 1646588520,
+        "well_name": "a17",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 60901
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 92765
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 83003
+        }
+    },
+    "17": {
+        "sample_name": "W000124518_018",
+        "data_file_name": "HDAC6_W000124518_0346.d",
+        "acquisition_timestamp": 1646588580,
+        "well_name": "a18",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 60364
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 87971
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 143523
+        }
+    },
+    "18": {
+        "sample_name": "W000124518_019",
+        "data_file_name": "HDAC6_W000124518_0347.d",
+        "acquisition_timestamp": 1646588640,
+        "well_name": "a19",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 54805
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 71574
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 160553
+        }
+    },
+    "19": {
+        "sample_name": "W000124518_020",
+        "data_file_name": "HDAC6_W000124518_0348.d",
+        "acquisition_timestamp": 1646588760,
+        "well_name": "a20",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 62006
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 85460
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 224847
+        }
+    },
+    "20": {
+        "sample_name": "W000124518_021",
+        "data_file_name": "HDAC6_W000124518_0349.d",
+        "acquisition_timestamp": 1646588820,
+        "well_name": "a21",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 65537
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 82414
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 233795
+        }
+    },
+    "21": {
+        "sample_name": "W000124518_022",
+        "data_file_name": "HDAC6_W000124518_0350.d",
+        "acquisition_timestamp": 1646588880,
+        "well_name": "a22",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 64796
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 83269
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 232593
+        }
+    },
+    "22": {
+        "sample_name": "W000124518_023",
+        "data_file_name": "HDAC6_W000124518_0351.d",
+        "acquisition_timestamp": 1646588940,
+        "well_name": "a23",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 67121
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 86826
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 228580
+        }
+    },
+    "23": {
+        "sample_name": "W000124518_024",
+        "data_file_name": "HDAC6_W000124518_0352.d",
+        "acquisition_timestamp": 1646589000,
+        "well_name": "a24",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 68846
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 87542
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 226010
+        }
+    },
+    "24": {
+        "sample_name": "W000124518_025",
+        "data_file_name": "HDAC6_W000124518_0353.d",
+        "acquisition_timestamp": 1646589060,
+        "well_name": "b1",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 52777
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 86193
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 3231
+        }
+    },
+    "25": {
+        "sample_name": "W000124518_026",
+        "data_file_name": "HDAC6_W000124518_0354.d",
+        "acquisition_timestamp": 1646589120,
+        "well_name": "b2",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 56195
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 102243
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 2071
+        }
+    },
+    "26": {
+        "sample_name": "W000124518_027",
+        "data_file_name": "HDAC6_W000124518_0355.d",
+        "acquisition_timestamp": 1646589180,
+        "well_name": "b3",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 56998
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 93580
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 28269
+        }
+    },
+    "27": {
+        "sample_name": "W000124518_028",
+        "data_file_name": "HDAC6_W000124518_0356.d",
+        "acquisition_timestamp": 1646589240,
+        "well_name": "b4",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 55555
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 92163
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 45217
+        }
+    },
+    "28":  {
+        "sample_name": "W000124518_029",
+        "data_file_name": "HDAC6_W000124518_0357.d",
+        "acquisition_timestamp": 1646589300,
+        "well_name": "b5",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 56726
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 82854
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 119946
+        }
+    },
+    "29": {
+        "sample_name": "W000124518_030",
+        "data_file_name": "HDAC6_W000124518_0358.d",
+        "acquisition_timestamp": 1646589360,
+        "well_name": "b6",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 59145
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 76040
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 125951
+        }
+    },
+    "30": {
+        "sample_name": "W000124518_031",
+        "data_file_name": "HDAC6_W000124518_0359.d",
+        "acquisition_timestamp": 1646589420,
+        "well_name": "b7",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 55865
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 73299
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 162283
+        }
+    },
+    "31": {
+        "sample_name": "W000124518_032",
+        "data_file_name": "HDAC6_W000124518_0360.d",
+        "acquisition_timestamp": 1646589480,
+        "well_name": "b8",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 57248
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 71079
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 207464
+        }
+    },
+    "32": {
+        "sample_name": "W000124518_033",
+        "data_file_name": "HDAC6_W000124518_0361.d",
+        "acquisition_timestamp": 1646589600,
+        "well_name": "b9",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 54968
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 63642
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 187078
+        }
+    },
+    "33": {
+        "sample_name": "W000124518_034",
+        "data_file_name": "HDAC6_W000124518_0362.d",
+        "acquisition_timestamp": 1646589660,
+        "well_name": "b10",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 54642
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 66095
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 199595
+        }
+    },
+    "34": {
+        "sample_name": "W000124518_035",
+        "data_file_name": "HDAC6_W000124518_0363.d",
+        "acquisition_timestamp": 1646589720,
+        "well_name": "b11",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 61912
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 72962
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 214038
+        }
+    },
+    "35": {
+        "sample_name": "W000124518_036",
+        "data_file_name": "HDAC6_W000124518_0364.d",
+        "acquisition_timestamp": 1646589780,
+        "well_name": "b12",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 59460
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 70410
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 210789
+        }
+    },
+    "46": {
+        "sample_name": "W000124518_047",
+        "data_file_name": "HDAC6_W000124518_0365.d",
+        "acquisition_timestamp": 1646589840,
+        "well_name": "b23",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 67973
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 77770
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 233030
+        }
+    },
+    "47": {
+        "sample_name": "W000124518_048",
+        "data_file_name": "HDAC6_W000124518_0366.d",
+        "acquisition_timestamp": 1646589900,
+        "well_name": "b24",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 68293
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 81783
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 230208
+        }
+    },
+    "48": {
+        "sample_name": "W000124518_049",
+        "data_file_name": "HDAC6_W000124518_0367.d",
+        "acquisition_timestamp": 1646589960,
+        "well_name": "c1",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 61759
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 99675
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 3690
+        }
+    },
+    "49": {
+        "sample_name": "W000124518_050",
+        "data_file_name": "HDAC6_W000124518_0368.d",
+        "acquisition_timestamp": 1646590020,
+        "well_name": "c2",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 61941
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 99903
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 2102
+        }
+    },
+    "50": {
+        "sample_name": "W000124518_051",
+        "data_file_name": "HDAC6_W000124518_0369.d",
+        "acquisition_timestamp": 1646590080,
+        "well_name": "c3",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 61124
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 89375
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 23937
+        }
+    },
+    "51": {
+        "sample_name": "W000124518_052",
+        "data_file_name": "HDAC6_W000124518_0370.d",
+        "acquisition_timestamp": 1646590140,
+        "well_name": "c4",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 55791
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 75390
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 40902
+        }
+    },
+    "52": {
+        "sample_name": "W000124518_053",
+        "data_file_name": "HDAC6_W000124518_0371.d",
+        "acquisition_timestamp": 1646590200,
+        "well_name": "c5",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 55900
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 75905
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 77714
+        }
+    },
+    "53": {
+        "sample_name": "W000124518_054",
+        "data_file_name": "HDAC6_W000124518_0372.d",
+        "acquisition_timestamp": 1646590260,
+        "well_name": "c6",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 53487
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 62799
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 132639
+        }
+    },
+    "54": {
+        "sample_name": "W000124518_055",
+        "data_file_name": "HDAC6_W000124518_0373.d",
+        "acquisition_timestamp": 1646590320,
+        "well_name": "c7",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 54170
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 67336
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 185565
+        }
+    },
+    "55": {
+        "sample_name": "W000124518_056",
+        "data_file_name": "HDAC6_W000124518_0374.d",
+        "acquisition_timestamp": 1646590440,
+        "well_name": "c8",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 55136
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 62058
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 193391
+        }
+    },
+    "56": {
+        "sample_name": "W000124518_057",
+        "data_file_name": "HDAC6_W000124518_0375.d",
+        "acquisition_timestamp": 1646590500,
+        "well_name": "c9",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 48385
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 62283
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 198049
+        }
+    },
+    "57": {
+        "sample_name": "W000124518_058",
+        "data_file_name": "HDAC6_W000124518_0376.d",
+        "acquisition_timestamp": 1646590560,
+        "well_name": "c10",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 51071
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 59238
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 189361
+        }
+    },
+    "58": {
+        "sample_name": "W000124518_059",
+        "data_file_name": "HDAC6_W000124518_0377.d",
+        "acquisition_timestamp": 1646590620,
+        "well_name": "c11",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 51989
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 60641
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 207321
+        }
+    },
+    "59": {
+        "sample_name": "W000124518_060",
+        "data_file_name": "HDAC6_W000124518_0378.d",
+        "acquisition_timestamp": 1646590680,
+        "well_name": "c12",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 47963
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 59490
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 184795
+        }
+    },
+    "70": {
+        "sample_name": "W000124518_071",
+        "data_file_name": "HDAC6_W000124518_0379.d",
+        "acquisition_timestamp": 1646590740,
+        "well_name": "c23",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 58935
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 72476
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 227975
+        }
+    },
+    "71": {
+        "sample_name": "W000124518_072",
+        "data_file_name": "HDAC6_W000124518_0380.d",
+        "acquisition_timestamp": 1646590800,
+        "well_name": "c24",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 58479
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 73023
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 214879
+        }
+    },
+    "72": {
+        "sample_name": "W000124518_073",
+        "data_file_name": "HDAC6_W000124518_0381.d",
+        "acquisition_timestamp": 1646590860,
+        "well_name": "d1",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 52313
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 79955
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 3483
+        }
+    },
+    "73": {
+        "sample_name": "W000124518_074",
+        "data_file_name": "HDAC6_W000124518_0382.d",
+        "acquisition_timestamp": 1646590920,
+        "well_name": "d2",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 55917
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 82752
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 2008
+        }
+    },
+    "74": {
+        "sample_name": "W000124518_075",
+        "data_file_name": "HDAC6_W000124518_0383.d",
+        "acquisition_timestamp": 1646590980,
+        "well_name": "d3",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 56111
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 79112
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 11055
+        }
+    },
+    "75": {
+        "sample_name": "W000124518_076",
+        "data_file_name": "HDAC6_W000124518_0384.d",
+        "acquisition_timestamp": 1646591040,
+        "well_name": "d4",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 52808
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 78289
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 21780
+        }
+    },
+    "76": {
+        "sample_name": "W000124518_077",
+        "data_file_name": "HDAC6_W000124518_0385.d",
+        "acquisition_timestamp": 1646591100,
+        "well_name": "d5",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 52111
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 70731
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 30583
+        }
+    },
+    "77": {
+        "sample_name": "W000124518_078",
+        "data_file_name": "HDAC6_W000124518_0386.d",
+        "acquisition_timestamp": 1646591220,
+        "well_name": "d6",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 51806
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 68545
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 62779
+        }
+    },
+    "78": {
+        "sample_name": "W000124518_079",
+        "data_file_name": "HDAC6_W000124518_0387.d",
+        "acquisition_timestamp": 1646591280,
+        "well_name": "d7",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 56117
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 69024
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 109547
+        }
+    },
+    "79": {
+        "sample_name": "W000124518_080",
+        "data_file_name": "HDAC6_W000124518_0388.d",
+        "acquisition_timestamp": 1646591340,
+        "well_name": "d8",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 56676
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 60446
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 150398
+        }
+    },
+    "80": {
+        "sample_name": "W000124518_081",
+        "data_file_name": "HDAC6_W000124518_0389.d",
+        "acquisition_timestamp": 1646591400,
+        "well_name": "d9",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 49169
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 57281
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 162262
+        }
+    },
+    "81": {
+        "sample_name": "W000124518_082",
+        "data_file_name": "HDAC6_W000124518_0390.d",
+        "acquisition_timestamp": 1646591460,
+        "well_name": "d10",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 50968
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 57827
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 178771
+        }
+    },
+    "82": {
+        "sample_name": "W000124518_083",
+        "data_file_name": "HDAC6_W000124518_0391.d",
+        "acquisition_timestamp": 1646591520,
+        "well_name": "d11",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 55935
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 62122
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 209608
+        }
+    },
+    "83": {
+        "sample_name": "W000124518_084",
+        "data_file_name": "HDAC6_W000124518_0392.d",
+        "acquisition_timestamp": 1646591580,
+        "well_name": "d12",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 50345
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 57042
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 192092
+        }
+    },
+    "94": {
+        "sample_name": "W000124518_095",
+        "data_file_name": "HDAC6_W000124518_0393.d",
+        "acquisition_timestamp": 1646591640,
+        "well_name": "d23",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 59473
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 62465
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 199345
+        }
+    },
+    "95": {
+        "sample_name": "W000124518_096",
+        "data_file_name": "HDAC6_W000124518_0394.d",
+        "acquisition_timestamp": 1646591700,
+        "well_name": "d24",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 59796
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 67045
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 251649
+        }
+    },
+    "96": {
+        "sample_name": "W000124518_097",
+        "data_file_name": "HDAC6_W000124518_0395.d",
+        "acquisition_timestamp": 1646591760,
+        "well_name": "e1",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 60963
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 87779
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 3758
+        }
+    },
+    "97": {
+        "sample_name": "W000124518_098",
+        "data_file_name": "HDAC6_W000124518_0396.d",
+        "acquisition_timestamp": 1646591820,
+        "well_name": "e2",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 59940
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 78924
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 1886
+        }
+    },
+    "98": {
+        "sample_name": "W000124518_099",
+        "data_file_name": "HDAC6_W000124518_0397.d",
+        "acquisition_timestamp": 1646591880,
+        "well_name": "e3",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 58935
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 74001
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 19227
+        }
+    },
+    "99": {
+        "sample_name": "W000124518_100",
+        "data_file_name": "HDAC6_W000124518_0398.d",
+        "acquisition_timestamp": 1646591940,
+        "well_name": "e4",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 57259
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 67425
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 32856
+        }
+    },
+    "100": {
+        "sample_name": "W000124518_101",
+        "data_file_name": "HDAC6_W000124518_0399.d",
+        "acquisition_timestamp": 1646592060,
+        "well_name": "e5",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 63296
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 68196
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 67495
+        }
+    },
+    "101": {
+        "sample_name": "W000124518_102",
+        "data_file_name": "HDAC6_W000124518_0400.d",
+        "acquisition_timestamp": 1646592120,
+        "well_name": "e6",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 63110
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 61743
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 109827
+        }
+    },
+    "102": {
+        "sample_name": "W000124518_103",
+        "data_file_name": "HDAC6_W000124518_0401.d",
+        "acquisition_timestamp": 1646592180,
+        "well_name": "e7",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 45924
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 42270
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 107685
+        }
+    },
+    "103": {
+        "sample_name": "W000124518_104",
+        "data_file_name": "HDAC6_W000124518_0402.d",
+        "acquisition_timestamp": 1646592240,
+        "well_name": "e8",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 62635
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 60510
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 183302
+        }
+    },
+    "104": {
+        "sample_name": "W000124518_105",
+        "data_file_name": "HDAC6_W000124518_0403.d",
+        "acquisition_timestamp": 1646592300,
+        "well_name": "e9",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 57224
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 52411
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 161106
+        }
+    },
+    "105": {
+        "sample_name": "W000124518_106",
+        "data_file_name": "HDAC6_W000124518_0404.d",
+        "acquisition_timestamp": 1646592360,
+        "well_name": "e10",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 56432
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 54967
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 162366
+        }
+    },
+    "106": {
+        "sample_name": "W000124518_107",
+        "data_file_name": "HDAC6_W000124518_0405.d",
+        "acquisition_timestamp": 1646592420,
+        "well_name": "e11",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 57276
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 61072
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 186569
+        }
+    },
+    "107": {
+        "sample_name": "W000124518_108",
+        "data_file_name": "HDAC6_W000124518_0406.d",
+        "acquisition_timestamp": 1646592480,
+        "well_name": "e12",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 64575
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 64269
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 200570
+        }
+    },
+    "118": {
+        "sample_name": "W000124518_119",
+        "data_file_name": "HDAC6_W000124518_0407.d",
+        "acquisition_timestamp": 1646592540,
+        "well_name": "e23",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 55154
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 56447
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 172726
+        }
+    },
+    "119": {
+        "sample_name": "W000124518_120",
+        "data_file_name": "HDAC6_W000124518_0408.d",
+        "acquisition_timestamp": 1646592600,
+        "well_name": "e24",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 63790
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 69686
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 199478
+        }
+    },
+    "120": {
+        "sample_name": "W000124518_121",
+        "data_file_name": "HDAC6_W000124518_0409.d",
+        "acquisition_timestamp": 1646592660,
+        "well_name": "f1",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 58223
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 73176
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 3195
+        }
+    },
+    "121": {
+        "sample_name": "W000124518_122",
+        "data_file_name": "HDAC6_W000124518_0410.d",
+        "acquisition_timestamp": 1646592720,
+        "well_name": "f2",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 53806
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 65746
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 1705
+        }
+    },
+    "122": {
+        "sample_name": "W000124518_123",
+        "data_file_name": "HDAC6_W000124518_0411.d",
+        "acquisition_timestamp": 1646592840,
+        "well_name": "f3",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 55620
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 68672
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 16700
+        }
+    },
+    "123": {
+        "sample_name": "W000124518_124",
+        "data_file_name": "HDAC6_W000124518_0412.d",
+        "acquisition_timestamp": 1646592900,
+        "well_name": "f4",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 51412
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 61904
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 24384
+        }
+    },
+    "124": {
+        "sample_name": "W000124518_125",
+        "data_file_name": "HDAC6_W000124518_0413.d",
+        "acquisition_timestamp": 1646592960,
+        "well_name": "f5",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 56973
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 63759
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 40513
+        }
+    },
+    "125": {
+        "sample_name": "W000124518_126",
+        "data_file_name": "HDAC6_W000124518_0414.d",
+        "acquisition_timestamp": 1646593020,
+        "well_name": "f6",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 50372
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 57533
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 77554
+        }
+    },
+    "126": {
+        "sample_name": "W000124518_127",
+        "data_file_name": "HDAC6_W000124518_0415.d",
+        "acquisition_timestamp": 1646593080,
+        "well_name": "f7",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 52761
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 54759
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 119509
+        }
+    },
+    "127": {
+        "sample_name": "W000124518_128",
+        "data_file_name": "HDAC6_W000124518_0416.d",
+        "acquisition_timestamp": 1646593140,
+        "well_name": "f8",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 49394
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 54760
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 146828
+        }
+    },
+    "128": {
+        "sample_name": "W000124518_129",
+        "data_file_name": "HDAC6_W000124518_0417.d",
+        "acquisition_timestamp": 1646593200,
+        "well_name": "f9",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 46385
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 50631
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 147052
+        }
+    },
+    "129": {
+        "sample_name": "W000124518_130",
+        "data_file_name": "HDAC6_W000124518_0418.d",
+        "acquisition_timestamp": 1646593260,
+        "well_name": "f10",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 51010
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 53779
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 164454
+        }
+    },
+    "130": {
+        "sample_name": "W000124518_131",
+        "data_file_name": "HDAC6_W000124518_0419.d",
+        "acquisition_timestamp": 1646593320,
+        "well_name": "f11",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 50201
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 53451
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 170862
+        }
+    },
+    "131": {
+        "sample_name": "W000124518_132",
+        "data_file_name": "HDAC6_W000124518_0420.d",
+        "acquisition_timestamp": 1646593380,
+        "well_name": "f12",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 49184
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 56338
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 181598
+        }
+    },
+    "142": {
+        "sample_name": "W000124518_143",
+        "data_file_name": "HDAC6_W000124518_0421.d",
+        "acquisition_timestamp": 1646593440,
+        "well_name": "f23",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 52804
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 56443
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 170426
+        }
+    },
+    "143": {
+        "sample_name": "W000124518_144",
+        "data_file_name": "HDAC6_W000124518_0422.d",
+        "acquisition_timestamp": 1646593500,
+        "well_name": "f24",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 54184
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 57346
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 173811
+        }
+    },
+    "144": {
+        "sample_name": "W000124518_145",
+        "data_file_name": "HDAC6_W000124518_0423.d",
+        "acquisition_timestamp": 1646593620,
+        "well_name": "g1",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 48542
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 65410
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 2925
+        }
+    },
+    "145": {
+        "sample_name": "W000124518_146",
+        "data_file_name": "HDAC6_W000124518_0424.d",
+        "acquisition_timestamp": 1646593680,
+        "well_name": "g2",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 51436
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 71414
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 1768
+        }
+    },
+    "146": {
+        "sample_name": "W000124518_147",
+        "data_file_name": "HDAC6_W000124518_0425.d",
+        "acquisition_timestamp": 1646593740,
+        "well_name": "g3",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 53265
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 57220
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 16185
+        }
+    },
+    "147": {
+        "sample_name": "W000124518_148",
+        "data_file_name": "HDAC6_W000124518_0426.d",
+        "acquisition_timestamp": 1646593800,
+        "well_name": "g4",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 44761
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 55947
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 29847
+        }
+    },
+    "148": {
+        "sample_name": "W000124518_149",
+        "data_file_name": "HDAC6_W000124518_0427.d",
+        "acquisition_timestamp": 1646593860,
+        "well_name": "g5",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 50728
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 61514
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 57595
+        }
+    },
+    "149": {
+        "sample_name": "W000124518_150",
+        "data_file_name": "HDAC6_W000124518_0428.d",
+        "acquisition_timestamp": 1646593920,
+        "well_name": "g6",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 48317
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 54963
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 106289
+        }
+    },
+    "150": {
+        "sample_name": "W000124518_151",
+        "data_file_name": "HDAC6_W000124518_0429.d",
+        "acquisition_timestamp": 1646593980,
+        "well_name": "g7",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 52511
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 52098
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 134149
+        }
+    },
+    "151": {
+        "sample_name": "W000124518_152",
+        "data_file_name": "HDAC6_W000124518_0430.d",
+        "acquisition_timestamp": 1646594040,
+        "well_name": "g8",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 51639
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 49384
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 146247
+        }
+    },
+    "152": {
+        "sample_name": "W000124518_153",
+        "data_file_name": "HDAC6_W000124518_0431.d",
+        "acquisition_timestamp": 1646594100,
+        "well_name": "g9",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 58028
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 56673
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 172200
+        }
+    },
+    "153": {
+        "sample_name": "W000124518_154",
+        "data_file_name": "HDAC6_W000124518_0432.d",
+        "acquisition_timestamp": 1646594160,
+        "well_name": "g10",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 54600
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 50485
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 153379
+        }
+    },
+    "154": {
+        "sample_name": "W000124518_155",
+        "data_file_name": "HDAC6_W000124518_0433.d",
+        "acquisition_timestamp": 1646594220,
+        "well_name": "g11",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 56227
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 55923
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 168978
+        }
+    },
+    "155":  {
+        "sample_name": "W000124518_156",
+        "data_file_name": "HDAC6_W000124518_0434.d",
+        "acquisition_timestamp": 1646594280,
+        "well_name": "g12",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 61049
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 57714
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 174689
+        }
+    },
+    "166": {
+        "sample_name": "W000124518_167",
+        "data_file_name": "HDAC6_W000124518_0435.d",
+        "acquisition_timestamp": 1646594340,
+        "well_name": "g23",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 58589
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 57700
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 184558
+        }
+    },
+    "167": {
+        "sample_name": "W000124518_168",
+        "data_file_name": "HDAC6_W000124518_0436.d",
+        "acquisition_timestamp": 1646594460,
+        "well_name": "g24",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 62727
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 60619
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 190398
+        }
+    },
+    "168": {
+        "sample_name": "W000124518_169",
+        "data_file_name": "HDAC6_W000124518_0437.d",
+        "acquisition_timestamp": 1646594520,
+        "well_name": "h1",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 62911
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 73340
+        },
+        "h3k9-product": {
+            "rt": 0.554,
+            "area": 3303
+        }
+    },
+    "169": {
+        "sample_name": "W000124518_170",
+        "data_file_name": "HDAC6_W000124518_0438.d",
+        "acquisition_timestamp": 1646594580,
+        "well_name": "h2",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 56244
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 61997
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 1667
+        }
+    },
+    "170": {
+        "sample_name": "W000124518_171",
+        "data_file_name": "HDAC6_W000124518_0439.d",
+        "acquisition_timestamp": 1646594640,
+        "well_name": "h3",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 53528
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 55762
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 64270
+        }
+    },
+    "171": {
+        "sample_name": "W000124518_172",
+        "data_file_name": "HDAC6_W000124518_0440.d",
+        "acquisition_timestamp": 1646594700,
+        "well_name": "h4",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 54119
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 53885
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 101066
+        }
+    },
+    "172": {
+        "sample_name": "W000124518_173",
+        "data_file_name": "HDAC6_W000124518_0441.d",
+        "acquisition_timestamp": 1646594760,
+        "well_name": "h5",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 52872
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 51716
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 132239
+        }
+    },
+    "173": {
+        "sample_name": "W000124518_174",
+        "data_file_name": "HDAC6_W000124518_0442.d",
+        "acquisition_timestamp": 1646594820,
+        "well_name": "h6",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 51901
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 49305
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 143494
+        }
+    },
+    "174": {
+        "sample_name": "W000124518_175",
+        "data_file_name": "HDAC6_W000124518_0443.d",
+        "acquisition_timestamp": 1646594880,
+        "well_name": "h7",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 51033
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 52146
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 136102
+        }
+    },
+    "175": {
+        "sample_name": "W000124518_176",
+        "data_file_name": "HDAC6_W000124518_0444.d",
+        "acquisition_timestamp": 1646594940,
+        "well_name": "h8",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 52544
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 52658
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 164963
+        }
+    },
+    "176": {
+        "sample_name": "W000124518_177",
+        "data_file_name": "HDAC6_W000124518_0445.d",
+        "acquisition_timestamp": 1646595000,
+        "well_name": "h9",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 54089
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 50426
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 156163
+        }
+    },
+    "177": {
+        "sample_name": "W000124518_178",
+        "data_file_name": "HDAC6_W000124518_0446.d",
+        "acquisition_timestamp": 1646595060,
+        "well_name": "h10",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 54010
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 50748
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 157171
+        }
+    },
+    "178": {
+        "sample_name": "W000124518_179",
+        "data_file_name": "HDAC6_W000124518_0447.d",
+        "acquisition_timestamp": 1646595120,
+        "well_name": "h11",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 59719
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 53650
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 167587
+        }
+    },
+    "179": {
+        "sample_name": "W000124518_180",
+        "data_file_name": "HDAC6_W000124518_0448.d",
+        "acquisition_timestamp": 1646595240,
+        "well_name": "h12",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 51600
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 51059
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 165946
+        }
+    },
+    "190": {
+        "sample_name": "W000124518_191",
+        "data_file_name": "HDAC6_W000124518_0449.d",
+        "acquisition_timestamp": 1646595300,
+        "well_name": "h23",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 53191
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 54794
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 177076
+        }
+    },
+    "191": {
+        "sample_name": "W000124518_192",
+        "data_file_name": "HDAC6_W000124518_0450.d",
+        "acquisition_timestamp": 1646595360,
+        "well_name": "h24",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 57377
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 55939
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 179570
+        }
+    },
+    "192": {
+        "sample_name": "W000124518_193",
+        "data_file_name": "HDAC6_W000124518_0451.d",
+        "acquisition_timestamp": 1646595420,
+        "well_name": "i1",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 55346
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 64459
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 2945
+        }
+    },
+    "193": {
+        "sample_name": "W000124518_194",
+        "data_file_name": "HDAC6_W000124518_0452.d",
+        "acquisition_timestamp": 1646595480,
+        "well_name": "i2",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 51402
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 61955
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 1781
+        }
+    },
+    "194": {
+        "sample_name": "W000124518_195",
+        "data_file_name": "HDAC6_W000124518_0453.d",
+        "acquisition_timestamp": 1646595540,
+        "well_name": "i3",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 54416
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 60275
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 18649
+        }
+    },
+    "195": {
+        "sample_name": "W000124518_196",
+        "data_file_name": "HDAC6_W000124518_0454.d",
+        "acquisition_timestamp": 1646595600,
+        "well_name": "i4",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 47024
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 48033
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 30072
+        }
+    },
+    "196": {
+        "sample_name": "W000124518_197",
+        "data_file_name": "HDAC6_W000124518_0455.d",
+        "acquisition_timestamp": 1646595660,
+        "well_name": "i5",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 50264
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 51159
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 62563
+        }
+    },
+    "197": {
+        "sample_name": "W000124518_198",
+        "data_file_name": "HDAC6_W000124518_0456.d",
+        "acquisition_timestamp": 1646595720,
+        "well_name": "i6",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 54814
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 51160
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 103442
+        }
+    },
+    "198": {
+        "sample_name": "W000124518_199",
+        "data_file_name": "HDAC6_W000124518_0457.d",
+        "acquisition_timestamp": 1646595780,
+        "well_name": "i7",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 48761
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 47316
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 126774
+        }
+    },
+    "199": {
+        "sample_name": "W000124518_200",
+        "data_file_name": "HDAC6_W000124518_0458.d",
+        "acquisition_timestamp": 1646595840,
+        "well_name": "i8",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 51315
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 47545
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 142825
+        }
+    },
+    "200": {
+        "sample_name": "W000124518_201",
+        "data_file_name": "HDAC6_W000124518_0459.d",
+        "acquisition_timestamp": 1646595900,
+        "well_name": "i9",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 49371
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 46330
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 147967
+        }
+    },
+    "201": {
+        "sample_name": "W000124518_202",
+        "data_file_name": "HDAC6_W000124518_0460.d",
+        "acquisition_timestamp": 1646596020,
+        "well_name": "i10",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 51510
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 53047
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 169444
+        }
+    },
+    "202": {
+        "sample_name": "W000124518_203",
+        "data_file_name": "HDAC6_W000124518_0461.d",
+        "acquisition_timestamp": 1646596080,
+        "well_name": "i11",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 49223
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 44485
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 150964
+        }
+    },
+    "203": {
+        "sample_name": "W000124518_204",
+        "data_file_name": "HDAC6_W000124518_0462.d",
+        "acquisition_timestamp": 1646596140,
+        "well_name": "i12",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 47951
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 46647
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 159271
+        }
+    },
+    "214": {
+        "sample_name": "W000124518_215",
+        "data_file_name": "HDAC6_W000124518_0463.d",
+        "acquisition_timestamp": 1646596200,
+        "well_name": "i23",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 51407
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 47705
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 155398
+        }
+    },
+    "215": {
+        "sample_name": "W000124518_216",
+        "data_file_name": "HDAC6_W000124518_0464.d",
+        "acquisition_timestamp": 1646596260,
+        "well_name": "i24",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 52566
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 54308
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 176955
+        }
+    },
+    "216": {
+        "sample_name": "W000124518_217",
+        "data_file_name": "HDAC6_W000124518_0465.d",
+        "acquisition_timestamp": 1646596320,
+        "well_name": "j1",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 47199
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 49818
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 2573
+        }
+    },
+    "217": {
+        "sample_name": "W000124518_218",
+        "data_file_name": "HDAC6_W000124518_0466.d",
+        "acquisition_timestamp": 1646596380,
+        "well_name": "j2",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 50519
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 48215
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 1503
+        }
+    },
+    "238": {
+        "sample_name": "W000124518_239",
+        "data_file_name": "HDAC6_W000124518_0467.d",
+        "acquisition_timestamp": 1646596440,
+        "well_name": "j23",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 47918
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 50413
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 165479
+        }
+    },
+    "239": {
+        "sample_name": "W000124518_240",
+        "data_file_name": "HDAC6_W000124518_0468.d",
+        "acquisition_timestamp": 1646596500,
+        "well_name": "j24",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 55692
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 51985
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 170730
+        }
+    },
+    "240": {
+        "sample_name": "W000124518_241",
+        "data_file_name": "HDAC6_W000124518_0469.d",
+        "acquisition_timestamp": 1646596560,
+        "well_name": "k1",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 53021
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 62419
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 2540
+        }
+    },
+    "241": {
+        "sample_name": "W000124518_242",
+        "data_file_name": "HDAC6_W000124518_0470.d",
+        "acquisition_timestamp": 1646596620,
+        "well_name": "k2",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 54144
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 64197
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 1625
+        }
+    },
+    "262": {
+        "sample_name": "W000124518_263",
+        "data_file_name": "HDAC6_W000124518_0471.d",
+        "acquisition_timestamp": 1646596680,
+        "well_name": "k23",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 55248
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 51424
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 157105
+        }
+    },
+    "263": {
+        "sample_name": "W000124518_264",
+        "data_file_name": "HDAC6_W000124518_0472.d",
+        "acquisition_timestamp": 1646596800,
+        "well_name": "k24",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 55259
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 53464
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 152695
+        }
+    },
+    "264": {
+        "sample_name": "W000124518_265",
+        "data_file_name": "HDAC6_W000124518_0473.d",
+        "acquisition_timestamp": 1646596860,
+        "well_name": "l1",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 54215
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 55798
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 2339
+        }
+    },
+    "265": {
+        "sample_name": "W000124518_266",
+        "data_file_name": "HDAC6_W000124518_0474.d",
+        "acquisition_timestamp": 1646596920,
+        "well_name": "l2",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 44505
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 39538
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 1047
+        }
+    },
+    "286": {
+        "sample_name": "W000124518_287",
+        "data_file_name": "HDAC6_W000124518_0475.d",
+        "acquisition_timestamp": 1646596980,
+        "well_name": "l23",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 54887
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 50690
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 154288
+        }
+    },
+    "287": {
+        "sample_name": "W000124518_288",
+        "data_file_name": "HDAC6_W000124518_0476.d",
+        "acquisition_timestamp": 1646597040,
+        "well_name": "l24",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 59676
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 52130
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 157032
+        }
+    },
+    "288": {
+        "sample_name": "W000124518_289",
+        "data_file_name": "HDAC6_W000124518_0477.d",
+        "acquisition_timestamp": 1646597100,
+        "well_name": "m1",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 59306
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 57507
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 2245
+        }
+    },
+    "289": {
+        "sample_name": "W000124518_290",
+        "data_file_name": "HDAC6_W000124518_0478.d",
+        "acquisition_timestamp": 1646597160,
+        "well_name": "m2",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 50760
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 50124
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 1211
+        }
+    },
+    "310": {
+        "sample_name": "W000124518_311",
+        "data_file_name": "HDAC6_W000124518_0479.d",
+        "acquisition_timestamp": 1646597220,
+        "well_name": "m23",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 57521
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 51026
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 147037
+        }
+    },
+    "311": {
+        "sample_name": "W000124518_312",
+        "data_file_name": "HDAC6_W000124518_0480.d",
+        "acquisition_timestamp": 1646597280,
+        "well_name": "m24",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 55676
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 49339
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 145869
+        }
+    },
+    "312": {
+        "sample_name": "W000124518_313",
+        "data_file_name": "HDAC6_W000124518_0481.d",
+        "acquisition_timestamp": 1646597340,
+        "well_name": "n1",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 53641
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 50355
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 2174
+        }
+    },
+    "313": {
+        "sample_name": "W000124518_314",
+        "data_file_name": "HDAC6_W000124518_0482.d",
+        "acquisition_timestamp": 1646597400,
+        "well_name": "n2",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 50310
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 48566
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 1263
+        }
+    },
+    "334": {
+        "sample_name": "W000124518_335",
+        "data_file_name": "HDAC6_W000124518_0483.d",
+        "acquisition_timestamp": 1646597460,
+        "well_name": "n23",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 60283
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 50204
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 149328
+        }
+    },
+    "335": {
+        "sample_name": "W000124518_336",
+        "data_file_name": "HDAC6_W000124518_0484.d",
+        "acquisition_timestamp": 1646597580,
+        "well_name": "n24",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 54671
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 49873
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 141895
+        }
+    },
+    "336": {
+        "sample_name": "W000124518_337",
+        "data_file_name": "HDAC6_W000124518_0485.d",
+        "acquisition_timestamp": 1646597640,
+        "well_name": "o1",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 58120
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 56810
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 2160
+        }
+    },
+    "337": {
+        "sample_name": "W000124518_338",
+        "data_file_name": "HDAC6_W000124518_0486.d",
+        "acquisition_timestamp": 1646597700,
+        "well_name": "o2",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 55330
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 54059
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 1195
+        }
+    },
+    "358": {
+        "sample_name": "W000124518_359",
+        "data_file_name": "HDAC6_W000124518_0487.d",
+        "acquisition_timestamp": 1646597760,
+        "well_name": "o23",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 57453
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 50092
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 147733
+        }
+    },
+    "359": {
+        "sample_name": "W000124518_360",
+        "data_file_name": "HDAC6_W000124518_0488.d",
+        "acquisition_timestamp": 1646597820,
+        "well_name": "o24",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 59408
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 50006
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 139896
+        }
+    },
+    "360": {
+        "sample_name": "W000124518_361",
+        "data_file_name": "HDAC6_W000124518_0489.d",
+        "acquisition_timestamp": 1646597880,
+        "well_name": "p1",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 52950
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.54,
+            "area": 46931
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 2121
+        }
+    },
+    "361": {
+        "sample_name": "W000124518_362",
+        "data_file_name": "HDAC6_W000124518_0490.d",
+        "acquisition_timestamp": 1646597940,
+        "well_name": "p2",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 55436
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.55,
+            "area": 49861
+        },
+        "h3k9-product": {
+            "rt": 0.544,
+            "area": 1256
+        }
+    },
+    "382": {
+        "sample_name": "W000124518_383",
+        "data_file_name": "HDAC6_W000124518_0491.d",
+        "acquisition_timestamp": 1646598000,
+        "well_name": "p23",
+        "h3k9-substrate": {
+            "rt": 0.375,
+            "area": 52695
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 43395
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 127772
+        }
+    },
+    "383": {
+        "sample_name": "W000124518_384",
+        "data_file_name": "HDAC6_W000124518_0492.d",
+        "acquisition_timestamp": 1646598060,
+        "well_name": "p24",
+        "h3k9-substrate": {
+            "rt": 0.385,
+            "area": 55502
+        },
+        "h3k9-internal_standard": {
+            "rt": 0.53,
+            "area": 47218
+        },
+        "h3k9-product": {
+            "rt": 0.533,
+            "area": 131551
+        }
+    }
+}

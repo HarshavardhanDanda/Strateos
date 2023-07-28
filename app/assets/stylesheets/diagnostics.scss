@@ -1,0 +1,109 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+//  Diagnostics data dashboard
+
+//  --------------------------------
+//  | warp1 | .chart
+//  | warp2 |
+//  | warp3 |-----------------------
+//  | .     | .chart
+//  | .     |
+//  --------------------------------
+
+
+.diagnostics {
+  padding: $spacing--xxs;
+
+  .charts-and-filters {
+    .slider-container {
+      margin: $spacing--xxlg $spacing--xxlg 0;
+      height: 80px;
+    }
+
+    .charts {
+      .chart-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-basis: 0;
+        margin-bottom: $spacing--xlg;
+        height: $element-width-md;
+
+        .sensor-description {
+          flex-shrink: 1;
+          margin-bottom: $spacing--xlg;
+
+          .sensor-label {
+            position: relative; // For the abs positioned spinner-container
+
+            .spinner-container {
+              position: absolute;
+              top: 0;
+              right: -$spacing--xxlg;
+            }
+          }
+        }
+
+        .chart {
+          display: flex;
+          flex-grow: 1;
+          flex-shrink: 0;
+          align-items: center;
+          justify-content: center;
+
+          .chart-wrapper {
+            position: relative;
+          }
+        }
+
+        .chart-warning-message {
+          @include tx-typescale(3);
+        }
+      }
+    }
+  }
+
+  &.pipette {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+
+    .charts-and-filters {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 2;
+    }
+
+    .warp-list {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .warp-list {
+      .instruction-card.pipette {
+        // Override some styles from the base instruction-card on Run page
+        padding: $spacing--md;
+        border-style: none;
+
+        .pipette-instruction {
+          border-left: 10px solid transparent;
+
+          // To show selected vs unselected instructions
+          &.focused {
+            border-left: 10px solid $tx-gold;
+          }
+        }
+      }
+    }
+  }
+}
+
+.chart-selector {
+  cursor: crosshair;
+
+  .selection-area {
+    border: 1px dotted $black;
+    background-color: tx-transparentize($blue, light-overlay);
+  }
+}

@@ -1,0 +1,55 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+
+$run-instruction-card-max-width: 800px;
+
+span.pending-payment {
+  cursor: pointer;
+
+  &:hover {
+
+    span.label {
+      background-color: $tx-gold;
+    }
+  }
+}
+
+.run-status-label {
+  @media(max-width: 1199px) {
+    @include tx-typescale(-1);
+    top: -27px;
+  }
+}
+
+.predecessor,
+.unknown {
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+
+.run-refs {
+  .fa {
+    margin-right: 5px;
+  }
+
+  .tab-content {
+    padding-top: 0;
+  }
+
+  .ref {
+    display: flex;
+    flex-direction: row;
+
+    &__name {
+      display: flex;
+      flex-grow: 1;
+    }
+
+    &__status {
+      display: flex;
+      flex-shrink: 1;
+      @include flex-justify-and-align(center, center);
+    }
+  }
+}

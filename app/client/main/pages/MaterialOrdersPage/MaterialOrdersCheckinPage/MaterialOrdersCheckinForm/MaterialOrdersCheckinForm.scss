@@ -1,0 +1,18 @@
+@use 'main/global-imports' as *;
+
+.material-orders-checkin-form {
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: $spacing--md;
+  }
+
+  &__toggle {
+    display: flex;
+    align-items: center;
+  }
+
+  &__toggle-text {
+    margin-left: $spacing--xxs;
+  }
+}

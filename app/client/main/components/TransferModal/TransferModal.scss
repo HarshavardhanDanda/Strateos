@@ -1,0 +1,12 @@
+@use 'main/global-imports' as *;
+
+.transfer-modal {
+
+    &__org-label {
+       padding-bottom: $spacing--xxxs;
+    }
+
+    &__comma:not(:last-child):after {
+        content: ", ";
+      }
+}

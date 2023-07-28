@@ -1,0 +1,32 @@
+@use 'main/global-imports' as *;
+
+.implementation-shipment-creator {
+    .validation-group:not(.has-error) &__title {
+      border: 0;
+    }
+  
+    &__title {
+      @include tx-typescale(6);
+      font-weight: 300;
+      margin-bottom: 0.5em;
+      letter-spacing: inherit;
+      color: rgb(92, 92, 92);
+    }
+  
+    &__instruction {
+      color: $carbon;
+      margin: 0.5em auto;
+    }
+  
+    &__list-item {
+      border-bottom: 1px solid $light-gray;
+      height: auto;
+      margin: 1em 0;
+      padding-bottom: 0.5em;
+  
+      &:last-of-type {
+        border-bottom: 0;
+      }
+    }
+  }
+  

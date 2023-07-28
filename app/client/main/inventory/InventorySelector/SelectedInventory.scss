@@ -1,0 +1,25 @@
+@use 'main/global-imports' as *;
+
+.selected-inventory {
+  min-height: 620px;
+  &__top-bar {
+    display: flex;
+
+    & :first-child {
+      flex-grow: 1;
+      margin-right: $spacing--xxxs;
+    }
+  }
+
+  &__text {
+    color: transparentize(#000000, 0.4);
+  }
+
+  &__table {
+    margin-top: $spacing--sm;
+  }
+
+  &__container-type {
+    display: flex;
+  }
+}

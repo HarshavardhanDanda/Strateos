@@ -1,0 +1,24 @@
+@use 'main/global-imports' as *;
+
+.table-view-actions {
+  border: 0;
+}
+
+.baby-icon {
+  font-size: 24px;
+  color: $light-carbon;
+
+  &--success {
+    color: $green;
+  }
+}
+
+.test-icon {
+  font-size: 24px;
+  margin: 0 $spacing--xxxs;
+}
+
+.resource-card {
+  display:flex;
+  flex-direction: column;
+}

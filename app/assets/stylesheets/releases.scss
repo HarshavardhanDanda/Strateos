@@ -1,0 +1,16 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.release-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.release-page {
+  h2 {
+    margin-top: $spacing--xxlg;
+  }
+
+  .page-header-panel {
+    margin-top: $spacing--xxlg;
+  }
+}

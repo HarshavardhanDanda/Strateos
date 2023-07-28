@@ -1,0 +1,42 @@
+@use 'main/global-imports' as *;
+
+.tx-timeline {
+  &__text-area {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  &__table {
+    width: 100%;
+  }
+
+  &__table-row {
+    border-top: 1px solid $black--20;
+    vertical-align: top;
+  }
+
+  &__table-cell {
+    padding: 1rem;
+    white-space: pre-wrap;
+
+    &--small {
+      width: 10%;
+    }
+  }
+
+  &__time {
+    @include tx-typescale(-2);
+    font-weight: $font-weight-semibold;
+    display: block;
+    text-transform: uppercase;
+    color: $extra-dark-gray;
+
+  }
+
+  &__date {
+    @include tx-typescale(-2);
+    font-weight: $font-weight-semibold;
+    color: $extra-dark-gray;
+  }
+}

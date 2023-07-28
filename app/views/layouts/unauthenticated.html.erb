@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Strateos</title>
+    <%= stylesheet_link_tag "application", :media => :all %>
+
+    <% if Rails.env.production? %>
+      <script src="//d2wy8f7a9ursnm.cloudfront.net/v4/bugsnag.min.js"></script>
+      <script>
+        window.BugsnagClient = window.bugsnag({
+          apiKey: "<%= ENV["BUGSNAG_API_KEY"] %>",
+          releaseStage: "<%= ENV["RAILS_ENV"] %>"
+        });
+      </script>
+    <% end %>
+
+    <% unless Rails.env.test? %>
+      <script src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+      <script type="text/javascript">
+        if (window.WebFont) WebFont.load({
+          google: { families: [ 'Source+Sans+Pro:300,400,600,700,300italic,400italic:latin', 'Roboto:300,400:latin' ] }
+        });
+      </script>
+    <% end %>
+
+    <% if Feature.enabled?(:analytics) %>
+    <script type="text/javascript">
+      window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=t.forceSSL||"https:"===document.location.protocol,a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src=(r?"https:":"http:")+"//cdn.heapanalytics.com/js/heap-"+e+".js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n);for(var o=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","removeEventProperty","setEventProperties","track","unsetEventProperty"],c=0;c<p.length;c++)heap[p[c]]=o(p[c])};
+      heap.load("<%= HEAP_TOKEN %>");
+    </script>
+    <% end %>
+  </head>
+
+  <body>
+    <div class="unauthenticated">
+      <div class="unauthenticated__container">
+        <% if @user %>
+          <% if @user.second_factor_attempts_count < 3 %>
+            <%= render partial: "layouts/flash_messages" %>
+          <% end %>
+        <% else %>
+          <%= render partial: "layouts/flash_messages" %>
+        <% end %>
+      
+        <% if @user or @admin %>
+
+          <% if resource.errors.any? %>
+            <div id="error_explanation">
+              <h2 class="tx-type--invert">
+                <%= I18n.t("errors.messages.not_saved",
+                           count: resource.errors.count,
+                           resource: resource.class.model_name.human.downcase)
+                         %>
+              </h2>
+
+              <ul>
+                <% resource.errors.full_messages.each do |message| %>
+                  <li class="tx-type--invert"><%= message %></li>
+                <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+        <% end %>
+
+        <div class="unauthenticated__content tx-stack tx-stack--xxlg">
+          <a class="unauthenticated__header" href="https://www.strateos.com">
+            <img class="unauthenticated__logo" src="/images/strateos.svg" alt="">
+            <img class="unauthenticated__lodestar-logo" src="/images/lodestar.svg" alt="">
+          </a>
+          <div class="unauthenticated__body">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+@use 'main/global-imports' as *;
+
+.compound-filters {
+    &__molecule-viewer {
+        height: 262px;
+    }
+
+    .tag-input {
+        background-color: white;
+    }
+    
+    .input-suggestions  {
+        @include tx-z-index(absolute, tooltip);
+        position: absolute;
+    
+        &__suggestion {
+            &:focus {
+                background-color: $blue--70;
+       
+                & img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+    }
+}

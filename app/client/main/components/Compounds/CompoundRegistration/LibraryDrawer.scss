@@ -1,0 +1,22 @@
+@use 'main/global-imports' as *;
+
+.library-drawer {
+    &__heading{
+        @include tx-type__style(subheading, $default-tier: primary);
+        font-weight: $font-weight-semibold;
+        padding-bottom: 10px;
+    }
+
+    &__wrapper {
+        @include tx-border-radius(medium);
+        display:flex;
+        border: 1px solid $carbon--30;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 3px $spacing--xxs;
+        .tag {
+            margin: $spacing--xxxs;
+        }
+    }
+}

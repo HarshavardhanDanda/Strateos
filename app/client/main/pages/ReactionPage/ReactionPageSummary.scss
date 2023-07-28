@@ -1,0 +1,96 @@
+@use 'main/global-imports' as *;
+
+.reaction-page-summary {
+  &__card {
+    margin: $spacing--xs 0;
+  }
+
+  &__card-title {
+    color: $black;
+    opacity: 0.6;
+    font-family: $font-family--branded;
+  }
+
+  .divider--horz {
+    width: 153px;
+  }
+
+  .amino-table {
+    &__header > tr > th {
+      color: $str-navy !important;
+    }
+  }
+
+  label {
+    color: $str-navy;
+  }
+
+  .top-field-label {
+    font-weight: $font-weight-semibold;
+  }
+
+  .field-row {
+    margin-bottom: 20px;
+  }
+
+  .long-left-field {
+    display: inline-block;
+    width: 600px;
+  }
+
+  .search-right-field {
+    display: inline-block;
+    width: 500px;
+    float: right;
+  }
+
+  .run-link {
+    margin-bottom: 5px;
+  }
+
+  .run-label {
+    font-weight: bold;
+    font-family: $font-family--branded;
+  }
+
+  .label-spacer {
+    margin-top: 7px;
+  }
+
+  .reactants {
+    margin-top: 50px;
+
+    &__table {
+      margin-top: 10px;
+    }
+  }
+
+  .product {
+    margin-top: 30px;
+
+    &__table {
+      margin-top: 10px;
+    }
+  }
+
+  .solvent {
+    margin-top: 30px;
+
+    &__table {
+      margin-top: 10px;
+    }
+  }
+
+  &__footer {
+    margin-top: $spacing--xxlg;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: $spacing--sm;
+  }
+
+  &--modal-button {
+    margin-top: $spacing--xxxlg;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,112 @@
+@use 'main/global-imports' as *;
+
+$border: 1px solid $standard-gray;
+
+.account-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  flex-grow: 1;
+}
+
+.information-section {
+  flex-grow: 1;
+  @include tx-box-shadow(light-shadow);
+  background: $white;
+}
+
+.org_profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  &__name {
+    margin-left: $spacing--xxxs
+  }
+}
+
+.user-profile {
+  &__edit-icon {
+    color: $black--20;
+    cursor: pointer;
+  }
+
+  &__feature-groups {
+    display: flex;
+  }
+
+  &__column-width {
+    width: 34%;
+  }
+
+  &__content-header {
+    @include tx-spacing__inset(square, md);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: $border;
+    width: 100%;
+  }
+
+  &__content-body {
+    @include tx-spacing__inset(square, md);
+  }
+
+  &__tags {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px
+  }
+
+  &__locked-tag {
+    color: $red--80
+  }
+
+  &__developer-tag {
+    color: $blue--80
+  }
+
+  &__profile-pic-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__profile-pic-container {
+    @include tx-border-radius(massive);
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    cursor: pointer;
+
+    width: 175px;
+    height: 175px;
+
+    &--bordered {
+      border: 2px solid $black--60;
+    }
+
+    &:hover .user-page__profile-pic-hover {
+      bottom: 0;
+    }
+  }
+
+  &__profile-pic {
+    background: $white;
+    width: 175px;
+    height: 175px;
+  }
+
+  &__profile-pic-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include tx-typescale(8);
+
+    width: 175px;
+    height: 175px;
+    background-color: $blue--30;
+    color: $blue--80;
+  }
+}

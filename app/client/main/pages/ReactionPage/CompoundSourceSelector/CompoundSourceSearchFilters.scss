@@ -1,0 +1,7 @@
+@use 'main/global-imports' as *;
+
+.compound-source-search-filters {
+  &__search-supplier {
+    margin-bottom: $spacing--xs;
+  }
+}

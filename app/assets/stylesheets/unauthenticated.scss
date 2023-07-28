@@ -1,0 +1,48 @@
+@use "sass:color";
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.unauthenticated {
+  display: flex;
+  justify-content: center;
+  @include linear-gradient($str-black, color.adjust($str-black, $lightness: 15%));
+  @include tx-typescale(-2);
+  color: $extra-light-carbon;
+  font-weight: $font-weight-light;
+  letter-spacing: 0.4px;
+  min-height: 100vh;
+  min-width: 100vw;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    position: relative;
+    margin: $spacing--xxlg;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  &__content {
+    width: 100%;
+    margin: 80px $spacing--xlg 0;
+    max-width: 300px;
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__logo {
+    width: 200px;
+  }
+
+  &__lodestar-logo {
+    margin-top: 18px;
+    width: 270px;
+    height: 50px;
+  }
+}

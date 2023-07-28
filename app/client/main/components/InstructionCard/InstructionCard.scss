@@ -1,0 +1,158 @@
+@use 'main/global-imports' as *;
+
+.instruction-card {
+
+  border-radius: 4px;
+
+  &__head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include tx-spacing__inset(square, xxxs);
+  }
+
+  &__title-wrapper {
+    margin-top: $spacing--xxs;
+    padding-left: $spacing--xxs;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+  }
+
+  &__title {
+    &--human-executed {
+      margin-left: $spacing--xxs;
+    }
+
+    &--small {
+      text-transform: none;
+      margin-left: $spacing--xxs;
+    }
+
+    &--error {
+      @include tx-typescale(-3);
+      color: $red;
+      display: inline-block;
+      margin-left: 10px;
+    }
+  }
+
+  &__title-index {
+    padding-right: calc(#{$spacing--xs} / 2);
+  }
+
+  &__time-constraint-icon {
+    padding-right: calc(#{$spacing--xs} / 2);
+    color: $black--80;
+    font-size: calc(#{$spacing--md} / 2);
+  }
+
+  &__head-content {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 16px;
+
+    max-width: 100%;
+
+    .display-text {
+      padding-top: $spacing--xxs;
+    }
+  }
+
+  &__head-data-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+
+    width: min-content;
+    min-width: 0;
+    max-width: 100%;
+    text-align: right;
+    padding-bottom: $spacing--xxs;
+  }
+
+  &__head-data {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    justify-content: flex-end;
+
+    width: min-content;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  &__operation {
+
+    .from,
+    .to,
+    .to .ref,
+    .arrow,
+    .volume-label {
+      display: table-cell;
+    }
+
+    .to .to-table,
+    .from .from-table {
+      display: table;
+      width: 100%;
+    }
+  }
+  &__label {
+    margin-left: 25px;
+  }
+  .expandable-card {
+
+    &__body {
+        padding-bottom: 0;
+      }
+
+      &--expanded {
+        border-bottom: none;
+      }
+  }
+
+  .card {
+    box-shadow: none;
+  }
+
+  .card--primary {
+    background: unset;
+  }
+
+  .container-tags {
+    padding: $spacing--xxs;
+    padding-right: 0;
+  }
+}
+
+.generic_task {
+
+  .param__label {
+    width: unset;
+  }
+}
+
+.expandable-card--expanded {
+  .liquid-handle-group {
+      &__head {
+        border-bottom: 1px solid #c2c4c6;
+      }
+    }
+
+  .generic-instruction {
+      &__head {
+        border-bottom: 1px solid #c2c4c6;
+      }
+  }
+}

@@ -1,0 +1,14 @@
+@use 'main/global-imports' as *;
+
+.user-profile {
+  @include tx-layout__children(inline, xxxs);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  &--invert #{&}__label {
+    color: $white;
+  }
+}

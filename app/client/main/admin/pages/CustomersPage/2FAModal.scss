@@ -1,0 +1,35 @@
+@use 'main/global-imports' as *;
+
+.two-fa-modal {
+  &__content {
+    width: auto;
+    font-size: 12px;
+    color: $black;
+  }
+
+  &__modal {
+    border-radius: 8px;
+  }
+
+  &__label {
+    font-size: 11px;
+    font-weight: bold;
+    color: $black--60;
+  }
+
+  &__checkbox-label {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.force-password-reset {
+  &__body {
+    padding-left: $spacing--md;
+    padding-right: $spacing--md;
+  }
+
+  &__text {
+    @include tx-typescale(0);
+  }
+}

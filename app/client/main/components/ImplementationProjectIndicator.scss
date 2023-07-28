@@ -1,0 +1,12 @@
+@use 'main/global-imports' as *;
+@use "sass:color";
+
+.implementation-project-indicator {
+  display: flex;
+  align-items: center;
+  gap: $spacing--sm;
+
+  &__eye-icon {
+    color: $str-green--medium !important
+  }
+}

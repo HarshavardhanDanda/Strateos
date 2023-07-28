@@ -1,0 +1,28 @@
+@use 'main/global-imports' as *;
+
+.container-type {
+  &--tag {
+    display: flex;
+    align-items: center;
+    &--icon {
+      margin: $spacing--root $spacing--root 0 0;
+    }
+  }
+}
+
+.address {
+  display: flex;
+  gap: $spacing--xxs;
+
+  .btn.btn-medium {
+    min-width: 0;
+  }
+
+  &--button {
+    width: pxToRem(42px);
+
+    &--sign {
+      vertical-align: -25%;
+    }
+  }
+}

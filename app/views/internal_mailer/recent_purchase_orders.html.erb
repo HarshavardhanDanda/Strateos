@@ -1,0 +1,26 @@
+<h2 style="text-align:center;">Recent Purchase Orders</h2>
+
+<table border="0" cellpadding="0" cellspacing="0" width="445" align="center" style="margin:auto; font-size:10px; table-layout:fixed;" class="fullwidth">
+
+  <thead>
+    <tr>
+      <th>Organization</th>
+      <th>Account Manager</th>
+      <th>PO Address</th>
+      <th>PO Date</th>
+      <th>PO Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @pos.each do |po| %>
+      <tr>
+        <th style="padding:10px;"><%= po.organization.name %></th>
+        <th style="padding:10px;"><%= po.organization.account_manager.try(:name) || 'NONE' %></th>
+        <th style="padding:10px;"><%= po.address.try(:to_s) || 'UNKNOWN' %></th>
+        <th style="padding:10px;"><%= po.created_at.to_date %></th>
+        <th style="padding:10px;"><%= po.po_limit.to_f %></th>
+      </tr>
+    <% end %>
+  </tbody>
+
+</table>

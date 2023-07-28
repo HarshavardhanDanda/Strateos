@@ -1,0 +1,124 @@
+@use 'main/global-imports' as *;
+@use "sass:color";
+
+.manage-instruction {
+  $boxsize: 39px;
+
+  display: flex;
+  margin-bottom: $spacing--xxs;
+
+  .instruction-card-container {
+    flex: 1;
+    margin-right: 6px;
+  }
+
+  .actions {
+    display: flex;
+    min-width: $boxsize * 5 + 10px * 5;
+    justify-content: flex-end;
+  }
+
+  &__download-wrapper {
+    margin-left: 10px;
+    background: $str-green--medium;
+    border: unset;
+    height: $boxsize;
+    width: $boxsize;
+    cursor: pointer;
+    &:hover {
+      background: $green--40;
+    }
+  }
+
+  &__download-icon {
+    font-size: map-get($scaleToPxMap--default, 5);
+    color: white;
+  }
+
+  .lab-checkbox {
+    user-select: none;
+    @include tx-typescale(7);
+    cursor: pointer;
+    line-height: $boxsize;
+    width: $boxsize;
+    height: $boxsize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border: 1px solid $green--50;
+    text-align: center;
+    padding: 0;
+    -webkit-touch-callout: none;
+    color: $white;
+    background: $green--60;
+
+    i {
+      font-size: map-get($scaleToPxMap--default, 5);
+      display: flex;
+    }
+
+    &:hover {
+      background: $green--40;
+    }
+
+    &.checked {
+      color: $white;
+      background-color: $green--90;
+      border-color: $green--100;
+    }
+
+    &:disabled {
+      color: $black--30;
+      background-color: $dark-gray;
+      border-color: $extra-light-carbon;
+    }
+
+    &.databox {
+      display: grid;
+      overflow: hidden;
+      border: 1px solid $blue--40;
+      background: $blue--30;
+      outline: none;
+      font-weight: $font-weight-bold;
+
+      &.set {
+        color: $white;
+        background: $blue--60;
+
+        &:hover {
+          background: $blue--60;
+        }
+      }
+
+      &:hover {
+        background: $blue--30;
+      }
+
+      &.checked {
+        color: $white;
+        background-color: color.adjust($green, $lightness: -20%);
+        border-color: color.adjust($green, $lightness: -25%);
+      }
+
+      .uploading-icon {
+        @include tx-typescale(3);
+        align-self: center;
+        justify-self: center;
+      }
+
+      .upload-progress {
+        align-self: end;
+        height: 4px;
+        background-color: $green;
+      }
+
+      input {
+        cursor: pointer;
+        &::-webkit-file-upload-button {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

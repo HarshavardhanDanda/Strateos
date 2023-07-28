@@ -1,0 +1,15 @@
+.add-row {
+    display: flex;
+
+    &__mail {
+        width: 310px;
+    }
+
+    &__feature-group {
+        width: 100px;
+    }
+
+    &__lab {
+        width: 100px;
+    }
+}

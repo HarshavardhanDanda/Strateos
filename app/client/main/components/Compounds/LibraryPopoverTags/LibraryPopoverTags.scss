@@ -1,0 +1,11 @@
+@use 'main/global-imports' as *;
+
+.library-popover-tags {
+    
+    @include tx-typescale(1);
+    margin-left: $spacing--xxxs;
+    color: $light-carbon;
+}
+.popover-wrapper {
+  width: fit-content;
+}

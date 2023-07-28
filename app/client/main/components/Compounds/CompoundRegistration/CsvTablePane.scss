@@ -1,0 +1,78 @@
+@use 'main/global-imports' as *;
+
+.csv-table-pane {
+  &__body_scroll {
+    height: 70vh;
+    overflow-y: auto;
+  }
+
+  &__pill {
+    border-radius: 0px;
+    box-shadow: none;
+    border: none;
+    justify-content: center;
+    margin-right: $spacing--xxs;
+
+    &--Valid {
+      background-color: $green--30;
+      color: $green--80;
+    }
+
+    &--Registered {
+      background-color: $blue--20;
+      color: $blue--70;
+    }
+
+    &--Invalid {
+      background-color: $orange--40;
+      color: $orange--90;
+    }
+
+    &--Restricted {
+      background-color: $red--40;
+      color: $red--80;
+    }
+
+    &--Duplicates {
+      background-color: $red--40;
+      color: $red--80;
+    }
+  }
+
+  &__back-button {
+    border: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  &__table-options {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1em;
+  }
+
+  &__table {
+    &--labels {
+      display: flex;
+    }
+
+    &--molecule {
+      height: 75px;
+    }
+  }
+
+  &__remove-dropdown {
+    @include tx-typescale(0);
+    @include tx-layout__children(stack, md);
+    width: 340px;
+    color: $black--70;
+  }
+
+  &__invalid-molecule {
+    display: flex;
+    justify-content: center;
+    margin-top: $spacing--xxs;
+    margin-bottom: $spacing--xxs;
+  }
+}

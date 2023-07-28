@@ -1,0 +1,27 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+
+.locations-section-body {
+  .add-location-button {
+    margin-top: $spacing--xxs;
+  }
+}
+
+.master-detail-list {
+  margin-top: $spacing--xxs;
+
+  .item {
+    width: 100%;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    padding: $spacing--xxs;
+    border-bottom: 1px solid $light-gray;
+
+    span.detail {
+      color: $carbon;
+      margin-left: $spacing--xxs;
+      font-weight: $font-weight-light;
+    }
+  }
+}

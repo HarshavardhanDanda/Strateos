@@ -1,0 +1,7 @@
+@use 'main/global-imports' as *;
+
+.lcmrm-csv-header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

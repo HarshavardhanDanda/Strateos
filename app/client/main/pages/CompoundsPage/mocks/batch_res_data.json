@@ -1,0 +1,69 @@
+{
+    "samples_created_at": "2023-02-01T02:32:03.471-08:00",
+    "purity": 90,
+    "synthesis_request": {
+        "name": "request_name",
+        "created_at": "2023-02-01T02:18:53.839-08:00",
+        "started_at": null,
+        "completed_at": null,
+        "id": "srq1asw58gr33jxwu32",
+        "type": "synthesis_requests"
+    },
+    "organization_id": "org13",
+    "post_purification_mass_yield_mg": 1.1,
+    "runs": [
+        {
+            "status": "complete",
+            "success": true,
+            "success_notes": "Test123",
+            "id": "run_id",
+            "type": "runs"
+        }
+    ],
+    "product_type": "FINAL_PRODUCT",
+    "created_at": "2022-06-15T11:14:37.217-07:00",
+    "compound": {
+        "reference_id": "CAS 15084-51-2",
+        "formula": "C10H13ClO2S",
+        "smiles": "CC(C)(C)c1ccc(S(=O)(=O)Cl)cc1",
+        "id": "cmpl1ebsudv4wcwrz",
+        "type": "compounds"
+    },
+    "name": "test_batch",
+    "user": null,
+    "compound_link_id": "cmpl1ebsudv4wcwrz",
+    "aliquots": [
+        {
+            "container_id": "ct1dmz8k9zzuz5u",
+            "volume_ul": "30.0",
+            "id": "aq1dmz8ka245ddw",
+            "type": "aliquots"
+        }
+    ],
+    "created_by": null,
+    "reaction_id": "a6caf6d8-12e2-45f4-b769-fd75fbd265b0",
+    "containers": [
+        {
+            "container_type_id": "a1-vial",
+            "barcode": "container_barcode",
+            "id": "ct1dmz8k9zzuz5u",
+            "type": "containers"
+        }
+    ],
+    "organization": {
+        "name": "Strateos",
+        "subdomain": "transcriptic",
+        "id": "org13",
+        "type": "organizations"
+    },
+    "contextual_custom_properties": [],
+    "updated_at": "2023-02-01T02:32:03.480-08:00",
+    "synthesis_program": {
+        "name": "program_name",
+        "id": "spr1asw55xc3edcde2n",
+        "type": "synthesis_programs"
+    },
+    "type": "batches",
+    "id": "b1",
+    "run_count": 1
+}

@@ -1,0 +1,32 @@
+@use 'main/global-imports' as *;
+
+.data-object-container-header {
+  @include tx-layout__item(stack, sm);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tx-layout__item(stack, xxs);
+  }
+
+  &__title-name {
+    @include ellipsis(200px);
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include tx-layout__children(inline, sm);
+
+    .divider--vert {
+      height: pxToRem(50px);
+      margin: 0 20px;
+    }
+  }
+
+  &__info-ctype {
+    @include ellipsis(100px);
+  }
+}

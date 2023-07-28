@@ -1,0 +1,43 @@
+{
+  "data": {
+    "id": "bk1aw7wrcz48h2ekge",
+    "type": "transfer",
+    "attributes": {
+      "result_success": [],
+      "result_errors": [
+        {
+          "id": "ct123",
+          "updated_at": "2023-02-21T00:45:22.002-08:00",
+          "status": "available",
+          "barcode": "bar123",
+          "label": "container_1",
+          "organization": "Strateos",
+          "errors": [
+            {
+              "title": "Record Invalid Error",
+              "detail": "container ct123, Multiple tubes cannot be in a single box cell",
+              "source": "/api/containers/transfer_many/2",
+              "status": 422
+            }
+          ]
+        },
+        {
+          "id": "ct124",
+          "updated_at": "2023-02-21T00:45:22.002-08:00",
+          "status": "available",
+          "barcode": "bar456",
+          "label": "container_2",
+          "organization": "Strateos",
+          "errors": [
+            {
+              "title": "Record Invalid Error",
+              "detail": "container ct124, Multiple tubes cannot be in a single box cell",
+              "source": "/api/containers/transfer_many/2",
+              "status": 422
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

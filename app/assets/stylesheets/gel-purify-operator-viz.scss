@@ -1,0 +1,113 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+
+.gel-purify {
+  height: 100%;
+  overflow-y: auto;
+
+  .grid {
+    border-top: 1px solid $dark-gray;
+    border-bottom: 1px solid $dark-gray;
+    position: relative;
+  }
+
+  .lane {
+    border-right: 1px dashed $standard-gray;
+    display: inline-block;
+    height: 100%;
+    width: 100px;
+    position: relative;
+
+    .numbering {
+      margin-bottom: 3px;
+    }
+
+    .numbering,
+    .source,
+    .ladder {
+      font-weight: bold;
+    }
+
+    .ladder {
+      background-color: $blue;
+    }
+
+    .numbering,
+    .source,
+    .footer,
+    .ladder {
+      @include tx-typescale(-2);
+      display: block;
+      text-align: center;
+    }
+
+    &:last-of-type {
+      border: 0;
+    }
+  }
+
+  .headers {
+    height: 50px;
+
+    .lane {
+      line-height: 1;
+    }
+  }
+
+  .extraction {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+
+    // Show the item on hover in case it is covered by another extraction
+    &:hover {
+      @include tx-z-index(absolute, tooltip);
+    }
+  }
+
+  .extraction-target {
+    @include flex-justify-and-align(center, center);
+    @include tx-typescale(-2);
+    background-color: $blue;
+    min-height: 18px;
+  }
+
+  .extraction-details {
+    background-color: $black--90;
+    width: 100%;
+    padding: 0;
+
+    margin: 0;
+
+    li:before {
+      display: none;
+    }
+  }
+
+  .gel-purify-summary {
+    @include tx-typescale(-1);
+    max-width: 400px;
+
+    dt,
+    dd {
+      line-height: 1;
+      width: 48%;
+      display: inline-block;
+    }
+
+    dt {
+      text-align: right;
+      margin-right: 8px;
+      color: $black;
+    }
+
+    dt:after {
+      content: ':';
+    }
+
+    dl {
+      margin-bottom: 5px;
+    }
+  }
+}

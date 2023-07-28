@@ -1,0 +1,11 @@
+.filter-sidebar {
+  .react-datepicker {
+    &__month-container {
+        width: 100%;
+    }
+  }
+
+  &__inputs {
+    max-width: 200px;
+  }
+}

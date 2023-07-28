@@ -1,0 +1,17 @@
+@use 'main/global-imports' as *;
+
+.csv-upload-pane {
+
+  &__dragdrop {
+    height: 45vh;
+    @include tx-typescale(-2);
+  }
+
+  &__download-icon {
+    margin-right: 0.5em;
+  }
+
+  &__banner {
+    margin-bottom: $spacing--md;
+  }
+}

@@ -1,0 +1,27 @@
+@use 'main/global-imports' as *;
+
+.add-package-card {
+  @include mq(md, up) {
+    @include tx-layout__grid-item(xlg, 4);
+  }
+
+  @include mq(sm, only) {
+    @include tx-layout__grid-item(md, 3);
+  }
+
+  @include mq(xs, only) {
+    @include tx-layout__grid-item(md, 2);
+  }
+
+  height: 130px;
+
+  &.creating {
+    width: $element-width-md;
+  }
+
+  .form-section {
+    .vertical-spaced-list {
+      width: $element-width-base;
+    }
+  }
+}

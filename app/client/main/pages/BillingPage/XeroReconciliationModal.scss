@@ -1,0 +1,8 @@
+@use 'main/global-imports' as *;
+
+.xero-reconciliation-modal {
+    .loading{
+        padding-top: $spacing--xxs;
+        padding-left: $spacing--xs;
+    }
+}

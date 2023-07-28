@@ -1,0 +1,26 @@
+.compound-detail-page__molecule-wrapper {
+  height: 500px;
+  position: relative;
+}
+
+.compound-inventory {
+  .search-field {
+    height: pxToRem(42px);
+
+    &__category {
+      width: 125px;
+    }
+
+    &__wrapper {
+      width: 475px;
+    }
+  }
+  .multi-select {
+    .select-input {
+      height: pxToRem(42px);
+    }
+  }
+  .card {
+    overflow: visible;
+  }
+}

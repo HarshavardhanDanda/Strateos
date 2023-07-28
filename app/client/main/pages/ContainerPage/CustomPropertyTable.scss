@@ -1,0 +1,15 @@
+@use 'main/global-imports' as *;
+
+.custom-property {
+  padding-bottom: 1em;
+
+  #{&}-header--grey {
+    background-color: $black--20;
+  }
+
+  #{&}-header-row {
+    &__column{
+      width: 50%;
+    }
+  }
+}

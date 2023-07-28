@@ -1,0 +1,109 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+
+.tube-view,
+.tube-create {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+
+  .tube-details-container {
+    .tube-details {
+      display: inline-block;
+      width: 200px;
+      margin: 40px 10px 40px 100px;
+      vertical-align: middle;
+
+      .text {
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+.acknowledge-containers {
+  @include flex-justify-and-align(center, center);
+
+  .body-container {
+    @include flex-justify-and-align(center, center);
+    flex-direction: column;
+    width: 600px;
+
+    i {
+      color: $dark-gray;
+    }
+  }
+}
+
+.shipment-created-success,
+.test-containers-created {
+  .modal-body {
+    @include flex-justify-and-align(center, center);
+
+    .body-container {
+      @include flex-justify-and-align(center, center);
+      flex-direction: column;
+      width: 700px;
+
+      h1 {
+        line-height: 30px;
+        text-align: center;
+      }
+
+    }
+  }
+
+  .modal-footer {
+    display: block;
+    padding: 30px 50px;
+    text-align: left;
+
+    .container-card-wrapper {
+      cursor: pointer;
+
+      .card .card-header {
+        margin: 10px 20px;
+      }
+    }
+  }
+
+}
+
+.address-envelope {
+  position: relative;
+  width: 300px;
+  height: 145px;
+  background-image: url('/images/icons/inventory_browser_icons/intake-envelope@2x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  .envelope-text {
+    @include tx-typescale(-2);
+    line-height: 1.3rem;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+}
+
+.card-intake-code-focus {
+  width: 266px;
+  height: 126px;
+  background-image: url('/images/icons/inventory_browser_icons/card-intake-code-focus@2x.png');
+  background-size: contain;
+}
+
+.inventory-content {
+  .create-container .choose-container .hide-sample-types {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: $extra-light-carbon;
+    cursor: pointer;
+  }
+
+  .paginated-footer {
+    @include flex-justify-and-align(center, center);
+  }
+}

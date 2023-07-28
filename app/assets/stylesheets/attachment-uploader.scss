@@ -1,0 +1,93 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.package-release {
+  &__upload {
+    margin-top: -15px;
+  }
+}
+
+.attachment-uploader {
+
+  &__files {
+    margin-bottom: 15px;
+  }
+
+  &__file {
+    @include tx-typescale(-2);
+    background: $light-gray;
+    border: 1px solid $dark-gray;
+    cursor: default;
+    margin-top: 4px;
+    padding: 2px 5px;
+    position: relative;
+    text-overflow: ellipsis;
+    z-index: 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__name,
+  &__size,
+  &__x {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__name {
+    display: inline-block;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  &__link {
+    color: $blue;
+  }
+
+  &__size {
+    color: $black--80;
+    display: inline-block;
+    margin-left: 4px;
+  }
+
+  &__x {
+    @include tx-typescale(0);
+    color: $black--80;
+    cursor: pointer;
+    float: right;
+    font-weight: $font-weight-bold;
+  }
+
+  &__upload-progress {
+    background-color: $green--40;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  &__upload {
+    margin: auto 0;
+
+    input[type='file'] {
+      @include tx-typescale(1);
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+      opacity: 0;
+      filter: alpha(opacity=0);
+    }
+  }
+
+  &__upload.btn {
+    position: relative;
+  }
+}

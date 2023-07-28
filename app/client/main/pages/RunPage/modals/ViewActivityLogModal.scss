@@ -1,0 +1,13 @@
+@use 'main/global-imports' as *;
+
+.view-activity-log {
+  &__content {
+    display: grid;
+    gap: $spacing--sm;
+  }
+
+  &__button {
+    margin-top: $spacing--xxlg;
+    justify-self: end;
+  }
+}

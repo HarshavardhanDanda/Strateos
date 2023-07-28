@@ -1,0 +1,119 @@
+@use "sass:map";
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use 'bootstrap-sass/assets/stylesheets/bootstrap/mixins' as *;
+
+$input-height: 40px;
+$input-padding: sm;
+
+.login-form {
+  @include tx-layout__children(stack, xxlg);
+
+  &__authenticity-token {
+    margin: 0;
+    padding: 0;
+    display: inline;
+  }
+
+  &__group {
+    @include tx-layout__children(stack, xxs);
+    position: relative;
+  }
+
+  & > &--animate {
+    animation-name: moveUp;
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+  }
+
+  @for $i from 1 through 4 {
+    & > &--animate:nth-child(#{$i}) {
+      animation-delay: #{calc($i / 10) - calc(1 / 10)}s;
+    }
+  }
+
+  &__group-label {
+    @include tx-typescale(-2);
+
+    position: absolute;
+    top: calc($input-height / 2);
+    left: map.get($spacing-map, $input-padding);
+    font-weight: $font-weight-bold;
+    letter-spacing: 1px;
+    transform-origin: 0 0;
+    transform: translateY(-50%) translateX(0) scale(1);
+    transition: transform 0.2s;
+    pointer-events: none;
+  }
+
+  & &__group-input {
+    @include transition(border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out);
+    @include tx-typescale(0);
+    @include tx-box-shadow(none);
+    @include tx-border-radius(none);
+    @include tx-spacing__inset(squish, $input-padding);
+
+    caret-color: $white;
+    background: tx-transparentize($white, light-overlay);
+    border: 1px solid tx-transparentize($white, dark-overlay);
+    height: $input-height;
+    letter-spacing: 0.4px;
+    color: $white;
+    width: 100%;
+    display: block;
+
+    &:focus {
+      @include tx-box-shadow(focused-state-shadow);
+      border-color: $str-green--medium;
+    }
+  }
+
+  &__group-input:focus + &__group-label,
+  &__group-input:not([value='']) + &__group-label {
+    transform: translateY(calc(-#{$input-height} / 2)) translateY(-100%) translateX(-10px) scale(0.8);
+  }
+
+  &__group-link {
+    float: left;
+  }
+
+  &__qrcode {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__submit {
+    @include linear-gradient($str-green--logo 18%, $str-green--medium 200%);
+    @include transition(background-image 0.5s ease, background-color 0.5s ease);
+    background-repeat: repeat-x;
+    border: 0;
+    color: $white;
+    cursor: pointer;
+    font-weight: $font-weight-bold;
+    height: 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: $spacing--xlg;
+
+    &:hover:not(:disabled) {
+      @include linear-gradient($str-green--dark 18%, $str-green--dark 200%);
+      border-color: transparent;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+}
+
+@keyframes moveUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,34 @@
+@use 'main/global-imports' as *;
+
+.delete-data-content {
+  gap: $spacing--sm;
+
+  &__grid {
+    display: grid;
+  }
+
+  .amino-table__header{
+    text-transform: none;
+  }
+
+  .button-group {
+    margin-top: $spacing--xxlg;
+    justify-self: end;
+  }
+
+  &__input {
+    width: pxToRem(378px);
+  }
+
+  &__button {
+    position: absolute;
+    bottom: pxToRem(20px);
+    right: pxToRem(20px);
+  }
+
+  &__search {
+    display: flex;
+    gap: $spacing--md;
+  }
+}
+

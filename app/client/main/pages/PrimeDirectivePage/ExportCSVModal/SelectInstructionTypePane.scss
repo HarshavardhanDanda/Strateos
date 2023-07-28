@@ -1,0 +1,11 @@
+@use 'main/global-imports' as *;
+
+.select-instruction-type-pane {
+    &--select {
+        width: pxToRem(400px);
+    }
+
+    &--table {
+        height: pxToRem(360px);
+    }
+}

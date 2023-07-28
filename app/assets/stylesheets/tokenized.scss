@@ -1,0 +1,37 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.resource-searcher {
+  position: relative;
+  width: 100%;
+  background: transparent;
+  z-index: 1;
+
+  > input.form-control {
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid $light-gray;
+    width: 100%;
+    height: 40px;
+    box-shadow: none;
+  }
+
+  .results {
+    position: absolute;
+    background: $white;
+    box-shadow: 0 1px 4px hsla(0, 0%, 0%, 0.2);
+    width: 100%;
+    @include tx-z-index(relative, page-content);
+
+    .result {
+      cursor: pointer;
+      padding: 8px;
+      overflow: hidden;
+
+      &.selected,
+      &:hover {
+        background: $yellow--60;
+        overflow-x: auto;
+      }
+    }
+  }
+}

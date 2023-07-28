@@ -1,0 +1,6 @@
+@use 'main/global-imports' as *;
+
+.taskgraph-node {
+  @include completion-status-coloration;
+  background-color: $white;
+}

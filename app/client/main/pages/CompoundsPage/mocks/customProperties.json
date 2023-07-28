@@ -1,0 +1,33 @@
+[
+  {
+    "id": "ccp1gbfdqv7nbxwx",
+    "type": "contextual_custom_properties",
+    "context_type": "CompoundLink",
+    "context_id": "cmp1gbfdqv6h5tvx",
+    "value": "Project beta",
+    "key": "cmp_cp_1"
+  },
+  {
+    "id": "ccp1gbfdqv8kdksd",
+    "type": "contextual_custom_properties",
+    "context_type": "CompoundLink",
+    "context_id": "cmp1gbfdqv6h5tvx",
+    "value": "201",
+    "key": "cmp_cp_2"
+  },
+  {
+    "id": "ccp1gbfebbr259vm",
+    "type": "contextual_custom_properties",
+    "context_type": "CompoundLink",
+    "context_id": "cmp1gbfdqv6h5tvx",
+    "value": "Mouse Phenotyping,General Screening",
+    "key": "cmp_cp_3"
+  },
+  {
+    "id": "ccp1gbfdncs7mz3s",
+    "type": "contextual_custom_properties",
+    "context_type": "CompoundLink",
+    "context_id": "cmp1gbfdqv6h5tvx",
+    "key": "cmp_cp_4"
+  }
+]

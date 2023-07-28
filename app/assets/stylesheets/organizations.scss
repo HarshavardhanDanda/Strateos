@@ -1,0 +1,136 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+$image-dimension: 176px;
+$caption-height: 44px;
+
+.tab-component {
+  margin-top: $spacing--xxxlg;
+  margin-bottom: $spacing--xxlg;
+ }
+
+.organization-header {
+  &__name {
+    text-align: center;
+  }
+
+  &__sidebar-container{
+    width:100%;
+    max-width: $image-dimension;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  &__photo-container {
+    height:0;
+    padding-top: 100%;
+    position: relative;
+    max-height: $image-dimension;
+    max-width: $image-dimension;
+  }
+
+  &__photo {
+    @include tx-border-radius(massive);
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 1;
+
+    &:hover .organization-header__profile-pic-caption{
+      transform: translateY(-$caption-height);
+   }
+  }
+
+  &__profile-pic-caption {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include tx-transition(ease,$tx-animation__base-time);
+
+    position: absolute;
+    width: 100%;
+    height: $caption-height;
+    background: tx-transparentize($black, dark-overlay);
+    bottom: -$caption-height;
+  }
+
+  .tabs {
+    .panel-navigation {
+      position: relative;
+      top: -25px;
+      padding-left: 200px;
+    }
+  }
+}
+
+.organization-overview-page {
+
+  &--approved {   
+    color: $green--90;       
+  }
+
+  tr.add-collaborator {
+    background-color: $extra-light-gray;
+    color: $extra-dark-gray;
+
+    &:hover {
+      background-color: $light-gray;
+      cursor: pointer;
+    };
+  }
+}
+
+.organization-addresses-page {
+  .address {
+    margin-bottom: 20px;
+  }
+
+  .address-list.empty {
+    font-style: italic;
+    color: $extra-dark-gray;
+    margin-bottom: 20px;
+  }
+}
+
+.account-manager {
+  .col-md-1 {
+    width: 65px;
+  }
+
+  img {
+    width: 50px;
+  }
+}
+
+.collaborator-name-col {
+  width: 35%;
+}
+
+.collaborator-email-col {
+  width: 35%;
+}
+
+.collaborator-role-col {
+  width: 15%;
+}
+
+.collaborator-actions-col {
+  width: 15%;
+}
+
+.table > tbody > tr > td.collaborator-actions-row-col {
+  line-height: 27px;
+}
+
+.add-collaborator-form {
+  position: relative;
+
+  &__button {
+    float: right;
+  }
+}

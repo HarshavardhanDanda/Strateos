@@ -1,0 +1,48 @@
+{
+  "data": {
+    "id": "bk1aw9s6dupepf689x",
+    "type": "bulk_requests",
+    "links": {
+      "self": "http://localhost:5000/api/bulk_requests/bk1aw9s6dupepf689x"
+    },
+    "attributes": {
+      "created_by" : "u12345",
+      "organization_id": "org13",
+      "context_type": "Container",
+      "bulk_action": "download",
+      "query": {},
+      "expected_records": 4,
+      "additional_data": {},
+      "result_success": [
+        {
+          "id": "ct101",
+          "updated_at": "2023-02-21T00:45:22.002-08:00",
+          "status": "returned",
+          "barcode": "AA_101",
+          "label": "container_name_1",
+          "errors": null
+        },
+        {
+          "id": "ct102",
+          "updated_at": "2023-02-21T00:45:22.002-08:00",
+          "status": "available",
+          "barcode": "AA_102",
+          "label": "container_name_2",
+          "errors": null
+        }
+      ],
+      "result_errors": [],
+      "completed_at": "2023-02-21T00:45:22.002-08:00",
+      "attachments": [
+        {
+          "name": "org-1_container-results.csv",
+          "data": "aGV5IHRoZXJl"
+        },
+        {
+          "name": "org-2_container-results.csv",
+          "data": "d2hhdHMsdXA="
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+<h1 class="unauthenticated-title">No confirmation email?</h1>
+
+<p class="tx-type--secondary">
+  Enter your email below and we'll resend it.
+</p>
+
+<form accept-charset="UTF-8" action="/users/confirmation" id="resend-confirmation-form" method="post">
+  <div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;">
+    <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Your email</label>
+    <input type="email" class="form-control" name="user[email]" placeholder="roberthooke@gmail.com"
+           value="<%= resource.email %>" autofocus=true>
+  </div>
+
+  <div class="form-actions">
+    <button class="btn btn-default" name="button" type="submit">Resend confirmation</button>
+  </div>
+</form>
+
+<div class="links">
+  <p class="desc">Already confirmed? <a href="/users/sign_in">Sign in.</a></p>
+</div>

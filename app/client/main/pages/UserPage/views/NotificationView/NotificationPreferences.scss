@@ -1,0 +1,36 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.notification-preferences {
+
+    &__head {
+        height: $spacing--xxxlg;
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__title-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: $spacing--xxs;
+    }
+
+    &__toggle-buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: $spacing--md;
+
+        .toggle-wrapper {
+            margin-right: $spacing--xs;
+        }
+    }
+
+    &__body {
+        padding: $spacing--xxs 0;
+    }
+
+    &__checkbox-group {
+        padding-left: $spacing--xs;
+    }
+}

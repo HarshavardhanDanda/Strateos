@@ -1,0 +1,33 @@
+@use 'main/global-imports' as *;
+
+$run-list-gutter: 40px;
+
+.run-list {
+  margin-bottom: $run-list-gutter;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+
+    input[type='checkbox'] {
+      margin-right: $run-list-gutter;
+    }
+  }
+
+  &__card-container {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__highlighted {
+    color: white !important;
+    background-color: $blue--80 !important;
+  }
+}

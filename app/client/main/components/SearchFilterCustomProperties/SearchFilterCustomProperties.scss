@@ -1,0 +1,61 @@
+@use 'main/global-imports' as *;
+
+.option-properties {
+  min-width: 175px;
+  .add-property {
+    align-items: center;
+    @include tx-layout__children(inline, xxxs);
+
+    dt {
+      &:after {
+        content: none;
+      };
+    }
+
+    dt > input {
+      width: 75px;
+    }
+
+    dd > input {
+      width: 75px;
+    }
+  }
+
+  .property{
+    @include tx-layout__children(inline, xxxs);
+    justify-content: space-between;
+    dd, dt {
+      width: auto;
+    }
+  }
+
+  dt {
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: initial;
+    margin-right: 0px;
+
+    &:hover {
+      text-overflow: initial;
+      overflow-x: auto;
+    }
+    &:after {
+      content: ':';
+    }
+  }
+
+  span.value {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: initial;
+    &:hover {
+      text-overflow: initial;
+      overflow-x: auto;
+    }
+  }
+
+  dd {
+    max-width: 100px;
+  }
+}

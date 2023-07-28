@@ -1,0 +1,8 @@
+.compound {
+    width: 300px;
+}
+.compound-view {
+    &--clickable {
+        cursor: pointer;
+    }
+}

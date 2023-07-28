@@ -1,0 +1,16 @@
+@use 'main/global-imports' as *;
+
+.labels-drawer {
+  &__add-labels {
+    @include tx-spacing__inset(square, md);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__drawer-options {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

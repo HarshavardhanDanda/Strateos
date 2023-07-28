@@ -1,0 +1,18 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.mixture-modal {
+  &__mixture-body {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    gap: $element-width-xs;
+  }
+
+  &__element {
+    width: 50%;
+  }
+
+  &__resource-label {
+    padding-bottom: $spacing--xxs;
+  }
+}

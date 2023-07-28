@@ -1,0 +1,29 @@
+Hello <%= @containers.first.organization.name %>,
+
+Strateos periodically reviews your inventory to monitor your sample
+conditions. Samples being actively used in recent runs are stored as per your
+instructions. However if more than 3 months have elapsed since the samples were
+last used in a run or if your reagents have either dehydrated or expired,
+they will be disposed of. If you would like to preserve your samples, they can
+be returned to you through the standard return shipment process.
+
+The following containers have not been used in a run for more than 3 months and
+hence meet the above criteria:
+
+Container ID      Label          Reason for Discard
+<% @containers.each do |container| -%>
+<%= container.id %>    <%= container.label %>    Last used: > 3 months
+<% end -%>
+
+If you would like to request an extension for your container, please visit the
+container's page and click 'Request extension' under container actions.
+
+If you would like any of your containers returned, please visit the container's
+page and select 'Ship container' under container actions.
+
+If we do not hear from you within the next 2 weeks, your containers will be
+discarded.
+
+Best Regards,
+
+The Strateos Team

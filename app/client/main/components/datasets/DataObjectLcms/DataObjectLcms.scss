@@ -1,0 +1,46 @@
+@use 'main/global-imports' as *;
+@use 'stylesheets/bootstrap-variables' as *;
+
+.data-object-lcms {
+    &--body {
+        .divider--horz {
+            margin: 0 -16px;
+            color: $carbon--10;
+        }
+
+        &__header {
+            border: 0;
+            border-bottom: 1px;
+        }
+
+        .data-table__table-headergrid {
+            border: none;
+        }
+
+        .data-table__table-datagrid {
+            border: none;
+        }
+
+        .data-table__header-cell {
+            background-color: $black--20;
+        }
+
+        .kv-list {
+            margin: 15px 0px;
+
+            &__key {
+                color: $carbon--40;
+                font-weight: 700;
+            }
+
+            &__value-text {
+                font-size: $font-size-small;
+            }
+
+            &__data-container {
+                margin-right: $spacing--md;
+            }
+        }
+    }
+
+}

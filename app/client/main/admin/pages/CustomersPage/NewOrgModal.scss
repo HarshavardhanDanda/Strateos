@@ -1,0 +1,10 @@
+.new-org-modal {
+    min-height: 570px;
+
+    &__checkbox {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        flex-direction: row;
+    }
+}

@@ -1,0 +1,9 @@
+@use 'main/global-imports' as *;
+
+.provision-panel {
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: $spacing--xxs;
+  }
+}

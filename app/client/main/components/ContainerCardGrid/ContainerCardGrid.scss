@@ -1,0 +1,5 @@
+@use 'main/global-imports' as *;
+
+.container-card-grid__grid-item {
+  @include tx-layout__grid-item(sm, 3);
+}

@@ -1,0 +1,100 @@
+@use 'main/global-imports' as *;
+
+.intake-kit-details-page {
+	&__form {
+    .row + .row {
+      margin-top: $spacing--sm;
+    }
+  }
+
+  &__tracker{
+    margin-top: 50px;
+  }
+
+  &__banner {
+    margin-top: $spacing--xlg;
+
+    &__table-title {
+      text-transform: uppercase;
+      color: $blue--70;
+    }
+
+    .expandable-card {
+      border: 0px;
+
+      &--expanded &__head {
+        border-bottom: 1px solid transparent;
+      }
+      
+      &__body {
+        margin-top: $spacing--xlg;
+      }
+    }
+  }
+
+	&__tablayout {
+    margin-top: $spacing--md;
+  }
+
+	&__item-header {
+    @include tx-type__style(subheading, $default-tier: primary, $default-weight: heavy);
+  }
+
+	&__buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: $spacing--md;
+  }
+
+  &__note {
+    margin-left: 180px;
+  }
+
+  &__text-input-note {
+    width: 300px;
+    height: 110px;
+  }
+
+  &__text-input-tracking {
+    width: 400px;
+    height: 40px;
+  }
+
+  &__detail-col {
+    padding-left: 0;
+  }
+
+  &__status-col {
+    padding: 0;
+  }
+
+  &__detail {
+    height: 220px;
+  }
+
+  dt, dd {
+    line-height: 25px;
+  }
+
+  .dl-horizontal {
+    dt {
+      float:left;
+      text-align: left;
+    }
+  }
+}
+
+.expandable-card {
+  &--expanded &__head {
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.processed-on-string {
+  font-size: 0.975rem;
+  text-align: right;
+}
+
+.bulk-upload-button {
+  margin-left: 7rem;
+}

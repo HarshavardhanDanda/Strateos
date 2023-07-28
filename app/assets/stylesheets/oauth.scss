@@ -1,0 +1,23 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+
+#oauth {
+  #authorization {
+    max-width: 600px;
+    margin: 60px auto 0;
+
+    .panel-heading {
+      @include background-stripes($extra-light-gray, $light-gray);
+    }
+
+    .panel-body {
+      p.h4 {
+        margin-top: 0;
+      }
+
+      input.btn.btn-block {
+        margin-top: 15px;
+      }
+    }
+  }
+}

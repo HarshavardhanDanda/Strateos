@@ -1,0 +1,52 @@
+@use 'main/global-imports' as *;
+
+$tab-height: 35px;
+
+.provision-card-header {
+  overflow: hidden;
+  margin-top: 20px;
+
+  &__background {
+    height: $tab-height;
+    background: $white;
+    width: calc(100% - 40px);
+    align-items: center;
+  }
+
+  &__tab {
+    height: $tab-height;
+    width: max-content;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  &__tab-content {
+    margin-left: 10px;
+    margin-right: 10px;
+    position: absolute;
+    top: 25%;
+  }
+
+  &__tab-triangle {
+    @include tx-border-radius(large);
+    height: 0;
+    width: 0;
+    border-width: $tab-height - 7px;
+    border-color: transparent;
+    border-right-color: $white;
+    position: absolute;
+    right: ($tab-height - 55px) * -1;
+    top: 8px;
+    transform: rotate(-45deg);
+
+    box-sizing: content-box;
+    border-style: solid;
+  }
+
+  &__tab-status {
+    display: inline !important;
+    margin-left: 5px;
+  }
+}

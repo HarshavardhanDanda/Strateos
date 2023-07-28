@@ -1,0 +1,82 @@
+@use 'main/global-imports' as *;
+
+.return-shipment-card {
+  @include tx-border-radius(large);
+  border: 1px solid $dark-gray;
+  overflow: hidden;
+
+  a[disabled] {
+    color: $black;
+    cursor: text;
+  }
+
+  // override style leak
+  p {
+    margin: 0;
+  }
+
+  // ovveride style leak
+  h3 {
+    @include tx-typescale(3);
+    margin: 0;
+  }
+
+  &__status-title {
+    &:first-letter {
+      text-transform: capitalize;
+    }
+  }
+
+  &__info {
+    display: inline-block;
+    margin: 1em;
+
+    &:not(:first-child):not(:last-child) {
+      margin: 1em 5%;
+    }
+  }
+
+  &__label {
+    @include tx-typescale(-2);
+    text-transform: uppercase;
+    font-weight: $font-weight-regular;
+  }
+
+  &__head {
+    background-color: $light-gray;
+  }
+
+  &__body {
+    max-height: 400px;
+    padding: 1em;
+    background-color: $white;
+    overflow-y: scroll;
+    border-top: 1px solid $dark-gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .return-shipment-container-card {
+    margin: 2em 0;
+  }
+
+  .address-text {
+    text-align: left;
+  }
+}
+
+.return-shipment-container-card {
+  display: flex;
+
+  &__icon {
+    height: 40px;
+    width: 50px;
+    margin-right: 1em;
+
+    img {
+      display: block;
+      margin: auto;
+      height: 100%;
+    }
+  }
+}

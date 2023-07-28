@@ -1,0 +1,9 @@
+@use 'main/global-imports' as *;
+
+.results-view-content {
+  display: flex;
+  flex-direction: column;
+  @include tx-layout__children(stack, xlg);
+
+  width: 100%;
+}

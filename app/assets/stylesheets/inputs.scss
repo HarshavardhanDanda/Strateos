@@ -1,0 +1,63 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+$error-text-color: $red;
+
+.has-error .bubbled-segmented-input {
+  border: 1px solid $red;
+
+  & span {
+    color: $error-text-color;
+  }
+}
+
+.has-error {
+  .help-block {
+    color: $error-text-color;
+  }
+}
+
+.bubbled-segmented-input {
+  display: flex;
+  align-items: center;
+  @include tx-typescale(-2);
+  @include tx-border-radius(medium);
+  min-height: 40px; // can expand if many segments
+  border: 1px solid $light-gray;
+  cursor: pointer;
+
+  .segment-empty-text {
+    @include tx-typescale(-2);
+    color: $blue;
+    margin: 10px;
+  }
+
+  .segments {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .segment {
+      display: flex;
+      align-items: center;
+      @include tx-border-radius(massive);
+      cursor: initial;
+      background-color: $blue--20;
+      border: 1px solid $light-gray;
+      min-height: 28px;
+      margin: 5px;
+      padding: 5px;
+
+      .segment-text {
+        word-break: break-word;
+        margin: 0 10px 0 5px;
+      }
+
+      .delete {
+        @include tx-typescale(-3);
+        cursor: pointer;
+        margin: 0 2px;
+        color: $dark-gray;
+      }
+    }
+  }
+}

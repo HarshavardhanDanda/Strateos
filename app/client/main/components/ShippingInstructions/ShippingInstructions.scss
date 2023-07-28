@@ -1,0 +1,24 @@
+@use 'main/global-imports' as *;
+
+.shipping-instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include tx-layout__children(stack, md);
+
+  &__instruction {
+
+    &:first-of-type {
+      margin-top: 10px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__instruction-header {
+    margin: 5px 0;
+    font-weight: $font-weight-regular;
+  }
+}

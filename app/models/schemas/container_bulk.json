@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "properties": {
+    "requests": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/request" }
+    }
+  },
+  "required": ["requests"],
+  "$defs": {
+    "request": {
+      "type": "object",
+      "required": [
+        "container_id",
+        "action"
+      ],
+      "properties": {
+        "container_id": {
+          "type": "string",
+          "description": "The id of the container."
+        },
+        "action": {
+          "type": "string",
+          "description": "Operation to perform on the container"
+        },
+        "location_id": {
+          "type": "string",
+          "description": "New location id when container needs t be relocate"
+        },
+        "error": {
+          "type": "string",
+          "description": "Result from the BackEnd"
+        }
+      }
+    }
+  }
+}

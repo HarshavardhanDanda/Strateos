@@ -1,0 +1,370 @@
+[
+    {
+        "id": "lbc1fknzm4mcwqr7",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "Menlo Park",
+            "operated_by_id": "org123",
+            "operated_by_name": "Strateos",
+            "operating": true,
+            "consuming": true,
+            "address": {
+                "id": "addr1",
+                "attention": "Second address",
+                "street": "3565 Haven Av",
+                "street_2": "Suite 454234",
+                "city": "Menlo park",
+                "state": "CA",
+                "zipcode": "94025",
+                "country": "US"
+            },
+            "id": "lab1",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "Strateos",
+            "subdomain": "transcriptic",
+            "id": "org123",
+            "type": "organizations"
+        }
+    },
+    {
+        "id": "lbc1fmrwx7byrnxt",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "Default Lab",
+            "operated_by_id": "org1fmrwx7bfuw5c",
+            "operated_by_name": "orgccsone",
+            "operating": false,
+            "consuming": false,
+            "address": null,
+            "id": "lab3",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "orgccsone",
+            "subdomain": "orgccsone",
+            "id": "org1fmrwx7bfuw5c",
+            "type": "organizations"
+        }
+    },
+    {
+        "id": "lbc1fknzmewqrew",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "Menlo Park",
+            "operated_by_id": "org123",
+            "operated_by_name": "Strateos",
+            "operating": true,
+            "consuming": true,
+            "address": {
+                "id": "addr1",
+                "attention": "Second address",
+                "street": "3565 Haven Av",
+                "street_2": "Suite 454234",
+                "city": "Menlo park",
+                "state": "CA",
+                "zipcode": "94025",
+                "country": "US"
+            },
+            "id": "lab1",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "UTEC",
+            "subdomain": "utec",
+            "id": "org123432ksdajf",
+            "type": "organizations"
+        }
+    },
+    {
+        "id": "lbc1fknzmpf4dvnz",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "Menlo Park",
+            "operated_by_id": "org123",
+            "operated_by_name": "Strateos",
+            "operating": true,
+            "consuming": true,
+            "address": {
+                "id": "addr1",
+                "attention": "Second address",
+                "street": "3565 Haven Av",
+                "street_2": "Suite 454234",
+                "city": "Menlo park",
+                "state": "CA",
+                "zipcode": "94025",
+                "country": "US"
+            },
+            "id": "lab1",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "Evan's Lab",
+            "subdomain": "evans-lab",
+            "id": "org18gq2mp292uq",
+            "type": "organizations"
+        }
+    },
+    {
+        "id": "lbc1fknzmpffruyb",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "Menlo Park",
+            "operated_by_id": "org123",
+            "operated_by_name": "Strateos",
+            "operating": true,
+            "consuming": true,
+            "address": {
+                "id": "addr1",
+                "attention": "Second address",
+                "street": "3565 Haven Av",
+                "street_2": "Suite 454234",
+                "city": "Menlo park",
+                "state": "CA",
+                "zipcode": "94025",
+                "country": "US"
+            },
+            "id": "lab1",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "Dexters Lab",
+            "subdomain": "dexters-lab",
+            "id": "org18reb7x9g9cg",
+            "type": "organizations"
+        }
+    },
+    {
+        "id": "lbc1fknzmpeufgrs",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "Menlo Park",
+            "operated_by_id": "org123",
+            "operated_by_name": "Strateos",
+            "operating": true,
+            "consuming": true,
+            "address": {
+                "id": "addr1",
+                "attention": "Second address",
+                "street": "3565 Haven Av",
+                "street_2": "Suite 454234",
+                "city": "Menlo park",
+                "state": "CA",
+                "zipcode": "94025",
+                "country": "US"
+            },
+            "id": "lab1",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "Kamino",
+            "subdomain": "kamino",
+            "id": "org18tjbn4etpyh",
+            "type": "organizations"
+        }
+    },
+    {
+        "id": "lbc1fknzmpexv45v",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "Menlo Park",
+            "operated_by_id": "org123",
+            "operated_by_name": "Strateos",
+            "operating": true,
+            "consuming": true,
+            "address": {
+                "id": "addr1",
+                "attention": "Second address",
+                "street": "3565 Haven Av",
+                "street_2": "Suite 454234",
+                "city": "Menlo park",
+                "state": "CA",
+                "zipcode": "94025",
+                "country": "US"
+            },
+            "id": "lab1",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "Fuego Labs",
+            "subdomain": "fuegolabs",
+            "id": "org17kdbdswzxda",
+            "type": "organizations"
+        }
+    },
+    {
+        "id": "lbc1fknzmpfk6fce",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "Menlo Park",
+            "operated_by_id": "org123",
+            "operated_by_name": "Strateos",
+            "operating": true,
+            "consuming": true,
+            "address": {
+                "id": "addr1",
+                "attention": "Second address",
+                "street": "3565 Haven Av",
+                "street_2": "Suite 454234",
+                "city": "Menlo park",
+                "state": "CA",
+                "zipcode": "94025",
+                "country": "US"
+            },
+            "id": "lab1",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "Culver (Personal Account)",
+            "subdomain": "culver-personal-account",
+            "id": "org18rgrh42rsam",
+            "type": "organizations"
+        }
+    },
+    {
+        "id": "lbc1fknzm4mcwqr6",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "San Diego",
+            "operated_by_id": "org123",
+            "operated_by_name": "Strateos",
+            "operating": true,
+            "consuming": true,
+            "address": {
+                "id": "addr2",
+                "attention": "First Address",
+                "street": "10290 Campus Point Dr",
+                "street_2": null,
+                "city": "San Diego",
+                "state": "CA",
+                "zipcode": "92121",
+                "country": "US"
+            },
+            "id": "lab_2",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "Strateos",
+            "subdomain": "transcriptic",
+            "id": "org123",
+            "type": "organizations"
+        }
+    },
+    {
+        "id": "lbc1fknzmper2wcp",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "Menlo Park",
+            "operated_by_id": "org123",
+            "operated_by_name": "Strateos",
+            "operating": true,
+            "consuming": true,
+            "address": {
+                "id": "addr1",
+                "attention": "Second address",
+                "street": "3565 Haven Av",
+                "street_2": "Suite 454234",
+                "city": "Menlo park",
+                "state": "CA",
+                "zipcode": "94025",
+                "country": "US"
+            },
+            "id": "lab1",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "Konov Lab, ExTCLE Labs",
+            "subdomain": "konov-lab-extcle-labs",
+            "id": "org18rcw3kb6zgx",
+            "type": "organizations"
+        }
+    },
+    {
+        "id": "lbc1fknzmpfcc9k8",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "Menlo Park",
+            "operated_by_id": "org123",
+            "operated_by_name": "Strateos",
+            "operating": true,
+            "consuming": true,
+            "address": {
+                "id": "addr1",
+                "attention": "Second address",
+                "street": "3565 Haven Av",
+                "street_2": "Suite 454234",
+                "city": "Menlo park",
+                "state": "CA",
+                "zipcode": "94025",
+                "country": "US"
+            },
+            "id": "lab1",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "Yang",
+            "subdomain": "yang",
+            "id": "org18rcyakqrqnd",
+            "type": "organizations"
+        }
+    },
+    {
+        "id": "lbc1fknzmpf7tg34",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "Menlo Park",
+            "operated_by_id": "org123",
+            "operated_by_name": "Strateos",
+            "operating": true,
+            "consuming": true,
+            "address": {
+                "id": "addr1",
+                "attention": "Second address",
+                "street": "3565 Haven Av",
+                "street_2": "Suite 454234",
+                "city": "Menlo park",
+                "state": "CA",
+                "zipcode": "94025",
+                "country": "US"
+            },
+            "id": "lab1",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "biocurious",
+            "subdomain": "biocurious",
+            "id": "org18r3dk5kdy6f",
+            "type": "organizations"
+        }
+    },
+    {
+        "id": "lbc1fknzmpekh4uj",
+        "type": "lab_consumers",
+        "lab": {
+            "name": "Menlo Park",
+            "operated_by_id": "org123",
+            "operated_by_name": "Strateos",
+            "operating": true,
+            "consuming": true,
+            "address": {
+                "id": "addr1",
+                "attention": "Second address",
+                "street": "3565 Haven Av",
+                "street_2": "Suite 454234",
+                "city": "Menlo park",
+                "state": "CA",
+                "zipcode": "94025",
+                "country": "US"
+            },
+            "id": "lab1",
+            "type": "labs"
+        },
+        "organization": {
+            "name": "The Howl Jenkins Pendragon Institute of Moving Castles",
+            "subdomain": "the-howl-jenkins-pendragon-institute-of-moving-castles",
+            "id": "org18b4awtfuegp",
+            "type": "organizations"
+        }
+    }
+]

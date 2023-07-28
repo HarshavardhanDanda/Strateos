@@ -1,0 +1,13 @@
+@use 'main/global-imports' as *;
+
+.data-object-image__img {
+  max-width: 100%;
+  pointer-events: none; // Let ZoomAndPan handle pointer events
+}
+
+.data-object-image__img-not-shown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include tx-layout__item(inline, sm);
+}

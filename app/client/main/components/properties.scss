@@ -1,0 +1,25 @@
+@use 'main/global-imports' as *;
+
+.property {
+  display: flex;
+
+  &:hover {
+    background: none;
+    white-space: normal;
+  }
+
+  .actions {
+    float: right;
+  }
+
+  dd, dt {
+    width: 50%;
+    font-weight: normal;
+    color: $black;
+    min-height: 22px;
+  }
+
+  dd {
+    word-wrap: break-word;
+  }
+}

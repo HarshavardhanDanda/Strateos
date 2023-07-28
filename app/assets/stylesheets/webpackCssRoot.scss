@@ -1,0 +1,10 @@
+
+// Libraries
+@use './bootstrap-custom';
+@use '@transcriptic/amino/dist/amino_foundation.css';
+@use '@transcriptic/amino/dist/amino_components.css';
+@use '@transcriptic/amino/dist/styling/typography/classes' with (
+    $font-path: "./../../assets/fonts"
+);
+@use '@transcriptic/amino/dist/amino_icons.css';
+@use './legacy';

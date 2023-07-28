@@ -1,0 +1,18 @@
+@use '@transcriptic/amino/dist/styling/spacing/_utilities' as *;
+
+.material-orders-checkin-csv-page {
+  &__screen {
+    display: none;
+    margin: $spacing--md;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: $spacing--md;
+  }
+}

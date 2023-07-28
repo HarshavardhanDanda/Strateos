@@ -1,0 +1,24 @@
+@use 'main/global-imports' as *;
+
+.create-containers-creation-pane {
+
+  .plate-create .plate-container .well-inputs {
+    margin-left: 20px; // decrease padding as parent modal can't get larger.
+  }
+
+  .next-btn {
+    &:focus {
+      outline: 0;
+    }
+
+    @include tx-box-shadow(light-shadow);
+    @include tx-typescale(-1);
+    background: $extra-light-gray;
+    border: 0;
+    width: 100%;
+
+    i {
+      margin: 0 10px;
+    }
+  }
+}

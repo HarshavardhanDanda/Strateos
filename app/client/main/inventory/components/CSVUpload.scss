@@ -1,0 +1,14 @@
+@use 'main/global-imports' as *;
+
+.csv-upload {
+  display: flex;
+  flex-flow: column;
+  @include flex-justify-and-align(center, center);
+
+  &-with-instructions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

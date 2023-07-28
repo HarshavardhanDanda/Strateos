@@ -1,0 +1,129 @@
+@use 'main/global-imports' as *;
+
+.prime-directive-container {
+  display: flex;
+  flex-direction: column;
+
+  &__actions-container {
+    margin-left: auto;
+  }
+
+  &__run-schedule {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__assign {
+    font-weight: $font-weight-semibold;
+    font-size: $base-font-size--default;
+  }
+
+  // TODO This is repeated on RunExecutionPage.scss
+  .run-execution__statuses {
+    @include tx-typescale(0);
+
+    > * {
+      margin-left: 10px;
+    }
+  }
+}
+
+.prime-directive-header {
+  display: flex;
+  @include flex-justify-and-align(space-between, center);
+
+  &__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__status-label {
+    display: inline-block;
+  }
+}
+
+.prime-directive {
+  .send-to-workcell {
+    $minheight: 40px;
+    @include tx-typescale(3);
+    min-height: $minheight;
+    width: 100%;
+    background: $carbon;
+    color: $white;
+    font-weight: $font-weight-bold;
+    margin: 10px 0;
+    padding: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .message {
+      flex: 1;
+    }
+
+    .actions {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: flex-end;
+
+      .non-busy-actions {
+        display: flex;
+        align-items: center;
+      }
+
+      .label {
+        margin-left: 10px;
+      }
+
+      .select:last-child {
+        margin-left: $spacing--xxs;
+      }
+
+      .send {
+        @include tx-typescale(3);
+        color: $carbon;
+        cursor: pointer;
+        outline: none;
+        border: 0;
+        background: none;
+        text-transform: uppercase;
+        transition: 0.2s color;
+        padding: 0 20px;
+
+        &:enabled {
+          color: $white;
+        }
+
+        &:disabled {
+          cursor: not-allowed;
+        }
+
+        &:hover {
+          &:enabled {
+            color: $green;
+          }
+        }
+
+        &:active {
+          background-color: tx-transparentize($white, light-overlay);
+        }
+      }
+    }
+  }
+}
+
+.tabbed-content.full-width {
+  overflow: auto;
+}
+
+.fa.fa-fw.fa-check {
+  color: $green;
+}
+
+.zero-schedule {
+  margin-bottom: $spacing--sm;
+}

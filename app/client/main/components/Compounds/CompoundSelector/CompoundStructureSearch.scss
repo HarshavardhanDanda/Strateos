@@ -1,0 +1,19 @@
+@use 'main/global-imports' as *;
+
+.drawer-search {
+    @include tx-spacing__inset(squish, sm);
+    &__header {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+    }
+  
+    &__editor {
+        height: 759px;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: flex-end;
+    }
+}

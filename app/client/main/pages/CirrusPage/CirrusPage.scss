@@ -1,0 +1,7 @@
+@use 'main/global-imports' as *;
+
+.cirrus-page{
+  .tab-layout__body-column {
+    padding: 0 0 $spacing--md 0 !important;
+  }
+}

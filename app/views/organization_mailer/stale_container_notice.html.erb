@@ -1,0 +1,54 @@
+<table border="0" cellpadding="0" cellspacing="0" width="445" align="center" style="margin:auto" class="fullwidth">
+  <tr>
+    <td>
+      <p>Hello <%= @containers.first.organization.name %>,</p>
+      <p>
+        Strateos periodically reviews your inventory to monitor your sample
+        conditions. Samples being actively used in recent runs are stored as per your
+        instructions. However if more than 3 months have elapsed since the samples were
+        last used in a run or if your reagents have either dehydrated or expired,
+        they will be disposed of. If you would like to preserve your samples, they can
+        be returned to you through the standard return shipment process.
+      </p>
+      <p>
+        The following containers have not been used in a run for more than 3 months and
+        hence meet the above criteria:
+      </p>
+      <table>
+        <tbody>
+          <tr style="font-weight: bold">
+            <td style="padding: 2px 20px 2px 20px;">Container ID</td>
+            <td style="padding: 2px 20px 2px 20px;">Label</td>
+            <td style="padding: 2px 20px 2px 20px;">Reason for Discard</td>
+          </tr>
+          <% @containers.each do |container| -%>
+            <tr>
+              <td style="padding: 2px 20px 2px 20px;">
+                <%=link_to(
+                  container.id,
+                  organization_inventory_sample_url(container.organization.subdomain, container.id)
+                )%>
+              </td>
+              <td style="padding: 2px 20px 2px 20px;"><%= container.label %></td>
+              <td style="padding: 2px 20px 2px 20px;">Last used: &gt; 3 months</td>
+            </tr>
+          <%end -%>
+        </tbody>
+      </table>
+      <p>
+        If you would like to request an extension for your container, please visit the
+        container's page and click 'Request extension' under container actions.
+      </p>
+      <p>
+        If you would like any of your containers returned, please visit the container's
+        page and select 'Ship container' under container actions.
+      </p>
+      <p>
+        If we do not hear from you within the next 2 weeks, your containers will be
+        discarded.
+      </p>
+      <p>Best Regards,</p>
+      <p>The Strateos Team</p>
+    </td>
+  </tr>
+</table>

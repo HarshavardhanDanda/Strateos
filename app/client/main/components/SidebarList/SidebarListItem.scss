@@ -1,0 +1,119 @@
+@use 'VerticalNavGlobals';
+@use 'main/global-imports' as *;
+
+.sidebar-list-item {
+
+  margin: $spacing--xxs;
+
+  &.card {
+    padding: 0;
+    box-shadow: none
+  }
+
+  & &__card {
+    @include tx-spacing__inset(squish, sm);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 5.5rem;
+
+    box-shadow: none;
+    border: 0;
+
+    &:hover {
+      background-color: $carbon--20;
+    }
+
+  }
+
+  &__link {
+    @include tx-z-index(absolute, overlay);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    &--active {
+      background-color: $str-blue;
+    }
+  }
+
+  &__row {
+    @include tx-layout__children(inline, sm);
+    @include tx-z-index(relative, overlay, 1);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  &__top-row {
+    pointer-events: none;
+  }
+
+  & &__header,
+  & &__hover:hover {
+    @include tx-type__tier(primary);
+
+    white-space: nowrap;
+    min-width: 0;
+  }
+
+  &__header-text {
+    pointer-events: all;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    .active {
+      color: $str-white;
+    }
+  }
+
+  &__header-icon {
+    visibility: hidden;
+    .icon--standard::before {
+      vertical-align: 50%;
+    }
+    .active {
+      visibility: visible;
+      .icon--light {
+        color: $str-white;
+      }
+    }
+  }
+
+  &__card:hover &__header-icon {
+    color: $carbon--40;
+    visibility: visible;
+  }
+
+  &__pending {
+    color: $orange;
+  }
+
+  &__download {
+    pointer-events: all;
+    color: $light-carbon;
+
+    &:hover {
+      color: $carbon;
+    }
+  }
+
+  &__bottom-text {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    &.active {
+      color: $font-invert--disabled;
+    }
+  }
+
+}

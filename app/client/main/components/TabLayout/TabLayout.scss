@@ -1,0 +1,89 @@
+@use 'main/global-imports' as *;
+@use "sass:color";
+
+@mixin vertical-scroll-effect($spacing) {
+  .tab-layout {
+    &__columns {
+      height: calc(100% + 2 * #{$spacing});
+      // negative margin is set to create a scrolling effect that scrolls content all the way up to modal header divider.
+      margin-top: -$spacing;
+      margin-bottom: -$spacing;
+    }
+
+    &__sidebar-column,
+    &__body-column {
+      padding-top: $spacing;
+      padding-bottom: $spacing;
+    }
+  }
+}
+
+.tab-layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  // flex stretch makes layout take up all remaining available space, but no more than its content.
+  // needed to ensure separate scrollbar of TabLayout sidebar and body, in both regular page and within modal.
+  align-items: stretch;
+  max-height: 100%;
+  width: 100%;
+  
+  &__gray {
+      background-color: color.adjust($light-gray, $lightness: 3%);
+  }
+
+  &__columns {
+    display: flex;
+    height: 100%;
+  }
+
+  &__sidebar-column {
+    border-right: 1px solid $carbon--20;
+
+    &--no-border {
+      border: none;
+    }
+  }
+
+  &__sidebar-column,
+  &__body-column {
+    max-height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-top: $spacing--md;
+    padding-bottom: calc(#{$intercom-icon-padding} + #{$intercom-icon} + #{$spacing--xxxs});
+    display: flex;
+    flex-direction: column;
+
+    &--no-scroll {
+      overflow: unset;
+    }
+  }
+
+  &__topbar {
+    margin-bottom: $spacing--xxs;
+  }
+
+  &__sidebar {
+    margin-right: $spacing--xxxs; // adds space to the scrollbar
+  }
+
+  &--inside-modal {
+    @include vertical-scroll-effect($modal-body-padding);
+  }
+
+  &--inside-drawer {
+    @include vertical-scroll-effect($modal-drawer-body-padding);
+  }
+
+  @media (max-width: $screen-sm-min) {
+    &__columns {
+      display: block;
+    }
+
+    &__sidebar-column,
+    &__body-column {
+      max-height: unset;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+<%= create_gmail_goto_action("View Run", "View Run", organization_project_run_url(@run.project.organization.subdomain, @run.project.id, @run)) %>
+
+<table border="0" cellpadding="0" cellspacing="0" width="445" align="center" style="margin:auto" class="fullwidth">
+
+    <tr>
+        <td class="content">
+
+            <p style="text-align:center;font-size:17px;color:#0E202E;line-height:160%;margin:0;padding:0;letter-spacing:0.3px" class="source light">
+                Hello <%= @run.organization.name %>, Your run
+                <span style="font-style:italic"><%= @run.display_name %></span>,
+                has been accepted. We'll email you when your run has started.
+            </p>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td height="50"></td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <img src="http://static-public.transcriptic.com/email/run_status/status_has-samples_run-launched@2x.png" width="227" height="69" style="display:block;border:none;margin:auto" align="center" />
+        </td>
+    </tr>
+
+
+    <tr>
+        <td style="height:50px"></td>
+    </tr>
+
+    <tr>
+        <td align="center">
+            <a href="<%= organization_project_run_url(@run.project.organization.subdomain, @run.project.id, @run) %>">
+                <img src="http://static-public.transcriptic.com/email/run_status/view-run-status-btn@2x.png" width="250" height="40" style="display:block;margin:auto;border:none" align="center" />
+            </a>
+        </td>
+    </tr>
+
+    <tr>
+        <td style="height:50px"></td>
+    </tr>
+
+    <tr>
+        <td style="text-align:center;font-size:17px;color:#0E202E;letter-spacing:0.3px" class="source padded light">We'll email you the results when your run completes.</td>
+    </tr>
+
+    <tr>
+        <td>
+            <table border="0" cellpadding="0" cellspacing="0" width="410" align="center" style="margin:auto" class="fullwidth">
+                <tr>
+                    <td style="font-size:14px;line-height:150%;text-align:center;color:#708696;letter-spacing:0.3px" class="source light">Your account will be charged at the end of the month.</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+
+</table>

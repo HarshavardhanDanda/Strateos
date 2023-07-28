@@ -1,0 +1,19 @@
+.shipment-form {
+  // PlateCanvas and editor in shipment form
+  .plate-container, .well-property-editor {float: left}
+  .well-property-editor {width: 350px} // same width as PlateCanvas set in js
+  .enter-shipment-name {
+    input {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.shipping-cart-modal {
+  &__toggle-delivery-type {
+    text-align: left;
+  }
+  &__title {
+    text-align: center;
+  }
+}

@@ -1,0 +1,40 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use 'bootstrap-variables' as *;
+
+.price-tree {
+  &__node {
+    display: flex;
+    padding: $spacing--xxxs 0;
+    border-bottom: 1px dotted $dark-gray;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $table-bg-hover;
+    }
+  }
+
+  &__name {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    i.fa-minus,
+    i.fa-plus {
+      color: $blue;
+    }
+
+    i.fa-circle {
+      color: $extra-light-carbon;
+    }
+  }
+
+  &__total {
+    text-align: right;
+  }
+
+  &__children {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+}

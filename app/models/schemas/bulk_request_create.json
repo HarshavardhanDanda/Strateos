@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "properties": {
+    "data": {
+      "type": "object",
+      "required": [
+        "context_type",
+        "bulk_action",
+        "search_query",
+        "expected_records"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "context_type": {
+          "type": "string"
+        },
+        "bulk_action": {
+          "type": "string"
+        },
+        "search_query": {
+          "type": "object"
+        },
+        "expected_records": {
+          "type": "number"
+        },
+        "additional_data": {
+          "type": "object"
+        }
+      }
+    },
+    "include": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

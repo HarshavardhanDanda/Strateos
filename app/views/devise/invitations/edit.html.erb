@@ -1,0 +1,44 @@
+<div class="panel panel-default sign-in-panel">
+  <div class="panel-heading">
+    <h3 class="panel-title">Accept Invitation</h3>
+  </div>
+  <div class="panel-body">
+    <div class="alert alert-info">
+      <p>You've been invited to use the <%= resource.organizations.first.name %> Strateos organization.</p>
+      <p>Set up your basic info here to log in and start collaborating.</p>
+    </div>
+
+    <%= form_tag invitation_path(resource_name), :method => :put do %>
+      <%= render("devise/shared/error_messages", resource: resource) %>
+      <div class="row">
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="name">First Name</label>
+            <input type="name" class="form-control" name="user[first_name]" value="<%= resource.first_name %>" />
+          </div>
+        </div>
+        <div class="col-xs-6">
+          <div class="form-group">
+            <label for="name">Last Name</label>
+            <input type="name" class="form-control" name="user[last_name]" value="<%= resource.last_name %>" />
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email (You can change this later)</label>
+        <p><%= resource.email %><p>
+      </div>
+      <div class="form-group">
+        <label for="password">New Password</label>
+        <input type="password" class="form-control" name="user[password]" />
+      </div>
+      <div class="form-group">
+        <label for="password_confirmation">Confirm New Password</label>
+        <input type="password" class="form-control" name="user[password_confirmation]" />
+      </div>
+      <input type="hidden" name="user[invitation_token]" value="<%= resource.invitation_token %>" />
+
+      <%= button_tag "Accept Invitation", :type  => 'submit', :class => 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>

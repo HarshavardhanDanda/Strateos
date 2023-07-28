@@ -1,0 +1,10 @@
+@use 'main/global-imports' as *;
+
+.compound-list {
+    @include tx-layout__children(inline, xlg);
+    @include tx-layout__children(stack, xlg);
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: $spacing--xlg;
+}

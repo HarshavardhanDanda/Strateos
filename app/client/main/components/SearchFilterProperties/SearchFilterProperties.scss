@@ -1,0 +1,85 @@
+@use 'main/global-imports' as *;
+@use "sass:math";
+
+.option-properties {
+  .add-property {
+    align-items: center;
+    @include tx-layout__children(inline, xxxs);
+
+    dt {
+      &:after {
+        content: none;
+      };
+    }
+    
+    dt > input {
+      width: 75px;
+    }
+
+    dd > input {
+      width: 75px;
+    }
+  }
+
+  .property{
+    @include tx-layout__children(inline, xxxs);
+    justify-content: center;
+    dd, dt {
+      width: auto;
+    }
+  }
+
+  dt {
+    max-width: 80px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: initial;
+    margin-right: 0px;
+
+    &:hover {
+      text-overflow: initial;
+      overflow-x: auto;
+    }
+    &:after {
+      content: ':';
+    }
+  }
+
+  span.value {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: initial;
+    &:hover {
+      text-overflow: initial;
+      overflow-x: auto;
+    }
+  }
+
+  dd {
+    max-width: 100px;
+  }
+
+  .inplace-input {
+    margin-bottom: 18px;
+  }
+  
+  .custom-properties div:last-child > div.inplace-input:last-of-type {
+    margin-bottom: 0px;
+  }
+}
+
+.search-filter-wrapper {
+  &__title {
+    text-transform: none;
+  }
+
+  &__subtitle {
+    color: $carbon--40;
+    padding-top: $spacing--lg;
+    padding-bottom: 14px;
+  }
+
+  &__subtitle:first-of-type {
+    padding-top: math.div($spacing--xs, 2);
+  }
+}

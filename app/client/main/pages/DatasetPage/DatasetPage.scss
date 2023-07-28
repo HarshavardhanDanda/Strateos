@@ -1,0 +1,164 @@
+.dataset {
+  margin: -20px 0;
+
+  .body {
+    display: table;
+
+    #drawer {
+      display: table-cell;
+      float: none;
+      width: 25%;
+      vertical-align: top;
+      background-color: $extra-light-gray;
+      padding: 15px;
+      height: 100%;
+
+      dl.execution {
+
+        dt {
+          width: 90px;
+        }
+
+        dd {
+          margin-left: 100px;
+        }
+      }
+    }
+
+    #results {
+      display: table-cell;
+      float: none;
+      width: 75%;
+      padding: 15px;
+      vertical-align: top;
+    }
+  }
+
+  .no-runs,
+  .no-results {
+    color: $black--60;
+  }
+
+  .run-list {
+
+    .run-row {
+      padding: 5px;
+    }
+  }
+
+  ul.source-runs {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  #protocol {
+    max-height: 500px;
+    overflow: scroll;
+  }
+
+  #results {
+
+    .wrapper {
+      max-width: 100%;
+      overflow-x: scroll;
+    }
+
+    .chart_container {
+      position: relative;
+      display: inline-block;
+      font-family: Helvetica, sans-serif;
+
+      .chart {
+        display: inline-block;
+        margin-left: 40px;
+      }
+
+      .y_axis {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+      }
+    }
+
+    th {
+      height: 30px;
+      line-height: 30px;
+      background-color: $extra-light-gray;
+    }
+
+    .add-col,
+    .add-row,
+    .remove-row {
+      @include tx-typescale(1);
+      text-align: center;
+
+      &:hover {
+        background-color: $light-gray;
+        cursor: pointer;
+      }
+    }
+
+    .remove-row:hover {
+      background-color: $red;
+      color: $white;
+    }
+  }
+}
+
+.dataset .body,
+.data .result {
+
+  .qpcr-data {
+    @include user-select(none);
+
+    .qpcr-ct {
+
+      tbody {
+
+        tr {
+          cursor: pointer;
+        }
+
+        tr.focused {
+          color: $dark-blue;
+          font-weight: $font-weight-bold;
+        }
+      }
+    }
+  }
+
+  .adjusted-threshold-download {
+    margin: $spacing--md;
+  }
+
+  .plate-data {
+    position: relative;
+  }
+
+  dd {
+    margin-bottom: 5px;
+  }
+
+  .files {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .measure-data-table {
+
+    .container-grouper {
+      vertical-align: middle;
+    }
+  }
+}
+
+
+.gel-images-dataset {
+  list-style: none;
+  padding-left: 0;
+
+  &__gel-image {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,36 @@
+@use 'main/global-imports' as *;
+
+.projects-search-filters {
+  display: flex;
+  @include flex-justify-and-align(center, center);
+
+  &__favorite-filter, &__implementation-filter {
+    @include tx-border-radius(small);
+
+    cursor: pointer;
+    width: $spacing--xxlg;
+    height: $spacing--xxlg;
+    border: solid 1px $standard-gray;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &--favorite-active &__favorite-filter, &--implementation-active &__implementation-filter {
+    @include tx-box-shadow(focused-state-shadow);
+  }
+
+  &--favorite-active &__favorite-icon {
+    color: $tx-gold;
+  }
+
+  &--implementation-active &__implementation-filter {
+    background-color: $str-green--dark;
+  }
+
+  &--implementation-active &__implementation-icon {
+    color: white;
+  }
+}
+

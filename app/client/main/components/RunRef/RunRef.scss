@@ -1,0 +1,7 @@
+@use 'main/global-imports' as *;
+
+.run-ref-details {
+  &__instructions {
+    max-width: $run-instruction-card-max-width;
+  }
+}

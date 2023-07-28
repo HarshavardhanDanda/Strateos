@@ -1,0 +1,11 @@
+.remove-user-modal {
+  &__icon {
+    color: #D6A400
+  }
+
+  &__displayfile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

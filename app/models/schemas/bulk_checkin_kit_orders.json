@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "required": [ "kit_orders" ],
+  "properties": {
+    "kit_orders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "data"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "data": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "container",
+                "aliquots"
+              ],
+              "properties": {
+                "container": {
+                  "type": "object",
+                  "required": [
+                    "orderable_material_component_id",
+                    "container_type_id",
+                    "location_id",
+                    "kit_order_id",
+                    "barcode"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "orderable_material_component_id": {
+                      "type": "string"
+                    },
+                    "container_type_id": {
+                      "type": "string"
+                    },
+                    "location_id": {
+                      "type": "string"
+                    },
+                    "kit_order_id": {
+                      "type": "string"
+                    },
+                    "lab_id": {
+                      "type": "string"
+                    },
+                    "barcode": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "storage_condition": {
+                      "type": "string"
+                    },
+                    "label": {
+                      "type": ["string", "null"]
+                    },
+                    "expires_at": {
+                      "type": ["string", "null"]
+                    }
+                  }
+                },
+                "aliquots": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "well_idx",
+                      "lot_no",
+                      "resource_id"
+                    ],
+                    "additionalProperties": false,
+                    "properties": {
+                      "well_idx": {
+                        "type": ["number", "string"]
+                      },
+                      "lot_no": {
+                        "type": "string"
+                      },
+                      "resource_id": {
+                        "type": "string"
+                      },
+                      "volume_ul": {
+                        "type": ["number", "string"]
+                      },
+                      "mass_mg": {
+                        "type": ["number", "string"]
+                      },
+                      "name": {
+                        "type": "string"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

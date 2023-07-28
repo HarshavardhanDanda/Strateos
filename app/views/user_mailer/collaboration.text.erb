@@ -1,0 +1,7 @@
+<% if @inviting_user %>
+<%= @inviting_user.name %> has invited you to join <%= @organization.name %> organization on Strateos.
+<% else %>
+You have been invited to join <%= @organization.name %> organization on Strateos.
+<% end %>
+
+To access the organization and start creating projects and orders, visit <%= organization_url(@organization) %>

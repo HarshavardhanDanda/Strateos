@@ -1,0 +1,17 @@
+@use 'main/global-imports' as *;
+
+.compound-edit-form {
+  &__select-input {
+    background-color: $white;
+  }
+
+  &__molecule-wrapper {
+    height: 500px;
+    position: relative;
+  }
+  &__fields-wrapper {
+       display: flex;
+       flex-wrap: wrap;
+  }
+  
+}

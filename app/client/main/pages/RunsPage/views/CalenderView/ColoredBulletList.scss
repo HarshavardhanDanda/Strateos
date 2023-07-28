@@ -1,0 +1,18 @@
+.list-container {
+    &__name {
+        vertical-align: text-bottom;
+        cursor: pointer;
+    }
+    &__bullet {
+        font-size: x-large;
+        margin-right: 3px;
+        cursor: pointer;
+    }
+    &--disable {
+        opacity: 0.25;
+    }
+}
+ .row-orientation {
+    display: flex;
+    flex-flow: wrap;
+}

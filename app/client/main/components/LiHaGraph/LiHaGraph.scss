@@ -1,0 +1,58 @@
+@use 'main/global-imports' as *;
+
+$line-color: $black--20;
+
+.liha-graph {
+  &__line {
+    stroke: $line-color;
+  }
+
+  &__line-pill {
+    stroke: $line-color;
+    fill: $white;
+  }
+
+  &__line-end {
+    stroke: $white;
+    fill: $line-color;
+    stroke-width: 2;
+  }
+
+  &__text {
+
+    fill: $black;
+
+    &--light {
+      opacity: 0.6;
+    }
+
+    &--normal {
+      font-size: 14px;
+    }
+
+    &--small {
+      font-size: 12px;
+    }
+  }
+
+  &__popover {
+    transform-origin: 100% 0;
+    filter: url('#shadow');
+    opacity: 0;
+    transition: opacity 0.2s;
+
+    &--visible {
+      opacity: 1;
+    }
+  }
+
+  &__popover-tip {
+    fill: $white;
+    filter: url('#tip-border');
+  }
+
+  &__popover-background {
+    fill: $white;
+    stroke: $standard-gray;
+  }
+}

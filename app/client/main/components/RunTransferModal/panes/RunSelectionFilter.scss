@@ -1,0 +1,16 @@
+@use 'main/global-imports' as *;
+
+.run-selection-filter {
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__clear-filters {
+        font-size: 12px;
+        color: $black--100;
+        opacity: 0.5;
+        text-decoration: underline;
+    }
+}

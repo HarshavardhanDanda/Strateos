@@ -1,0 +1,56 @@
+@use 'main/global-imports' as *;
+
+.create-containers-list-pane {
+  vertical-align: top;
+
+  &__nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    @include tx-layout__children(inline, xxs);
+
+    width: 75%;
+    font-size: medium;
+  }
+
+  &__nav-item-label {
+    max-width: 90%;
+  }
+
+  &__nav-item--error {
+    color: $red--80
+  }
+
+  &__nav-item-icon {
+    color: $carbon;
+    cursor: pointer;
+
+    &:hover {
+      color: $black--80;
+    }
+  }
+
+  .plates,
+  .tubes {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+
+    a {
+      @include tx-typescale(-2);
+      color: $dark-gray;
+
+      i:hover {
+        color: $carbon;
+      }
+    }
+  }
+
+  .vertical-button-group {
+    margin: 5px 0 10px;
+  }
+}

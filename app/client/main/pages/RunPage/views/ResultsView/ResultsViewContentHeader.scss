@@ -1,0 +1,47 @@
+@use 'main/global-imports' as *;
+
+.results-view-content__header {
+  margin-bottom: 10px;
+
+  &-headline,
+  &-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-actions {
+    @include tx-layout__children(inline, sm);
+  }
+
+  &-info {
+    margin-top: 10px;
+  }
+
+  &-type-info {
+    display: flex;
+    flex-direction: row;
+    @include tx-layout__children(inline, xxs);
+    align-items: center;
+
+    // explicit height for vertical divider
+    height: 20px;
+  }
+
+  &-title {
+    // required for overflow, and to still show download button.
+    width: 100%;
+
+    &-name {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+
+  .divider--horz {
+    margin: 5px 0;
+  }
+}

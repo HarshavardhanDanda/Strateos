@@ -1,0 +1,74 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use 'bootstrap-variables' as *;
+
+// BILLING PAGE
+// INVOICES
+.invoice-view {
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__invoice {
+    background: $white;
+    border: 1px solid $dark-gray;
+    width: 100%;
+
+    & + & {
+      margin-top: 5px;
+    }
+  }
+
+  .invoice-card {
+    &__download-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__download {
+      padding-right: $spacing--sm;
+      font-size: $font-size-small;
+      padding-top: $spacing--xxxs;
+    }
+
+    &__header {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+
+      &--credit {
+        color: $green;
+        cursor: initial;
+      }
+
+      &--long {
+        flex: 1;
+      }
+
+      &--strong {
+        font-weight: $font-weight-bold;
+      }
+
+      &--left {
+        margin-left: $spacing--xlg;
+      }
+    }
+  }
+}
+
+// PAYMENT METHODS
+.billing {
+  &__add {
+    margin-bottom: $spacing--xxxs;
+  }
+  &__action {
+    :hover {
+      color: $str-green--dark;
+    };
+  }
+  &__default {
+    color: $yellow--90;
+    margin-right: $spacing--xxxs;
+  }
+}

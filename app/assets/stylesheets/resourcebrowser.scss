@@ -1,0 +1,183 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.reservations {
+  .resource-browser,
+  .search-results {
+    margin-top: 1em;
+  }
+
+  .resource-browser {
+    ul.path {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 5px;
+
+      > li {
+        color: $extra-dark-gray;
+        background-color: $extra-light-gray;
+        padding: 0.5em 0.6em;
+        margin-bottom: 3px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .search-results .empty {
+    @include tx-typescale(3);
+    padding-top: $spacing--xxxs;
+  }
+
+  .category-list {
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+
+    > li {
+      list-style: none;
+      width: 100%;
+      padding: 0.5em 0.6em;
+      cursor: pointer;
+      position: relative;
+
+      &:hover {
+        background: $extra-light-gray;
+      }
+
+      &.category:after {
+        content: '›';
+        margin-left: 8px;
+        font-size: 130%;
+        line-height: 0;
+        position: relative;
+        top: 2px;
+      }
+
+      & + li {
+        border-top: 1px solid $standard-gray;
+      }
+    }
+  }
+
+  .request-inline {
+    margin-top: 20px;
+    max-width: 300px;
+  }
+
+  .resource-list {
+    @include tx-typescale(3);
+    padding: 0;
+    margin-right: 15px;
+
+    > .row > .col-md-12 {
+      & + .row {
+        border-top: 1px solid $standard-gray;
+      }
+
+      > .row > .col-md-12 {
+        padding: 0.8em 0.6em;
+      }
+    }
+
+    > .row > .col-md-12 > .row:first-child {
+      &:hover {
+        cursor: pointer;
+        background: $light-gray;
+      }
+
+      &.expanded {
+        background-color: $light-gray;
+      }
+    }
+
+    .details {
+      @include tx-typescale(-1);
+      padding-top: 5px;
+
+      .reserve {
+        margin-top: 5px;
+      }
+
+      .helper {
+        color: $extra-dark-gray;
+      }
+
+      code {
+        padding: 0;
+      }
+
+      table.table.components {
+        color: $extra-dark-gray;
+        width: 100%;
+
+        tbody tr {
+          td {
+            border: 0;
+            padding: 3px;
+          }
+
+          td:first-child {
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+            white-space: nowrap;
+            text-transform: uppercase;
+            font-size: 80%;
+            padding-top: 5px;
+          }
+
+          td:last-child {
+            width: 99%;
+          }
+
+          .kit-item-ability {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+
+    .name {
+      font-weight: 200;
+    }
+
+    .price {
+      @include tx-typescale(0);
+      float: right;
+      color: $extra-dark-gray;
+    }
+
+    .vendor {
+      font-size: 70%;
+      margin-left: 15px;
+      color: $black--30;
+    }
+
+    .form-inline {
+      text-align: center;
+      margin-bottom: 20px;
+
+      strong.total {
+        @include tx-typescale(3);
+        padding: 0 20px;
+      }
+    }
+
+    dl.dl-horizontal.metadata {
+      .fa-external-link-alt {
+        margin-left: 3px;
+        font-size: 90%;
+      }
+
+      dt {
+        width: 90px;
+      }
+
+      dd {
+        margin-left: 100px;
+      }
+    }
+  }
+}

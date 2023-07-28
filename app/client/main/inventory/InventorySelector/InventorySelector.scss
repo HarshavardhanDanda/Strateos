@@ -1,0 +1,90 @@
+@use 'main/global-imports' as *;
+
+// Used to select containers or aliquots.
+// Useful when configuring protocols
+.inventory-selector-drawer {
+  background-color: $extra-light-gray;
+  display: grid;
+  height: 550px;
+}
+
+.inventory-selector {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+
+  .inventory-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  .inventory-content {
+    padding: $spacing--xxs $spacing--xlg $spacing--xxs $spacing--xxlg;
+    margin: 0 auto;
+    max-width: 1000px;
+
+    .search-results-page {
+      .spinner-container {
+        padding: 100px 50%;
+
+        .spinner {
+          margin: 0;
+        }
+      }
+
+      .containers {
+        .card .card-header {
+          // Decrease vertical margin as these cards are smaller.
+          margin: 10px 20px;
+        }
+      }
+    }
+
+    .tube-view,
+    .tube-create,
+    .plate-create,
+    .plate-select,
+    .acknowledge-containers {
+      background-color: $white;
+    }
+
+    .acknowledge-containers {
+      padding: 30px;
+    }
+
+    button.select-well {
+      background-color: $tx-gold;
+      border-color: $tx-gold;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .selector-header-container {
+    @include tx-box-shadow(light-shadow);
+    @include tx-z-index(relative, page-content, 1);
+
+    background-color: $white;
+    padding-bottom: $spacing--xxs;
+    flex: 0 0 auto;
+    overflow-y: visible;
+  }
+
+  .selector-contents-container {
+    flex: 1 1;
+    overflow-y: auto;
+    width: 100%;
+  }
+}
+
+.triangle-left.inventory-select {
+  &:before {
+    @include tx-box-shadow(light-shadow);
+    background-color: $extra-light-gray;
+  }
+}

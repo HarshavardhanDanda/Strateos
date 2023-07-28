@@ -1,0 +1,61 @@
+<div class="login">
+  <h1 class="login__header tx-type--invert tx-type--heavy">Admin Log In</h1>
+  <script type="text/javascript">
+
+    function setValue(ref) { // eslint-disable-line no-unused-vars
+      ref.setAttribute('value', ref.value);
+    }
+  </script>
+
+  <form accept-charset="UTF-8" action="/admins/sign_in" method="post" class="login-form login__form">
+    <div class="login-form__authenticity-token">
+      <input name="utf8" type="hidden" value="&#x2713;">
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+    </div>
+
+    <div class="login-form__group">
+      <input
+        required
+        onkeyup="setValue(this);"
+        onfocus="setValue(this);"
+        onchange="setValue(this);"
+        type="email"
+        class="form-control login-form__group-input"
+        name="admin[email]"
+        tabindex=1
+        value="<%= resource.email %>"
+        autofocus=true
+        id="emailInput"
+      >
+      <label class="login-form__group-label" for="email"><h3 class="tx-type--invert tx-type--secondary">Admin Email Address</h3></label>
+    </div>
+
+    <div class="login-form__group">
+      <input
+        required
+        onkeyup="setValue(this);"
+        onfocus="setValue(this);"
+        onchange="setValue(this);"
+        value=""
+        type="password"
+        class="form-control login-form__group-input"
+        name="admin[password]"
+        tabindex=2
+        id="passwordInput"
+      >
+      <label class="login-form__group-label" for="password"><h3 class="tx-type--invert tx-type--secondary">Password</h3></label>
+      <a class="login-form__group-link tx-type--invert" href="/admins/password/new">Forgot your password?</a>
+    </div>
+
+    <div class="login-form__action form-actions">
+      <button class="login-form__submit btn btn-default" name="button" type="submit" tabindex=3>Sign In as Admin</button>
+    </div>
+  </form>
+  <div class="login__divider">
+    <h2 class="tx-type--invert">OR</h2>
+  </div>
+  <div class="login__links">
+    <p class="tx-type--invert">Not an admin? <a href="/">Log in as a user.</a></p>
+    <p class="tx-type--invert">Didn't receive unlock instructions? <a href="/admins/unlock/new">Resend.</a></p>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+@use '@transcriptic/amino/dist/styling/spacing/_utilities' as *;
+
+.field-mapper-form {
+  &__mapped-key {
+    display: flex;
+    gap: $spacing--xxs;
+    align-items: center;
+  }
+}

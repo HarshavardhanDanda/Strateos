@@ -1,0 +1,42 @@
+@use 'main/global-imports' as *;
+
+.shipment-confirmation-page {
+
+  &__item-header {
+    @include tx-type__style(subheading, $default-tier: primary, $default-weight: heavy);
+    margin-top: $spacing--md;
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: $spacing--md;
+  }
+
+  &__list-header {
+    font-size: 10px;
+    margin-left: 1.2rem;
+    list-style-type: disc;
+  }
+
+  &__list-item {
+    &:before {
+      content: "";
+    }
+  }
+  
+  &__list-item-text {
+    margin-left: -10px
+  }
+
+  &__label {
+    @include tx-border-radius(medium);
+    border: dashed 2px #4FA5E3;
+    height: 352px;
+    width: 25%;
+    margin: auto;
+    display: block;
+    margin-top: 46px;
+    margin-bottom: 25px;
+  }
+}

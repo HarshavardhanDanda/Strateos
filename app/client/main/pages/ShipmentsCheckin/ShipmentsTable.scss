@@ -1,0 +1,19 @@
+@use 'main/global-imports' as *;
+
+.shipments-table {
+
+  &__filters {
+    margin: $spacing--xxs 0;
+  }
+
+  &__filters-bar {
+    display: flex;
+    align-items: flex-start;
+    @include tx-layout__children(inline, xxs);
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+  }
+}

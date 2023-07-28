@@ -1,0 +1,36 @@
+@use 'main/global-imports' as *;
+
+.reaction-preview-page {
+
+  .tab-layout__body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 1240px;
+  }
+
+  .tx-profile {
+    display: inline-flex;
+  }
+
+  .tab-layout__body-content {
+    overflow: visible;
+  }
+
+  .tab-layout:first-child {
+    .tx-view__body {
+      padding-bottom: 0;
+    }
+  }
+
+  &--progress-bar {
+    margin-top: $spacing--sm;
+    .pizza-tracker {
+      &__step {
+        cursor: pointer;
+      }
+    }
+  }
+}

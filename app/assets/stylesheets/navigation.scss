@@ -1,0 +1,94 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/variables' as *;
+
+$tab-text-left-padding: $spacing--xxs;
+
+
+ul.nav-bar-vertical {
+
+  @include list-unstyled;
+
+  li {
+
+    &:before {
+      display: none;
+    }
+
+    a {
+      &.active {
+        color: $tx-gold;
+        border-bottom: 2px solid $tx-gold;
+        font-weight: $font-weight-regular;
+      }
+
+      &:not(.active) {
+        color: $carbon;
+
+        &:hover {
+          color: $tx-gold;
+        }
+      }
+    }
+
+  }
+
+  li,
+  a {
+    @include tx-type__style(body-text-small);
+
+    display: block;
+    word-break: break-all;
+  }
+
+  &.tab-style {
+    li {
+      & + li {
+        margin-top: 0;
+        margin-left: 0;
+      }
+    }
+
+    a {
+      padding: 15px;
+
+      &:not(.active) {
+        border-bottom: 1px solid $dark-gray;
+      }
+    }
+  }
+
+  &.link-style {
+    li a,
+    li a.active {
+      border-style: none;
+    }
+
+    a {
+      padding: $spacing--xxxs 0;
+    }
+  }
+
+  &.space-left {
+    li a {
+      padding-left: $tab-text-left-padding;
+    }
+  }
+}
+
+
+// Override some of the base nav-bar-horizontal sizes/colors
+ul.main-chrome {
+  li {
+    @include tx-typescale(-2);
+    font-weight: $font-weight-light;
+    margin-right: $spacing--xlg;
+    height: $header-bar-height;
+    line-height: $header-bar-height;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    a:not(.active) {
+      color: $white;
+    }
+  }
+}

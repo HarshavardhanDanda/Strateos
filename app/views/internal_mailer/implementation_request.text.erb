@@ -1,0 +1,11 @@
+New protocol implementation request.
+
+Name:         <%= @req.user.name %>
+Email:        <%= @req.user.email %>
+Organization: <%= @req.organization.name %>
+
+Assay Type:   <%= @req.assay %>
+Details:
+<%= @req.details %>
+
+Organization Overview: <%= organization_overview_url(@req.organization.subdomain) %>

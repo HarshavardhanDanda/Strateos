@@ -1,0 +1,6 @@
+@use 'main/global-imports' as *;
+
+.node-selector {
+  @include tx-border-radius(large);
+  border-color: $tx-gold;
+}

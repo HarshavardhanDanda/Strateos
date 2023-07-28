@@ -1,0 +1,11 @@
+@use 'main/global-imports' as *;
+
+.org-members-table__admin-action {
+  color: $black--50;
+  margin-right: $spacing--sm;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $str-green--dark;
+  };
+}

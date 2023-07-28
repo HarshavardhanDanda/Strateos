@@ -1,0 +1,30 @@
+<table border="0" cellpadding="0" cellspacing="0" width="445" align="center" style="margin:auto" class="fullwidth">
+
+  <tr>
+    <td class="content">
+      <p style="font-size:17px;color:#0E202E;line-height:160%;margin:0;padding:0;letter-spacing:0.3px" class="source light">
+        New protocol implementation request.
+      </p>
+      <br>
+      <p style="font-size:17px;color:#0E202E;line-height:160%;margin:0;padding:0;letter-spacing:0.3px" class="source light">
+        Name:         <%= @req.user.name %>
+      </p>
+      <p style="font-size:17px;color:#0E202E;line-height:160%;margin:0;padding:0;letter-spacing:0.3px" class="source light">
+        Email:        <%= @req.user.email %>
+      </p>
+      <p style="font-size:17px;color:#0E202E;line-height:160%;margin:0;padding:0;letter-spacing:0.3px" class="source light">
+        Organization: <a href="<%= organization_overview_url(@req.organization.subdomain)%>"><%= @req.organization.name %></a>
+      </p>
+      <br>
+      <p style="font-size:17px;color:#0E202E;line-height:160%;margin:0;padding:0;letter-spacing:0.3px" class="source light">
+        Assay Type:   <%= @req.assay %>
+      </p>
+      <p style="font-size:17px;color:#0E202E;line-height:160%;margin:0;padding:0;letter-spacing:0.3px" class="source light">
+        Details:<br>
+        <%= @req.details %>
+      </p>
+
+    </td>
+  </tr>
+
+</table>

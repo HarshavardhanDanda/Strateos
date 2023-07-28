@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="panel panel-default organizations-list-panel">
+      <div class="panel-heading">
+        <h3 class="panel-title">Organizations I'm a Member Of</h3>
+      </div>
+      <div class="panel-body">
+        <table class="table">
+          <tr>
+            <th>Name</th>
+            <th>Role</th>
+          </tr>
+          <% @user.organization_collaborations.each do |collaboration| %>
+          <tr>
+            <td><%= link_to collaboration.collaborative.name, organization_url(collaboration.collaborative) %></td>
+            <td><%= collaboration.privilege.humanize %><% if collaboration.admin %> <%= link_to "(Manage)", organization_overview_path(collaboration.organization) %><% end %></td>
+          </tr>
+          <% end %>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Create New Organization</h3>
+      </div>
+      <div class="panel-body">
+        <p>An organization is a completely independent group: it has its own addresses, collaborators, billing, runs, and other associated data.  Shipping addresses and certifications must all be approved again.  Most users will only be associated with one organization.</p>
+        <% if false %>
+          <%= render :partial => "organizations/create" %>
+        <% else %>
+          <p>To create an additional organization linked to this account, please contact your account manager.</p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

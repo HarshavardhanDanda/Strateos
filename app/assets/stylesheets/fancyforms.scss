@@ -1,0 +1,110 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.expanding-input {
+  display: inline-block;
+  position: relative;
+
+  div,
+  input {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font: inherit;
+    line-height: inherit;
+    min-width: 8px;
+    text-rendering: inherit;
+    letter-spacing: inherit;
+    color: transparent;
+  }
+
+  div {
+    margin-right: 1px;
+  }
+
+  input {
+    background: transparent;
+    color: inherit;
+    letter-spacing: inherit;
+    vertical-align: initial;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &:first-line {
+      display: inline-block;
+    }
+  }
+}
+
+.expanding-area {
+  position: relative;
+
+  div,
+  textarea {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    font: inherit;
+    line-height: inherit;
+    min-width: 8px;
+    text-rendering: inherit;
+    color: transparent;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+
+  textarea {
+    background-color: transparent;
+    color: inherit;
+    letter-spacing: inherit;
+    vertical-align: initial;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    box-shadow: none;
+    resize: none;
+    overflow: hidden;
+  }
+
+  &.with-highlights {
+    .highlighted {
+      &:first-child {
+        // Position relative so that it gives the textarea height.
+        // The other children are position:absolute to be overlayed exactly
+        // on top.
+        position: relative;
+      }
+
+      &:not(:first-child) {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+.edit-in-place {
+  display: inline-block;
+  cursor: pointer;
+
+  .text-container {
+    min-width: $spacing--xxlg; // So you can click it even when there's no text content
+  }
+
+  &.decorate {
+    &.showing:hover,
+    &.editing {
+      span.text {
+        border-bottom: dashed 1px $carbon;
+        color: $carbon;
+      }
+    }
+  }
+}

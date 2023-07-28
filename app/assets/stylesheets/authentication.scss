@@ -1,0 +1,30 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.authentication {
+  &__alert {
+    @include tx-typescale(-1);
+    @include tx-border-radius(small);
+
+    animation-duration: 0.2s;
+    animation-name: moveIn;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    color: $black;
+    font-weight: $font-weight-regular;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 100%;
+  }
+}
+
+@keyframes moveIn {
+  from {
+    transform: translateY(-30px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}

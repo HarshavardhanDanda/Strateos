@@ -1,0 +1,50 @@
+[
+  {
+    "id": "ccp1gbfdqv7nbxwx",
+    "type": "contextual_custom_properties",
+    "context_type": "Container",
+    "context_id": "ct1gbfdqv6h5tvx",
+    "key": "ct_prop_1",
+    "value": "Project beta"
+  },
+  {
+    "id": "ccp1gbfdqv8kdksd",
+    "type": "contextual_custom_properties",
+    "context_type": "Container",
+    "context_id": "ct1gbfdqv6h5tvx",
+    "key": "ct_prop_2",
+    "value": "210"
+  },
+  {
+    "id": "ccp1gbfebbr259vm",
+    "type": "contextual_custom_properties",
+    "context_type": "Container",
+    "context_id": "ct1gbfdqv6h5tvx",
+    "key": "ct_prop_3",
+    "value": "Mouse Phenotyping,General Screening"
+  },
+  {
+    "id": "ccp1gbfdncs7mz3s",
+    "type": "contextual_custom_properties",
+    "context_type": "Container",
+    "context_id": "ct1gbfdqv6h5tvx",
+    "key": "ct_prop_4",
+    "value": "1001"
+  },
+  {
+    "id": "ccptestboolean2",
+    "type": "contextual_custom_properties",
+    "context_type": "Container",
+    "context_id": "ct1gbfdqv6h5tvx",
+    "key": "ct_prop_5",
+    "value": "true"
+  },
+  {
+    "id": "ccp1gbfdncs7mzqq",
+    "type": "contextual_custom_properties",
+    "context_type": "Container",
+    "context_id": "ct1gbfdqv6h5555",
+    "key": "ct_prop_4",
+    "value": ""
+  }
+]

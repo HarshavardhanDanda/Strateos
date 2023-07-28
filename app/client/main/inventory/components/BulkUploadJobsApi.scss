@@ -1,0 +1,8 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.bulk-upload-jobs-api {
+  &__upload {
+    display: flex;
+    gap: $spacing--xxxlg;
+  }
+}

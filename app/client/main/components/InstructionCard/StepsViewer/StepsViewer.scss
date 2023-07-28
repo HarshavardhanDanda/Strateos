@@ -1,0 +1,47 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.steps-viewer {
+    
+    padding: $spacing--xs 0;
+
+    &__heading {
+        display: flex;
+        cursor: pointer;
+    }
+
+    &__button-text {
+        margin: 0 0 $spacing--xxxs $spacing--xs;
+
+        .btn__content {
+            font-size: unset;
+        }
+    }
+
+    &__body {
+        padding: $spacing--md;
+        padding-left: $spacing--xxxlg;
+    }
+
+    &__step {
+        display: flex;
+        flex-direction: row;
+
+        &-index {
+            display: flex;
+            flex-direction: column;
+            width: 10%;
+            min-height: $spacing--xxxlg;
+        }
+        
+        &-line {
+            border-left: $normal-border solid $carbon--30;
+            height: 100%;
+            margin: $spacing--xxs $spacing--sm;
+        }
+
+        &-content {
+            width: 80%;
+            padding-bottom: $spacing--md;
+        }
+    }
+}

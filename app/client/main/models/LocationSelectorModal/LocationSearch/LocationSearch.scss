@@ -1,0 +1,23 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.location-search {
+  &__suggestion {
+    display: flex;
+  }
+
+  &__name {
+    width: 40%;
+  }
+
+  &__path {
+    width: 60%;
+    padding-left: $spacing--sm;
+  }
+
+  &__name,
+  &__path {
+    > * {
+      @include ellipsis(100%);
+    }
+  }
+}

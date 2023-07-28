@@ -1,0 +1,22 @@
+@use 'main/global-imports' as *;
+@use "sass:color";
+
+.base-tag {
+  @include tx-border-radius(small);
+  display: inline-block;
+  position: relative;
+  padding: 2px 4px;
+  margin-left: 3px;
+  color: $carbon;
+  cursor: default;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+a .base-tag {
+  &:hover {
+    color: color.adjust($carbon, $lightness: 20%);
+  }
+}

@@ -1,0 +1,28 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.implementation-shipment-info {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-top: 1px solid $black--70;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  padding-top: 1em;
+
+
+  &__packing-slip {
+    background: transparent;
+  }
+
+  &__notes {
+    height: 7em;
+    resize: none;
+  }
+
+  &__submit {
+    margin-left: auto;
+    margin-top: 1em;
+  }
+}

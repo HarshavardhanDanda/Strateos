@@ -1,0 +1,147 @@
+@use 'main/global-imports' as *;
+
+.user-nav-bar {
+  @include tx-z-index(relative, chrome);
+  display: flex;
+  justify-content: space-between;
+
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 20px;
+  float: none;
+  width: 100%;
+  height: $header-bar-height;
+  line-height: $header-bar-height;
+  background-color: $header-background-color;
+  color: $white;
+
+  &__logo {
+    display: flex;
+    flex-shrink: 1;
+    align-self: center;
+    padding: 10px 0;
+    padding-right: $spacing--md;
+  }
+
+  &__logo-img {
+    height: 100%;
+  }
+
+  &__content-right {
+    display: flex;
+    margin-left: auto;
+    align-self: center;
+    height: auto;
+  }
+
+  &__content-left {
+    display: flex;
+  }
+
+  &__menu {
+    @include list-unstyled;
+    @include tx-typescale(-1);
+
+    text-transform: uppercase;
+    margin: 0;
+
+    li {
+      letter-spacing: 1px;
+      margin-right: $spacing--xxlg;
+      text-transform: uppercase;
+      margin-top: 0;
+
+      &:before {
+        display: none;
+      }
+
+      a {
+        &.active {
+          color: $tx-gold;
+          border-bottom: 2px solid $tx-gold;
+          font-weight: $font-weight-regular;
+        }
+
+        &:not(.active) {
+          color: $carbon;
+
+          &:hover {
+            color: $tx-gold;
+          }
+        }
+      }
+    }
+
+    li,
+    li a {
+      height: $header-bar-height;
+      line-height: $header-bar-height;
+      display: inline-block;
+    }
+  }
+
+  $element-pad: 10px;
+
+  .element,
+  .profile {
+    @include tx-typescale(-2);
+    display: block;
+    float: left;
+    font-weight: $font-weight-light;
+    letter-spacing: 0.5px;
+    line-height: $header-bar-height;
+
+    &:hover {
+      text-decoration: none;
+      background: $hover-navigation-item-color;
+    }
+  }
+
+  &.admin {
+    @include admin-stripes-dark-blue();
+
+    .profile .context {
+      // THIS NEEDS TO BE FIXED
+      > * { // sass-lint:disable-line no-universal-selectors
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  a {
+    color: $white;
+  }
+
+  .organization-selector {
+    position: relative;
+
+    .button {
+      text-align: right;
+
+      &:hover {
+        background-color: $hover-navigation-item-color;
+        cursor: pointer;
+      }
+
+      i {
+        margin-left: $spacing--xxxs;
+      }
+    }
+
+    .organization-pic {
+      @include tx-border-radius(medium);
+      height: 55px;
+      width: 55px;
+    }
+  }
+
+  .profile {
+    position: relative;
+    float: right;
+
+    .context {
+      position: relative;
+    }
+  }
+}

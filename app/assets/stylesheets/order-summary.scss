@@ -1,0 +1,42 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.order-summary {
+  @include tx-typescale(-2);
+  border: 1px solid $light-gray;
+  background: $extra-light-gray;
+  padding: 10px 0 15px;
+  color: $extra-light-carbon;
+
+  &__title {
+    text-align: center;
+    margin: 0 0 10px;
+  }
+
+  &__rows {
+    width: 100%;
+  }
+
+  &__item-cost {
+    text-align: right;
+  }
+
+  &__cell {
+    padding: 2px 15px;
+  }
+
+  &__totals {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid $light-gray;
+    color: $extra-light-carbon;
+  }
+
+  &__total {
+    color: $black;
+    font-weight: $font-weight-regular;
+  }
+
+  &__description {
+    padding: 2px 15px;
+  }
+}

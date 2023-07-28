@@ -1,0 +1,25 @@
+@use 'main/global-imports' as *;
+
+.samples {
+  .search-header {
+    display: flex;
+    flex-direction: column-reverse;
+    border-bottom: 2px solid $light-gray;
+    margin: 0 auto 20px;
+
+    .search-bar {
+      margin-top: $spacing--md;
+      border-left: 0;
+      padding: 0;
+
+      input { //sass-lint:disable-line nesting-depth
+        background: transparent;
+      }
+    }
+
+    .search-filters {
+      display: block;
+      margin-left: 0;
+    }
+  }
+}

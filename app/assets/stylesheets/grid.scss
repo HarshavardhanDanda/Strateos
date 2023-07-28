@@ -1,0 +1,26 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+// Creates a row wrapped flexbox container and also
+// sets negative margins to have margins align nicely.
+.row-wrapped-grid {
+
+  @include flex-justify-and-align(flexbox, flex-start);
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-left: -$spacing--xxs;
+  margin-right: -$spacing--xxs;
+
+  .grid-element {
+    margin: $spacing--xxs;
+  }
+}
+
+// Search results cards in a grid
+.search-results-page {
+  //TODO: Get rid of this important during a grid refactor of this page.
+  margin: 0 !important; // sass-lint:disable-line no-important
+}
+
+.paginated-footer {
+  width: 100%;
+}

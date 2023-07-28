@@ -1,0 +1,75 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+@use '../../client/main/mixins' as *;
+
+.address-choice-squares {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.address-selector {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  &__address {
+    cursor: pointer;
+    width: 124px; // these dimensions are to be replaced with variables from a sizing system once it is implemented.
+    height: 124px; // these dimensions are to be replaced with variables from a sizing system once it is implemented.
+    margin: 15px;
+    text-align: center;
+    color: $black--80;
+    display: flex;
+
+    &--new {
+      @include flex-justify-and-align(center, center);
+      flex-direction: column;
+
+    }
+  }
+
+  &__address-title {
+    width: 120px;
+    line-height: 1.4;
+  }
+
+  &__add-button {
+    padding: $spacing--xs $spacing--xxxs;
+  }
+}
+
+.address-create-form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.address-text {
+  @include tx-typescale(-2);
+  text-align: center;
+  margin: auto;
+
+  p {
+    margin: 0;
+    word-break: break-all;
+  }
+}
+
+.address {
+  &__add {
+    margin-bottom: $spacing--xxxs;
+  }
+}
+
+.address__admin-action {
+  color: $black--50;
+  margin-right: $spacing--sm;
+  transition: color 0.2s;
+
+  &:hover {
+    color: $str-green--dark;
+  };
+}
+.tx-radio {
+  margin-bottom: $spacing--sm;
+}

@@ -1,0 +1,20 @@
+@use 'main/global-imports' as *;
+
+.run-filter {
+    &__calender-icon {
+        @include tx-border-radius(small);
+    
+        width: $spacing--xxlg;
+        height: $spacing--xxlg;
+        border: solid 1px $standard-gray;
+        background-color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: $black--50;
+    }
+    &--datepicker {
+        width: 280px;
+    }
+}

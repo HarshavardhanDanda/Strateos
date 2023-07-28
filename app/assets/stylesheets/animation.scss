@@ -1,0 +1,8 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.hover-highlight {
+  color: $dark-gray;
+  &:hover {
+    color: $carbon;
+  }
+}

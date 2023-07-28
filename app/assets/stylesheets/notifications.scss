@@ -1,0 +1,12 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.notifications-layer {
+  @include tx-z-index(fixed, notification);
+
+  top: 0;
+  right: 0;
+
+  .notifications {
+    margin: 0 $spacing--xxs $spacing--xxs 0;
+  }
+}

@@ -1,0 +1,5 @@
+There's a new message waiting for you at Strateos: <%= polymorphic_url [@run.organization, @run.project, @run] %>
+
+Message from <%= @post.author_name %> on <%= @post.created_at.strftime "%b %-d, %Y, at %I:%M %p" %>:
+
+<%= @post.text %>

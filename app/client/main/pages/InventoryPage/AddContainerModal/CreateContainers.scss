@@ -1,0 +1,47 @@
+@use 'main/global-imports' as *;
+
+.create-containers {
+  @include tx-spacing__inset(square, xxs);
+  margin: -15px;
+  background-color: $extra-light-gray;
+
+  .body-container {
+    @include flex-justify-and-align(center, center);
+    flex-direction: column;
+
+    &__create-containers-body {
+      width: 100%;
+
+      .create-containers-csv-pane {
+
+        a.back {
+          @include tx-typescale(-2);
+          display: inline-block;
+          margin-bottom: $spacing--md;
+
+          i {
+            margin-right: 5px;
+          }
+
+
+        }
+      }
+    }
+  }
+}
+
+.container-type-select-container {
+  align-self: flex-start;
+}
+
+.container-type-select {
+  &__selector {
+    display: flex;
+    align-items: baseline;
+    gap: $spacing--xs;
+  }
+
+  &__links {
+    margin: $spacing--xs $spacing--xxxs 0;
+  }
+}

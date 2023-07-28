@@ -1,0 +1,29 @@
+@use 'main/global-imports' as *;
+
+.material-order-details-page {
+
+  &__form {
+    .row + .row {
+      margin-top: $spacing--sm;
+    }
+  }
+
+  &__group-materials {
+    margin-top: $spacing--md;
+  }
+
+  &__item {
+    @include tx-layout__item(stack, xxs);
+    padding: $spacing--md;
+
+    &:nth-child(even) {
+      background-color: $extra-light-gray;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: $spacing--md;
+  }
+}

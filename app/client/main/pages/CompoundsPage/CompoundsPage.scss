@@ -1,0 +1,20 @@
+@use 'main/global-imports' as *;
+
+.compounds-page {
+  .selected-count-group {
+    display: none;
+  }
+}
+
+.toggle-with-label{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  span {
+    @include tx-type__style(body-text-small);
+    margin-left: $spacing--xxxs;
+  }
+
+  margin-bottom: $spacing--xxs;
+}

@@ -1,0 +1,29 @@
+.selector-content {
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--data {
+      justify-content: flex-start;
+    }
+
+    &--empty {
+      justify-content: flex-start;
+    }
+
+    &--is-drawer {
+      overflow: hidden;
+    }
+  }
+
+  .search-filter-wrapper {
+    margin-right: 0px;
+    &__vertical-options {
+      &--with_scroll {
+        width: 100%;
+      }
+    }
+  }
+}

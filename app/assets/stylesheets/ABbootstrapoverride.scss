@@ -1,0 +1,114 @@
+@use '@transcriptic/amino/dist/styling/amino-utilities' as *;
+
+.panel-body.no-padding,
+.panel.panel-default > .panel-heading.no-padding {
+  padding: 0;
+}
+
+
+.no-padding {
+  .tab-content {
+    padding-top: 0;
+  }
+}
+
+.panel-title.white-text {
+  color: $white;
+}
+
+.alert.alert-block.alert-success {
+  color: $extra-dark-gray;
+  background-color: $extra-light-gray;
+  border-color: $black--30;
+
+  .alert-heading {
+    color: $extra-dark-gray;
+  }
+}
+
+.alert {
+  border: 0;
+  border-radius: 0;
+  text-align: left;
+}
+
+h2.page-header {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.page-header {
+  padding-bottom: 0;
+}
+
+footer {
+  margin-top: 17px;
+  padding-top: 17px;
+}
+
+table .progress {
+  margin-bottom: 0;
+}
+
+.page-header .badge {
+  position: relative;
+  top: -2px;
+}
+
+.datepicker {
+  z-index: 2000 !important;
+}
+
+.tab-content {
+  padding-top: 10px;
+}
+
+.popover {
+  max-width: 400px;
+}
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+.nav-tabs > li {
+  > a,
+  > a:hover,
+  > a:focus {
+    box-sizing: border-box;
+    border-radius: 0;
+    border-color: transparent;
+    background: none;
+    border: 0;
+
+    &:hover {
+      border-bottom: 1px solid $light-carbon;
+    }
+
+    &.active {
+      border: 0;
+      border-bottom: 3px solid $light-carbon;
+      background: none;
+    }
+  }
+
+  &.active {
+
+    > a,
+    > a:hover,
+    > a:focus {
+      border: 0;
+      border-bottom: 3px solid $light-carbon;
+      background: none;
+    }
+  }
+}
+
+code {
+  background-color: inherit;
+  color: inherit;
+}
